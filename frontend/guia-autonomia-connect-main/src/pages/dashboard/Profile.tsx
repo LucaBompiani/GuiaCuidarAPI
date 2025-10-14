@@ -19,65 +19,60 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
+import { Database } from "@/integrations/supabase/types";
 
-const supportLevelLabels = {
-  nivel_1: "Nível 1 - Requer apoio",
-  nivel_2: "Nível 2 - Requer apoio substancial",
-  nivel_3: "Nível 3 - Requer apoio muito substancial",
-};
+type Profile = Database["public"]["Tables"]["Responsavel"]["Row"];
+type Dependente = Database["public"]["Tables"]["Dependente"]["Row"];
+type NivelSuporte = Database["public"]["Tables"]["NivelSuporteTEA"]["Row"];
 
 const Profile = () => {
   const { toast } = useToast();
   const [loading, setLoading] = useState(true);
-  const [profile, setProfile] = useState<any>(null);
-  const [dependents, setDependents] = useState<any[]>([]);
-  const [editingDependent, setEditingDependent] = useState<any>(null);
-  const [deleteId, setDeleteId] = useState<string | null>(null);
+  const [profile, setProfile] = useState<Profile | null>(null);
+  const [dependentes, setDependentes] = useState<Dependente[]>([]);
+  const [niveisSuporte, setNiveisSuporte] = useState<NivelSuporte[]>([]);
+  const [editingDependent, setEditingDependent] = useState<Dependente | null>(null);
+  const [deleteId, setDeleteId] = useState<number | null>(null);
   const [formData, setFormData] = useState({
-    name: "",
-    age: "",
-    support_level: "nivel_1",
-    notes: "",
+    nome: "",
+    nivel_suporte_tea_id: "",
   });
 
   useEffect(() => {
-    loadProfile();
-    loadDependents();
+    loadInitialData();
   }, []);
 
-  const loadProfile = async () => {
+  const loadInitialData = async () => {
+    setLoading(true);
     try {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) return;
 
-      const { data, error } = await supabase
-        .from("profiles")
-        .select("*")
-        .eq("id", user.id)
-        .single();
+      const [
+        { data: profileData, error: profileError },
+        { data: dependentesData, error: dependentesError },
+        { data: niveisData, error: niveisError },
+      ] = await Promise.all([
+        supabase.from("Responsavel").select("*").eq("id", user.id).single(),
+        supabase.from("Dependente").select("*").eq("responsavel_id", user.id).order("data_criacao", { ascending: false }),
+        supabase.from("NivelSuporteTEA").select("*"),
+      ]);
 
-      if (error) throw error;
-      setProfile(data);
+      if (profileError) throw profileError;
+      if (dependentesError) throw dependentesError;
+      if (niveisError) throw niveisError;
+
+      setProfile(profileData);
+      setDependentes(dependentesData || []);
+      setNiveisSuporte(niveisData || []);
+
+      if (niveisData && niveisData.length > 0) {
+        setFormData(prev => ({ ...prev, nivel_suporte_tea_id: String(niveisData[0].id) }));
+      }
+
     } catch (error: any) {
-      console.error("Erro ao carregar perfil:", error);
-    }
-  };
-
-  const loadDependents = async () => {
-    try {
-      const { data: { user } } = await supabase.auth.getUser();
-      if (!user) return;
-
-      const { data, error } = await supabase
-        .from("dependents")
-        .select("*")
-        .eq("user_id", user.id)
-        .order("created_at", { ascending: false });
-
-      if (error) throw error;
-      setDependents(data || []);
-    } catch (error: any) {
-      console.error("Erro ao carregar dependentes:", error);
+      console.error("Erro ao carregar dados:", error);
+      toast({ title: "Erro ao carregar dados", description: error.message, variant: "destructive" });
     } finally {
       setLoading(false);
     }
@@ -92,16 +87,14 @@ const Profile = () => {
       if (!user) throw new Error("Usuário não autenticado");
 
       const dependentData = {
-        name: formData.name,
-        age: formData.age ? parseInt(formData.age) : null,
-        support_level: formData.support_level as "nivel_1" | "nivel_2" | "nivel_3",
-        notes: formData.notes,
-        user_id: user.id,
+        nome: formData.nome,
+        nivel_suporte_tea_id: parseInt(formData.nivel_suporte_tea_id),
+        responsavel_id: user.id,
       };
 
       if (editingDependent) {
         const { error } = await supabase
-          .from("dependents")
+          .from("Dependente")
           .update(dependentData)
           .eq("id", editingDependent.id);
 
@@ -109,16 +102,20 @@ const Profile = () => {
         toast({ title: "Dependente atualizado com sucesso!" });
       } else {
         const { error } = await supabase
-          .from("dependents")
+          .from("Dependente")
           .insert(dependentData);
 
         if (error) throw error;
         toast({ title: "Dependente adicionado com sucesso!" });
       }
 
-      setFormData({ name: "", age: "", support_level: "nivel_1", notes: "" });
+      setFormData({ nome: "", nivel_suporte_tea_id: niveisSuporte[0]?.id.toString() || "" });
       setEditingDependent(null);
-      loadDependents();
+      // Recarrega apenas os dependentes
+      const { data, error } = await supabase.from("Dependente").select("*").eq("responsavel_id", user.id).order("data_criacao", { ascending: false });
+      if (error) throw error;
+      setDependentes(data || []);
+
     } catch (error: any) {
       toast({
         title: "Erro ao salvar dependente",
@@ -130,13 +127,11 @@ const Profile = () => {
     }
   };
 
-  const handleEdit = (dependent: any) => {
+  const handleEdit = (dependent: Dependente) => {
     setEditingDependent(dependent);
     setFormData({
-      name: dependent.name,
-      age: dependent.age?.toString() || "",
-      support_level: dependent.support_level,
-      notes: dependent.notes || "",
+      nome: dependent.nome,
+      nivel_suporte_tea_id: String(dependent.nivel_suporte_tea_id),
     });
   };
 
@@ -145,14 +140,14 @@ const Profile = () => {
     
     try {
       const { error } = await supabase
-        .from("dependents")
+        .from("Dependente")
         .delete()
         .eq("id", deleteId);
 
       if (error) throw error;
       
       toast({ title: "Dependente removido com sucesso!" });
-      loadDependents();
+      setDependentes(prev => prev.filter(d => d.id !== deleteId));
     } catch (error: any) {
       toast({
         title: "Erro ao remover dependente",
@@ -163,6 +158,8 @@ const Profile = () => {
       setDeleteId(null);
     }
   };
+
+  const getNivelSuporteLabel = (id: number | null) => niveisSuporte.find(n => n.id === id)?.nome || "N/A";
 
   if (loading && !profile) {
     return <div>Carregando...</div>;
@@ -185,7 +182,7 @@ const Profile = () => {
         <CardContent className="space-y-4">
           <div>
             <Label>Nome</Label>
-            <p className="text-lg font-medium">{profile?.full_name}</p>
+            <p className="text-lg font-medium">{profile?.nome}</p>
           </div>
           <div>
             <Label>Email</Label>
@@ -196,10 +193,10 @@ const Profile = () => {
 
       <Separator />
 
-      {/* Dependents List */}
+      {/* Dependentes List */}
       <div>
         <h3 className="text-2xl font-bold mb-4">Dependentes Cadastrados</h3>
-        {dependents.length === 0 ? (
+        {dependentes.length === 0 ? (
           <Card>
             <CardContent className="py-8 text-center text-muted-foreground">
               Nenhum dependente cadastrado ainda. Adicione um abaixo.
@@ -207,15 +204,14 @@ const Profile = () => {
           </Card>
         ) : (
           <div className="grid gap-4">
-            {dependents.map((dependent) => (
+            {dependentes.map((dependent) => (
               <Card key={dependent.id}>
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div>
-                      <CardTitle>{dependent.name}</CardTitle>
+                      <CardTitle>{dependent.nome}</CardTitle>
                       <CardDescription>
-                        {dependent.age && `${dependent.age} anos • `}
-                        {supportLevelLabels[dependent.support_level as keyof typeof supportLevelLabels]}
+                        {getNivelSuporteLabel(dependent.nivel_suporte_tea_id)}
                       </CardDescription>
                     </div>
                     <div className="flex gap-2">
@@ -236,11 +232,6 @@ const Profile = () => {
                     </div>
                   </div>
                 </CardHeader>
-                {dependent.notes && (
-                  <CardContent>
-                    <p className="text-muted-foreground">{dependent.notes}</p>
-                  </CardContent>
-                )}
               </Card>
             ))}
           </div>
@@ -263,50 +254,29 @@ const Profile = () => {
               <Label htmlFor="name">Nome *</Label>
               <Input
                 id="name"
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                value={formData.nome}
+                onChange={(e) => setFormData({ ...formData, nome: e.target.value })}
                 required
-              />
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="age">Idade</Label>
-              <Input
-                id="age"
-                type="number"
-                min="0"
-                value={formData.age}
-                onChange={(e) => setFormData({ ...formData, age: e.target.value })}
               />
             </div>
 
             <div className="space-y-2">
               <Label htmlFor="support_level">Nível de Suporte *</Label>
               <Select
-                value={formData.support_level}
-                onValueChange={(value) => setFormData({ ...formData, support_level: value })}
+                value={formData.nivel_suporte_tea_id}
+                onValueChange={(value) => setFormData({ ...formData, nivel_suporte_tea_id: value })}
               >
                 <SelectTrigger>
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  {Object.entries(supportLevelLabels).map(([value, label]) => (
-                    <SelectItem key={value} value={value}>
-                      {label}
+                  {niveisSuporte.map((nivel) => (
+                    <SelectItem key={nivel.id} value={String(nivel.id)}>
+                      {nivel.nome}
                     </SelectItem>
                   ))}
                 </SelectContent>
               </Select>
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="notes">Observações</Label>
-              <Textarea
-                id="notes"
-                value={formData.notes}
-                onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                rows={3}
-              />
             </div>
 
             <div className="flex gap-2">
@@ -329,7 +299,7 @@ const Profile = () => {
                   variant="outline"
                   onClick={() => {
                     setEditingDependent(null);
-                    setFormData({ name: "", age: "", support_level: "nivel_1", notes: "" });
+                    setFormData({ nome: "", nivel_suporte_tea_id: niveisSuporte[0]?.id.toString() || "" });
                   }}
                 >
                   Cancelar

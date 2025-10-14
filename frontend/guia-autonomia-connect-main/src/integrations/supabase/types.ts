@@ -12,166 +12,381 @@ export type Database = {
   __InternalSupabase: {
     PostgrestVersion: "13.0.5"
   }
+  graphql_public: {
+    Tables: {
+      [_ in never]: never
+    }
+    Views: {
+      [_ in never]: never
+    }
+    Functions: {
+      graphql: {
+        Args: {
+          extensions?: Json
+          operationName?: string
+          query?: string
+          variables?: Json
+        }
+        Returns: Json
+      }
+    }
+    Enums: {
+      [_ in never]: never
+    }
+    CompositeTypes: {
+      [_ in never]: never
+    }
+  }
   public: {
     Tables: {
-      dependents: {
+      ArtigoInformativo: {
         Row: {
-          age: number | null
-          created_at: string | null
-          id: string
-          name: string
-          notes: string | null
-          support_level: Database["public"]["Enums"]["support_level"]
-          updated_at: string | null
-          user_id: string
+          autor: string | null
+          corpo: string
+          data_atualizacao: string | null
+          data_criacao: string | null
+          id: number
+          titulo: string
         }
         Insert: {
-          age?: number | null
-          created_at?: string | null
-          id?: string
-          name: string
-          notes?: string | null
-          support_level: Database["public"]["Enums"]["support_level"]
-          updated_at?: string | null
-          user_id: string
+          autor?: string | null
+          corpo: string
+          data_atualizacao?: string | null
+          data_criacao?: string | null
+          id?: number
+          titulo: string
         }
         Update: {
-          age?: number | null
-          created_at?: string | null
-          id?: string
-          name?: string
-          notes?: string | null
-          support_level?: Database["public"]["Enums"]["support_level"]
-          updated_at?: string | null
-          user_id?: string
+          autor?: string | null
+          corpo?: string
+          data_atualizacao?: string | null
+          data_criacao?: string | null
+          id?: number
+          titulo?: string
         }
         Relationships: []
       }
-      favorite_tips: {
+      CategoriaMaterial: {
         Row: {
-          created_at: string | null
-          id: string
-          tip_id: string
-          user_id: string
+          data_criacao: string | null
+          descricao: string | null
+          id: number
+          nome: string
         }
         Insert: {
-          created_at?: string | null
-          id?: string
-          tip_id: string
-          user_id: string
+          data_criacao?: string | null
+          descricao?: string | null
+          id?: number
+          nome: string
         }
         Update: {
-          created_at?: string | null
-          id?: string
-          tip_id?: string
-          user_id?: string
+          data_criacao?: string | null
+          descricao?: string | null
+          id?: number
+          nome?: string
+        }
+        Relationships: []
+      }
+      DadosEstatisticosTEA: {
+        Row: {
+          conteudo: string
+          data_criacao: string | null
+          descricao: string | null
+          fonte: string | null
+          id: number
+          nome: string
+        }
+        Insert: {
+          conteudo: string
+          data_criacao?: string | null
+          descricao?: string | null
+          fonte?: string | null
+          id?: number
+          nome: string
+        }
+        Update: {
+          conteudo?: string
+          data_criacao?: string | null
+          descricao?: string | null
+          fonte?: string | null
+          id?: number
+          nome?: string
+        }
+        Relationships: []
+      }
+      Dependente: {
+        Row: {
+          data_atualizacao: string | null
+          data_criacao: string | null
+          id: number
+          nivel_suporte_tea_id: number | null
+          nome: string
+          responsavel_id: string
+        }
+        Insert: {
+          data_atualizacao?: string | null
+          data_criacao?: string | null
+          id?: number
+          nivel_suporte_tea_id?: number | null
+          nome: string
+          responsavel_id: string
+        }
+        Update: {
+          data_atualizacao?: string | null
+          data_criacao?: string | null
+          id?: number
+          nivel_suporte_tea_id?: number | null
+          nome?: string
+          responsavel_id?: string
         }
         Relationships: [
           {
-            foreignKeyName: "favorite_tips_tip_id_fkey"
-            columns: ["tip_id"]
+            foreignKeyName: "Dependente_nivel_suporte_tea_id_fkey"
+            columns: ["nivel_suporte_tea_id"]
             isOneToOne: false
-            referencedRelation: "tips"
+            referencedRelation: "NivelSuporteTEA"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "Dependente_responsavel_id_fkey"
+            columns: ["responsavel_id"]
+            isOneToOne: false
+            referencedRelation: "Responsavel"
             referencedColumns: ["id"]
           },
         ]
       }
-      profiles: {
+      DepoimentoResponsavel: {
         Row: {
-          created_at: string | null
-          email: string
-          full_name: string
-          id: string
-          updated_at: string | null
+          aprovado: boolean | null
+          categoria_id: number | null
+          data_criacao: string | null
+          id: number
+          responsavel_id: string
+          texto: string
         }
         Insert: {
-          created_at?: string | null
-          email: string
-          full_name: string
-          id: string
-          updated_at?: string | null
+          aprovado?: boolean | null
+          categoria_id?: number | null
+          data_criacao?: string | null
+          id?: number
+          responsavel_id: string
+          texto: string
         }
         Update: {
-          created_at?: string | null
+          aprovado?: boolean | null
+          categoria_id?: number | null
+          data_criacao?: string | null
+          id?: number
+          responsavel_id?: string
+          texto?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "DepoimentoResponsavel_categoria_id_fkey"
+            columns: ["categoria_id"]
+            isOneToOne: false
+            referencedRelation: "CategoriaMaterial"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "DepoimentoResponsavel_responsavel_id_fkey"
+            columns: ["responsavel_id"]
+            isOneToOne: false
+            referencedRelation: "Responsavel"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      MaterialDeApoio: {
+        Row: {
+          categoria_id: number | null
+          corpo: string | null
+          data_atualizacao: string | null
+          data_criacao: string | null
+          id: number
+          nivel_suporte_tea_id: number | null
+          titulo: string
+        }
+        Insert: {
+          categoria_id?: number | null
+          corpo?: string | null
+          data_atualizacao?: string | null
+          data_criacao?: string | null
+          id?: number
+          nivel_suporte_tea_id?: number | null
+          titulo: string
+        }
+        Update: {
+          categoria_id?: number | null
+          corpo?: string | null
+          data_atualizacao?: string | null
+          data_criacao?: string | null
+          id?: number
+          nivel_suporte_tea_id?: number | null
+          titulo?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "MaterialDeApoio_categoria_id_fkey"
+            columns: ["categoria_id"]
+            isOneToOne: false
+            referencedRelation: "CategoriaMaterial"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "MaterialDeApoio_nivel_suporte_tea_id_fkey"
+            columns: ["nivel_suporte_tea_id"]
+            isOneToOne: false
+            referencedRelation: "NivelSuporteTEA"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      MaterialFavorito: {
+        Row: {
+          data_favoritado: string | null
+          dependente_id: number
+          material_id: number
+          responsavel_id: string
+        }
+        Insert: {
+          data_favoritado?: string | null
+          dependente_id: number
+          material_id: number
+          responsavel_id: string
+        }
+        Update: {
+          data_favoritado?: string | null
+          dependente_id?: number
+          material_id?: number
+          responsavel_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "MaterialFavorito_dependente_id_fkey"
+            columns: ["dependente_id"]
+            isOneToOne: false
+            referencedRelation: "Dependente"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "MaterialFavorito_material_id_fkey"
+            columns: ["material_id"]
+            isOneToOne: false
+            referencedRelation: "MaterialDeApoio"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "MaterialFavorito_responsavel_id_fkey"
+            columns: ["responsavel_id"]
+            isOneToOne: false
+            referencedRelation: "Responsavel"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      NivelSuporteTEA: {
+        Row: {
+          data_criacao: string | null
+          descricao: string | null
+          id: number
+          nome: string
+        }
+        Insert: {
+          data_criacao?: string | null
+          descricao?: string | null
+          id?: number
+          nome: string
+        }
+        Update: {
+          data_criacao?: string | null
+          descricao?: string | null
+          id?: number
+          nome?: string
+        }
+        Relationships: []
+      }
+      Responsavel: {
+        Row: {
+          data_atualizacao: string | null
+          data_criacao: string | null
+          email: string
+          id: string
+          nome: string
+          senha_hash: string | null
+        }
+        Insert: {
+          data_atualizacao?: string | null
+          data_criacao?: string | null
+          email: string
+          id: string
+          nome: string
+          senha_hash?: string | null
+        }
+        Update: {
+          data_atualizacao?: string | null
+          data_criacao?: string | null
           email?: string
-          full_name?: string
           id?: string
-          updated_at?: string | null
+          nome?: string
+          senha_hash?: string | null
         }
         Relationships: []
       }
-      services: {
+      ServicoLocal: {
         Row: {
-          address: string
-          cep: string
-          city: string
-          created_at: string | null
-          description: string | null
-          email: string | null
-          id: string
+          data_atualizacao: string | null
+          data_criacao: string | null
+          endereco: string | null
+          id: number
           name: string
-          phone: string | null
-          state: string
-          type: string
-          website: string | null
+          tipo_servico_id: number | null
         }
         Insert: {
-          address: string
-          cep: string
-          city: string
-          created_at?: string | null
-          description?: string | null
-          email?: string | null
-          id?: string
+          data_atualizacao?: string | null
+          data_criacao?: string | null
+          endereco?: string | null
+          id?: number
           name: string
-          phone?: string | null
-          state: string
-          type: string
-          website?: string | null
+          tipo_servico_id?: number | null
         }
         Update: {
-          address?: string
-          cep?: string
-          city?: string
-          created_at?: string | null
-          description?: string | null
-          email?: string | null
-          id?: string
+          data_atualizacao?: string | null
+          data_criacao?: string | null
+          endereco?: string | null
+          id?: number
           name?: string
-          phone?: string | null
-          state?: string
-          type?: string
-          website?: string | null
+          tipo_servico_id?: number | null
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "ServicoLocal_tipo_servico_id_fkey"
+            columns: ["tipo_servico_id"]
+            isOneToOne: false
+            referencedRelation: "TipoServico"
+            referencedColumns: ["id"]
+          },
+        ]
       }
-      tips: {
+      TipoServico: {
         Row: {
-          category: Database["public"]["Enums"]["tip_category"]
-          content: string
-          created_at: string | null
-          id: string
-          is_public: boolean | null
-          support_level: Database["public"]["Enums"]["support_level"]
-          title: string
+          data_criacao: string | null
+          descricao: string | null
+          id: number
+          name: string
         }
         Insert: {
-          category: Database["public"]["Enums"]["tip_category"]
-          content: string
-          created_at?: string | null
-          id?: string
-          is_public?: boolean | null
-          support_level: Database["public"]["Enums"]["support_level"]
-          title: string
+          data_criacao?: string | null
+          descricao?: string | null
+          id?: number
+          name: string
         }
         Update: {
-          category?: Database["public"]["Enums"]["tip_category"]
-          content?: string
-          created_at?: string | null
-          id?: string
-          is_public?: boolean | null
-          support_level?: Database["public"]["Enums"]["support_level"]
-          title?: string
+          data_criacao?: string | null
+          descricao?: string | null
+          id?: number
+          name?: string
         }
         Relationships: []
       }
@@ -183,13 +398,7 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      support_level: "nivel_1" | "nivel_2" | "nivel_3"
-      tip_category:
-        | "higiene"
-        | "educacao"
-        | "atividades"
-        | "alimentacao"
-        | "comunicacao"
+      [_ in never]: never
     }
     CompositeTypes: {
       [_ in never]: never
@@ -315,16 +524,10 @@ export type CompositeTypes<
     : never
 
 export const Constants = {
+  graphql_public: {
+    Enums: {},
+  },
   public: {
-    Enums: {
-      support_level: ["nivel_1", "nivel_2", "nivel_3"],
-      tip_category: [
-        "higiene",
-        "educacao",
-        "atividades",
-        "alimentacao",
-        "comunicacao",
-      ],
-    },
+    Enums: {},
   },
 } as const

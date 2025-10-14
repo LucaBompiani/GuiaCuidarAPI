@@ -7,137 +7,146 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Heart, BookOpen, Users, Activity, MessageCircle, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { Database } from "@/integrations/supabase/types";
+
+type Dependente = Database["public"]["Tables"]["Dependente"]["Row"];
+type MaterialDeApoio = Database["public"]["Tables"]["MaterialDeApoio"]["Row"];
+type CategoriaMaterial = Database["public"]["Tables"]["CategoriaMaterial"]["Row"];
+type NivelSuporte = Database["public"]["Tables"]["NivelSuporteTEA"]["Row"];
 
 const categoryIcons = {
-  higiene: Heart,
-  educacao: BookOpen,
-  atividades: Activity,
-  alimentacao: Users,
-  comunicacao: MessageCircle,
-};
-
-const categoryLabels = {
-  higiene: "Higiene",
-  educacao: "Educação",
-  atividades: "Atividades",
-  alimentacao: "Alimentação",
-  comunicacao: "Comunicação",
-};
-
-const supportLevelLabels = {
-  nivel_1: "Nível 1",
-  nivel_2: "Nível 2",
-  nivel_3: "Nível 3",
+  1: BookOpen, // Educação
+  2: MessageCircle, // Comunicação
+  3: Activity, // Rotina
+  4: Heart, // Sensorial
 };
 
 const Tips = () => {
   const { toast } = useToast();
   const [loading, setLoading] = useState(true);
-  const [dependents, setDependents] = useState<any[]>([]);
+  const [dependentes, setDependentes] = useState<Dependente[]>([]);
   const [selectedDependent, setSelectedDependent] = useState<string>("");
-  const [tips, setTips] = useState<any[]>([]);
-  const [favorites, setFavorites] = useState<Set<string>>(new Set());
+  const [materiais, setMateriais] = useState<MaterialDeApoio[]>([]);
+  const [favorites, setFavorites] = useState<Set<number>>(new Set());
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const [categorias, setCategorias] = useState<CategoriaMaterial[]>([]);
+  const [niveisSuporte, setNiveisSuporte] = useState<NivelSuporte[]>([]);
 
   useEffect(() => {
-    loadDependents();
+    loadInitialData();
   }, []);
 
   useEffect(() => {
     if (selectedDependent) {
-      loadTips();
+      loadMateriais();
       loadFavorites();
     }
   }, [selectedDependent]);
 
-  const loadDependents = async () => {
+  const loadInitialData = async () => {
+    setLoading(true);
     try {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) return;
 
-      const { data, error } = await supabase
-        .from("dependents")
-        .select("*")
-        .eq("user_id", user.id)
-        .order("created_at", { ascending: false });
+      // Carregar categorias e níveis de suporte uma vez
+      const [
+        { data: dependentesData, error: dependentesError },
+        { data: categoriasData, error: categoriasError },
+        { data: niveisData, error: niveisError },
+      ] = await Promise.all([
+        supabase.from("Dependente").select("*").eq("responsavel_id", user.id).order("data_criacao", { ascending: false }),
+        supabase.from("CategoriaMaterial").select("*"),
+        supabase.from("NivelSuporteTEA").select("*"),
+      ]);
 
-      if (error) throw error;
-      
-      setDependents(data || []);
-      if (data && data.length > 0) {
-        setSelectedDependent(data[0].id);
+      if (dependentesError) throw dependentesError;
+      if (categoriasError) throw categoriasError;
+      if (niveisError) throw niveisError;
+
+      setCategorias(categoriasData || []);
+      setNiveisSuporte(niveisData || []);
+      setDependentes(dependentesData || []);
+
+      if (dependentesData && dependentesData.length > 0) {
+        setSelectedDependent(String(dependentesData[0].id));
       }
     } catch (error: any) {
-      console.error("Erro ao carregar dependentes:", error);
+      console.error("Erro ao carregar dados iniciais:", error);
+      toast({ title: "Erro ao carregar dados", description: error.message, variant: "destructive" });
     } finally {
       setLoading(false);
     }
   };
 
-  const loadTips = async () => {
-    try {
-      const dependent = dependents.find(d => d.id === selectedDependent);
-      if (!dependent) return;
+  const loadMateriais = async () => {
+    const dependent = dependentes.find(d => String(d.id) === selectedDependent);
+    if (!dependent?.nivel_suporte_tea_id) return;
 
+    try {
       const { data, error } = await supabase
-        .from("tips")
+        .from("MaterialDeApoio")
         .select("*")
-        .eq("support_level", dependent.support_level)
-        .order("category");
+        .eq("nivel_suporte_tea_id", dependent.nivel_suporte_tea_id)
+        .order("categoria_id");
 
       if (error) throw error;
-      setTips(data || []);
+      setMateriais(data || []);
     } catch (error: any) {
-      console.error("Erro ao carregar dicas:", error);
+      console.error("Erro ao carregar materiais:", error);
     }
   };
 
   const loadFavorites = async () => {
     try {
       const { data: { user } } = await supabase.auth.getUser();
-      if (!user) return;
+      if (!user || !selectedDependent) return;
 
       const { data, error } = await supabase
-        .from("favorite_tips")
-        .select("tip_id")
-        .eq("user_id", user.id);
+        .from("MaterialFavorito")
+        .select("material_id")
+        .eq("responsavel_id", user.id)
+        .eq("dependente_id", parseInt(selectedDependent, 10));
 
       if (error) throw error;
       
-      const favSet = new Set(data?.map(f => f.tip_id) || []);
+      const favSet = new Set(data?.map(f => f.material_id) || []);
       setFavorites(favSet);
     } catch (error: any) {
       console.error("Erro ao carregar favoritos:", error);
     }
   };
 
-  const toggleFavorite = async (tipId: string) => {
+  const toggleFavorite = async (materialId: number) => {
     try {
       const { data: { user } } = await supabase.auth.getUser();
-      if (!user) return;
+      if (!user || !selectedDependent) return;
 
-      if (favorites.has(tipId)) {
+      const dependentIdAsNumber = parseInt(selectedDependent, 10);
+
+      if (favorites.has(materialId)) {
         const { error } = await supabase
-          .from("favorite_tips")
+          .from("MaterialFavorito")
           .delete()
-          .eq("user_id", user.id)
-          .eq("tip_id", tipId);
+          .eq("responsavel_id", user.id)
+          .eq("material_id", materialId)
+          .eq("dependente_id", dependentIdAsNumber);
 
         if (error) throw error;
         
         const newFavorites = new Set(favorites);
-        newFavorites.delete(tipId);
+        newFavorites.delete(materialId);
         setFavorites(newFavorites);
         
         toast({ title: "Removido dos favoritos" });
       } else {
         const { error } = await supabase
-          .from("favorite_tips")
-          .insert({ user_id: user.id, tip_id: tipId });
+          .from("MaterialFavorito")
+          .insert({ responsavel_id: user.id, material_id: materialId, dependente_id: dependentIdAsNumber });
 
         if (error) throw error;
         
-        setFavorites(new Set([...favorites, tipId]));
+        setFavorites(new Set([...favorites, materialId]));
         toast({ title: "Adicionado aos favoritos" });
       }
     } catch (error: any) {
@@ -149,17 +158,19 @@ const Tips = () => {
     }
   };
 
-  const filteredTips = selectedCategory === "all"
-    ? tips
-    : tips.filter(tip => tip.category === selectedCategory);
+  const filteredMateriais = selectedCategory === "all"
+    ? materiais
+    : materiais.filter(material => String(material.categoria_id) === selectedCategory);
 
-  const currentDependent = dependents.find(d => d.id === selectedDependent);
+  const currentDependent = dependentes.find(d => String(d.id) === selectedDependent);
+  const getNivelSuporteLabel = (id: number | null) => niveisSuporte.find(n => n.id === id)?.nome || "Nível não definido";
+  const getCategoriaLabel = (id: number | null) => categorias.find(c => c.id === id)?.nome || "Sem Categoria";
 
   if (loading) {
     return <div>Carregando...</div>;
   }
 
-  if (dependents.length === 0) {
+  if (dependentes.length === 0) {
     return (
       <div className="max-w-4xl mx-auto">
         <Card>
@@ -182,9 +193,9 @@ const Tips = () => {
   return (
     <div className="max-w-6xl mx-auto space-y-6">
       <div>
-        <h2 className="text-3xl font-bold mb-2">Dicas de Cuidados Diários</h2>
+        <h2 className="text-3xl font-bold mb-2">Materiais de Apoio</h2>
         <p className="text-muted-foreground">
-          Dicas personalizadas para o nível de suporte do seu dependente
+          Conteúdo personalizado para o nível de suporte do seu dependente
         </p>
       </div>
 
@@ -193,7 +204,7 @@ const Tips = () => {
         <CardHeader>
           <CardTitle>Selecione o Dependente</CardTitle>
           <CardDescription>
-            As dicas serão filtradas de acordo com o nível de suporte selecionado
+            Os materiais serão filtrados de acordo com o nível de suporte selecionado
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -202,9 +213,9 @@ const Tips = () => {
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              {dependents.map((dependent) => (
-                <SelectItem key={dependent.id} value={dependent.id}>
-                  {dependent.name} - {supportLevelLabels[dependent.support_level as keyof typeof supportLevelLabels]}
+              {dependentes.map((dependent) => (
+                <SelectItem key={dependent.id} value={String(dependent.id)}>
+                  {dependent.nome} - {getNivelSuporteLabel(dependent.nivel_suporte_tea_id)}
                 </SelectItem>
               ))}
             </SelectContent>
@@ -214,43 +225,43 @@ const Tips = () => {
 
       {/* Category Tabs */}
       <Tabs value={selectedCategory} onValueChange={setSelectedCategory}>
-        <TabsList className="grid w-full grid-cols-3 md:grid-cols-6">
+        <TabsList className="grid w-full grid-cols-3 md:grid-cols-5">
           <TabsTrigger value="all">Todas</TabsTrigger>
-          {Object.entries(categoryLabels).map(([key, label]) => (
-            <TabsTrigger key={key} value={key}>
-              {label}
+          {categorias.map((cat) => (
+            <TabsTrigger key={cat.id} value={String(cat.id)}>
+              {cat.nome}
             </TabsTrigger>
           ))}
         </TabsList>
       </Tabs>
 
       {/* Tips Grid */}
-      {filteredTips.length === 0 ? (
+      {filteredMateriais.length === 0 ? (
         <Card>
           <CardContent className="py-8 text-center text-muted-foreground">
-            Nenhuma dica encontrada para esta categoria.
+            Nenhum material encontrado para esta categoria.
           </CardContent>
         </Card>
       ) : (
         <div className="grid md:grid-cols-2 gap-6">
-          {filteredTips.map((tip) => {
-            const Icon = categoryIcons[tip.category as keyof typeof categoryIcons];
-            const isFavorite = favorites.has(tip.id);
+          {filteredMateriais.map((material) => {
+            const Icon = categoryIcons[material.categoria_id as keyof typeof categoryIcons] || BookOpen;
+            const isFavorite = favorites.has(material.id);
             
             return (
-              <Card key={tip.id} className="shadow-soft hover:shadow-medium transition-all">
+              <Card key={material.id} className="shadow-soft hover:shadow-medium transition-all">
                 <CardHeader>
                   <div className="flex items-start justify-between mb-2">
                     <Icon className="w-8 h-8 text-primary" />
                     <div className="flex gap-2">
                       <Badge variant="secondary">
-                        {categoryLabels[tip.category as keyof typeof categoryLabels]}
+                        {getCategoriaLabel(material.categoria_id)}
                       </Badge>
                       <Button
                         variant="ghost"
                         size="icon"
                         className="h-8 w-8"
-                        onClick={() => toggleFavorite(tip.id)}
+                        onClick={() => toggleFavorite(material.id)}
                       >
                         <Star 
                           className={`w-5 h-5 ${isFavorite ? 'fill-accent text-accent' : 'text-muted-foreground'}`}
@@ -258,13 +269,13 @@ const Tips = () => {
                       </Button>
                     </div>
                   </div>
-                  <CardTitle className="text-xl">{tip.title}</CardTitle>
+                  <CardTitle className="text-xl">{material.titulo}</CardTitle>
                   <CardDescription>
-                    Personalizado para {currentDependent?.name}
+                    Personalizado para {currentDependent?.nome}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-foreground leading-relaxed">{tip.content}</p>
+                  <p className="text-foreground leading-relaxed">{material.corpo}</p>
                 </CardContent>
               </Card>
             );
