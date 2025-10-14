@@ -1,64 +1,51 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Heart, BookOpen, Users, Activity, MessageCircle } from "lucide-react";
+import { ArrowLeft, BookOpen, BarChart2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { supabase } from "@/integrations/supabase/client";
+import { Database } from "@/integrations/supabase/types";
 
-const categoryIcons = {
-  higiene: Heart,
-  educacao: BookOpen,
-  atividades: Activity,
-  alimentacao: Users,
-  comunicacao: MessageCircle,
-};
-
-const categoryLabels = {
-  higiene: "Higiene",
-  educacao: "Educação",
-  atividades: "Atividades",
-  alimentacao: "Alimentação",
-  comunicacao: "Comunicação",
-};
+// Tipos para as novas tabelas de conteúdo público
+type Artigo = Database["public"]["Tables"]["ArtigoInformativo"]["Row"];
+type DadoEstatistico = Database["public"]["Tables"]["DadosEstatisticosTEA"]["Row"];
 
 const Explore = () => {
-  const [tips, setTips] = useState<any[]>([]);
+  const [artigos, setArtigos] = useState<Artigo[]>([]);
+  const [dados, setDados] = useState<DadoEstatistico[]>([]);
   const [loading, setLoading] = useState(true);
-  const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
   useEffect(() => {
-    loadTips();
+    loadPublicContent();
   }, []);
 
-  const loadTips = async () => {
+  const loadPublicContent = async () => {
+    setLoading(true);
     try {
-      const { data, error } = await supabase
-        .from("tips")
-        .select("*")
-        .eq("is_public", true)
-        .order("created_at", { ascending: false });
+      const [
+        { data: artigosData, error: artigosError },
+        { data: dadosData, error: dadosError },
+      ] = await Promise.all([
+        supabase.from("ArtigoInformativo").select("*").order("data_criacao", { ascending: false }),
+        supabase.from("DadosEstatisticosTEA").select("*").order("data_criacao", { ascending: false }),
+      ]);
 
-      if (error) throw error;
-      setTips(data || []);
+      if (artigosError) throw artigosError;
+      if (dadosError) throw dadosError;
+
+      setArtigos(artigosData || []);
+      setDados(dadosData || []);
     } catch (error) {
-      console.error("Erro ao carregar dicas:", error);
+      console.error("Erro ao carregar conteúdo público:", error);
     } finally {
       setLoading(false);
     }
   };
 
-  const filteredTips = selectedCategory === "all" 
-    ? tips 
-    : tips.filter(tip => tip.category === selectedCategory);
-
-  const categories = Object.keys(categoryLabels);
-
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b bg-card shadow-soft">
+      <header className="border-b bg-card shadow-soft sticky top-0 z-10">
         <div className="container mx-auto max-w-6xl px-4 py-4">
           <div className="flex items-center justify-between">
             <Button asChild variant="ghost">
@@ -77,61 +64,67 @@ const Explore = () => {
 
       {/* Content */}
       <main className="container mx-auto max-w-6xl px-4 py-8">
-        <div className="mb-8">
-          <h2 className="text-3xl font-bold mb-4">Dicas e Orientações sobre TEA</h2>
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold mb-4">Conhecimento e Informação sobre o TEA</h2>
           <p className="text-muted-foreground text-lg">
-            Explore nosso conteúdo educativo sobre cuidados com pessoas no espectro autista. 
-            Para dicas personalizadas ao nível de suporte do seu dependente, crie uma conta gratuita.
+            Explore nossos artigos e dados sobre o espectro autista. 
+            Para dicas personalizadas, crie uma conta gratuita.
           </p>
         </div>
 
-        <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="mb-8">
-          <TabsList className="grid w-full grid-cols-3 md:grid-cols-6 gap-2">
-            <TabsTrigger value="all">Todas</TabsTrigger>
-            {categories.map(cat => (
-              <TabsTrigger key={cat} value={cat}>
-                {categoryLabels[cat as keyof typeof categoryLabels]}
-              </TabsTrigger>
-            ))}
-          </TabsList>
-        </Tabs>
-
         {loading ? (
           <div className="text-center py-12">
-            <p className="text-muted-foreground">Carregando dicas...</p>
-          </div>
-        ) : filteredTips.length === 0 ? (
-          <div className="text-center py-12">
-            <p className="text-muted-foreground">Nenhuma dica encontrada nesta categoria.</p>
+            <p className="text-muted-foreground">Carregando conteúdo...</p>
           </div>
         ) : (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredTips.map((tip) => {
-              const Icon = categoryIcons[tip.category as keyof typeof categoryIcons];
-              return (
-                <Card key={tip.id} className="shadow-soft hover:shadow-medium transition-all">
-                  <CardHeader>
-                    <div className="flex items-start justify-between mb-2">
-                      <Icon className="w-8 h-8 text-primary" />
-                      <Badge variant="secondary">
-                        Nível {tip.support_level.split('_')[1]}
-                      </Badge>
-                    </div>
-                    <CardTitle className="text-xl">{tip.title}</CardTitle>
-                    <CardDescription>
-                      {categoryLabels[tip.category as keyof typeof categoryLabels]}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground line-clamp-4">{tip.content}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
+          <div className="space-y-12">
+            {/* Seção de Artigos */}
+            <section>
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                <BookOpen className="w-6 h-6 text-primary" />
+                Artigos Informativos
+              </h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {artigos.map((artigo) => (
+                  <Card key={artigo.id} className="shadow-soft hover:shadow-medium transition-all flex flex-col">
+                    <CardHeader>
+                      <CardTitle className="text-xl">{artigo.titulo}</CardTitle>
+                      {artigo.autor && <CardDescription>Por: {artigo.autor}</CardDescription>}
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                      <p className="text-muted-foreground line-clamp-4">{artigo.corpo}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </section>
+
+            {/* Seção de Dados Estatísticos */}
+            <section>
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                <BarChart2 className="w-6 h-6 text-primary" />
+                Dados e Fatos
+              </h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {dados.map((dado) => (
+                  <Card key={dado.id} className="shadow-soft hover:shadow-medium transition-all text-center">
+                    <CardHeader>
+                      <CardTitle className="text-4xl font-extrabold text-primary">{dado.conteudo}</CardTitle>
+                      <CardDescription>{dado.nome}</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-muted-foreground">{dado.descricao}</p>
+                      {dado.fonte && <p className="text-xs text-muted-foreground mt-2">Fonte: {dado.fonte}</p>}
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </section>
           </div>
         )}
 
-        <div className="mt-12 text-center bg-muted rounded-lg p-8">
+        {/* CTA Final */}
+        <div className="mt-16 text-center bg-muted rounded-lg p-8">
           <h3 className="text-2xl font-bold mb-4">Quer dicas personalizadas?</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             Cadastre-se gratuitamente e receba recomendações específicas para o nível de suporte do seu dependente.
