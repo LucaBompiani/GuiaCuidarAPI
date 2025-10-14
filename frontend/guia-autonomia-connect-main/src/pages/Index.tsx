@@ -2,13 +2,15 @@ import { Link } from "react-router-dom";
 import { Heart, Users, BookOpen, MapPin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Boxes } from "@/components/ui/background-boxes";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-hero py-20 px-4 text-primary-foreground">
-        <div className="container mx-auto max-w-6xl">
+      <section className="relative h-[40rem] flex flex-col justify-center items-center bg-gradient-hero py-20 px-4 text-primary-foreground overflow-hidden">
+        <Boxes />
+        <div className="container mx-auto max-w-6xl relative z-20 pointer-events-none">
           <div className="text-center animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Guia Cuidar
@@ -16,7 +18,7 @@ const Index = () => {
             <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
               Sua plataforma completa de apoio para cuidadores de pessoas no espectro autista
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pointer-events-auto">
               <Button asChild size="lg" variant="secondary" className="shadow-medium hover:shadow-large transition-all">
                 <Link to="/auth">Começar Agora</Link>
               </Button>
