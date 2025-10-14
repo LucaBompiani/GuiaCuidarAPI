@@ -6,7 +6,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { supabase } from "@/integrations/supabase/client";
 import { Database } from "@/integrations/supabase/types";
 
-// Tipos para as novas tabelas de conteúdo público
 type Artigo = Database["public"]["Tables"]["ArtigoInformativo"]["Row"];
 type DadoEstatistico = Database["public"]["Tables"]["DadosEstatisticosTEA"]["Row"];
 

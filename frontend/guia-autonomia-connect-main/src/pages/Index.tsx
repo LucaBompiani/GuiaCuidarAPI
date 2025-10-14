@@ -12,6 +12,7 @@ const Index = () => {
         <Boxes />
         <div className="container mx-auto max-w-6xl relative z-20 pointer-events-none">
           <div className="text-center animate-fade-in">
+            <img src="../public/logo.svg" alt="Guia Cuidar" className="h-24 w-auto mx-auto mb-8" />
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Guia Cuidar
             </h1>
