@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, BookOpen, BarChart2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import ArticleModal from "@/components/ui/article-modal";
 import { supabase } from "@/integrations/supabase/client";
 import { Database } from "@/integrations/supabase/types";
 
@@ -13,6 +14,19 @@ const Explore = () => {
   const [artigos, setArtigos] = useState<Artigo[]>([]);
   const [dados, setDados] = useState<DadoEstatistico[]>([]);
   const [loading, setLoading] = useState(true);
+
+  const [selectedArticle, setSelectedArticle] = useState<Artigo | null>(null); // Estado para o artigo selecionado
+  const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar o modal
+
+  const openModal = (artigo: Artigo) => {
+    setSelectedArticle(artigo);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedArticle(null);
+    setIsModalOpen(false);
+  };
 
   useEffect(() => {
     loadPublicContent();
@@ -85,7 +99,11 @@ const Explore = () => {
               </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {artigos.map((artigo) => (
-                  <Card key={artigo.id} className="shadow-soft hover:shadow-medium transition-all flex flex-col">
+                  <Card
+                    key={artigo.id}
+                    className="shadow-soft hover:shadow-medium transition-all flex flex-col cursor-pointer"
+                    onClick={() => openModal(artigo)}
+                  >
                     <CardHeader>
                       <CardTitle className="text-xl">{artigo.titulo}</CardTitle>
                       {artigo.autor && <CardDescription>Por: {artigo.autor}</CardDescription>}
@@ -121,6 +139,13 @@ const Explore = () => {
             </section>
           </div>
         )}
+  
+        {/* Modal para exibir detalhes do artigo */}
+        <ArticleModal
+          isOpen={isModalOpen}
+          onClose={closeModal}
+          article={selectedArticle}
+        />
 
         {/* CTA Final */}
         <div className="mt-16 text-center bg-muted rounded-lg p-8">
