@@ -11,6 +11,7 @@ interface ArticleModalProps {
     autor?: string;
     corpo?: string;
     url_artigo?: string;
+    url_imagem?: string;
   } | null;
 }
 
@@ -19,7 +20,18 @@ const ArticleModal: React.FC<ArticleModalProps> = ({ isOpen, onClose, article })
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-5l h-[80vh] overflow-y-auto">
+      <DialogContent className="max-w-2l h-[80vh] overflow-y-auto">
+        {/* Imagem do artigo */}
+        {article.url_imagem && (
+          <div className="mb-4">
+            <img
+              src={article.url_imagem}
+              alt={article.titulo}
+              className="w-full h-64 object-cover rounded-md"
+            />
+          </div>
+        )}
+
         <DialogHeader>
           {/* Título */}
           <div className="mb-4">
