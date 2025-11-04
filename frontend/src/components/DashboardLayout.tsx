@@ -85,9 +85,9 @@ const DashboardLayout = () => {
     }
 
     return (
-        <div className="flex min-h-screen w-full bg-neutral-50 dark:bg-neutral-950">
+        <div className="flex w-full">
             <Sidebar>
-                <SidebarBody className="justify-between gap-10">
+                <SidebarBody className="h-screen justify-between gap-10">
                     <div className="flex flex-col flex-1">
                         <div className="mt-8 flex flex-col gap-2">
                             {menuItems.map((link, idx) => (
@@ -96,7 +96,6 @@ const DashboardLayout = () => {
                         </div>
                     </div>
                     <div>
-                        {/* Substitua o <Button> por <SidebarButton> */}
                         <SidebarButton
                             icon={<LogOut className="w-5 h-5" />}
                             label="Sair"
@@ -106,6 +105,7 @@ const DashboardLayout = () => {
                 </SidebarBody>
             </Sidebar>
 
+            {/* Conteúdo principal */}
             <main className="flex-1 overflow-auto">
                 <div className="p-6 md:p-8 md:pt-16">
                     <Outlet />
