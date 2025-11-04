@@ -11,7 +11,7 @@ import { Heart } from "lucide-react";
 
 const Auth = () => {
   const navigate = useNavigate();
-  const { toast } = useToast();
+  const { toast } = useToast(); 
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const Auth = () => {
         options: {
           emailRedirectTo: `${window.location.origin}/dashboard`,
           data: {
-            full_name: fullName,
+            nome: fullName,
           }
         }
       });
@@ -51,10 +51,10 @@ const Auth = () => {
       if (authData.user) {
         // Create profile
         const { error: profileError } = await supabase
-          .from("profiles")
+          .from("Responsavel")
           .insert({
             id: authData.user.id,
-            full_name: fullName,
+            nome: fullName,
             email: email,
           });
 

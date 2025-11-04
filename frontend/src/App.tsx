@@ -8,6 +8,7 @@ import Explore from "./pages/Explore";
 import Auth from "./pages/Auth";
 import DashboardLayout from "./components/DashboardLayout";
 import Profile from "./pages/dashboard/Profile";
+import Favorites from "./pages/dashboard/Favorites";
 import Tips from "./pages/dashboard/Tips";
 import Services from "./pages/dashboard/Services";
 import NotFound from "./pages/NotFound";
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/dashboard" element={<DashboardLayout />}>
             <Route index element={<Profile />} />
             <Route path="perfil" element={<Profile />} />
+            <Route path="favoritos" element={<Favorites />} />
             <Route path="dicas" element={<Tips />} />
             <Route path="servicos" element={<Services />} />
           </Route>
