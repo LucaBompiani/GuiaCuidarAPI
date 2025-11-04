@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { MapPin, Search } from "lucide-react";
 import { Database } from "@/integrations/supabase/types";
 
@@ -15,16 +16,35 @@ type Servico = Database["public"]["Tables"]["ServicoLocal"]["Row"] & {
   } | null;
 };
 
+type TipoServico = Database["public"]["Tables"]["TipoServico"]["Row"];
+
 const Services = () => {
   const [loading, setLoading] = useState(false);
   const [services, setServices] = useState<Servico[]>([]);
+  const [tiposServico, setTiposServico] = useState<TipoServico[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedTipoServico, setSelectedTipoServico] = useState<string>("");
 
   useEffect(() => {
+    loadTiposServico();
     loadServices();
   }, []);
 
-  const loadServices = async (filter = "") => {
+  const loadTiposServico = async () => {
+    try {
+      const { data, error } = await supabase
+        .from("TipoServico")
+        .select("*")
+        .order("name");
+
+      if (error) throw error;
+      setTiposServico(data || []);
+    } catch (error: any) {
+      console.error("Erro ao carregar tipos de serviço:", error);
+    }
+  };
+
+  const loadServices = async (filter = "", tipoServicoId = "") => {
     setLoading(true);
     try {
       let query = supabase
@@ -39,6 +59,11 @@ const Services = () => {
         query = query.or(`name.ilike.%${filter}%,endereco.ilike.%${filter}%`);
       }
 
+      if (tipoServicoId) {
+        // Filtra pelo tipo de serviço
+        query = query.eq("tipo_servico_id", parseInt(tipoServicoId));
+      }
+
       const { data, error } = await query.order("name");
 
       if (error) throw error;
@@ -51,7 +76,8 @@ const Services = () => {
   };
 
   const handleSearch = () => {
-    loadServices(searchTerm);
+    const tipoId = selectedTipoServico === "all" ? "" : selectedTipoServico;
+    loadServices(searchTerm, tipoId);
   };
 
   return (
@@ -68,7 +94,7 @@ const Services = () => {
         <CardHeader>
           <CardTitle>Buscar Serviços</CardTitle>
           <CardDescription>
-            Filtre por nome ou endereço para encontrar serviços.
+            Filtre por nome, endereço ou tipo de serviço.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -83,6 +109,25 @@ const Services = () => {
                 onKeyDown={(e) => e.key === "Enter" && handleSearch()}
               />
             </div>
+            <div className="space-y-2">
+              <Label htmlFor="tipo-servico">Tipo de Serviço</Label>
+              <Select
+                value={selectedTipoServico}
+                onValueChange={setSelectedTipoServico}
+              >
+                <SelectTrigger id="tipo-servico">
+                  <SelectValue placeholder="Todos os tipos" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">Todos os tipos</SelectItem>
+                  {tiposServico.map((tipo) => (
+                    <SelectItem key={tipo.id} value={tipo.id.toString()}>
+                      {tipo.name}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
           </div>
           <div className="flex gap-2 mt-4">
             <Button onClick={handleSearch} disabled={loading}>
@@ -93,6 +138,7 @@ const Services = () => {
               variant="outline"
               onClick={() => {
                 setSearchTerm("");
+                setSelectedTipoServico("");
                 loadServices();
               }}
             >
