@@ -342,6 +342,7 @@ export type Database = {
           id: number
           name: string
           tipo_servico_id: number | null
+          url_servico: string | null
         }
         Insert: {
           data_atualizacao?: string | null

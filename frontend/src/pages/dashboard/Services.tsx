@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { MapPin, Search } from "lucide-react";
 import { Database } from "@/integrations/supabase/types";
+import { ExternalLink } from "lucide-react";
 
 // Definindo os tipos com base no seu novo schema
 type Servico = Database["public"]["Tables"]["ServicoLocal"]["Row"] & {
@@ -174,6 +175,14 @@ const Services = () => {
                   <div className="flex items-start gap-2 text-sm">
                     <MapPin className="w-4 h-4 text-muted-foreground mt-0.5 flex-shrink-0" />
                     <p>{service.endereco}</p>
+                    {service.url_servico && (
+                      <Button asChild variant="link" className="ml-2">
+                        <a href={service.url_servico} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="w-4 h-4 mr-1" />
+                          Ver no Maps
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 )}
               </CardContent>
