@@ -10,6 +10,7 @@ import DashboardLayout from "./components/DashboardLayout";
 import Profile from "./pages/dashboard/Profile";
 import Favorites from "./pages/dashboard/Favorites";
 import Tips from "./pages/dashboard/Tips";
+import Articles from "./pages/dashboard/Articles";
 import Services from "./pages/dashboard/Services";
 import NotFound from "./pages/NotFound";
 
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="perfil" element={<Profile />} />
             <Route path="favoritos" element={<Favorites />} />
             <Route path="dicas" element={<Tips />} />
+            <Route path="artigos" element={<Articles />} />
             <Route path="servicos" element={<Services />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
-import { User, BookOpen, MapPin, LogOut, Star } from "lucide-react";
+import { User, BookOpen, MapPin, LogOut, Star, FileText } from "lucide-react";
 // Importe o SidebarButton aqui
 import { Sidebar, SidebarBody, SidebarLink, SidebarButton } from "@/components/ui/sidebar";
 import { useToast } from "@/hooks/use-toast";
@@ -17,6 +17,11 @@ const menuItems = [
         label: "Materiais de Apoio",
         href: "/dashboard/dicas",
         icon: <BookOpen className="w-5 h-5" />,
+    },
+    {
+        label: "Artigos",
+        href: "/dashboard/artigos",
+        icon: <FileText className="w-5 h-5" />,
     },
     {
         label: "Favoritos",

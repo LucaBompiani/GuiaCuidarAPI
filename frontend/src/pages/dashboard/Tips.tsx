@@ -225,7 +225,7 @@ const Tips = () => {
 
       {/* Category Tabs */}
       <Tabs value={selectedCategory} onValueChange={setSelectedCategory}>
-        <TabsList className="grid w-full grid-cols-3 md:grid-cols-5">
+        <TabsList className="grid w-full grid-cols-4 md:grid-cols-8">
           <TabsTrigger value="all">Todas</TabsTrigger>
           {categorias.map((cat) => (
             <TabsTrigger key={cat.id} value={String(cat.id)}>
