@@ -1,0 +1,1486 @@
+localidade,coluna_idx,valor
+Brasil,1,24.34
+Brasil,2,11.14
+Brasil,3,25.42
+Brasil,4,98.26
+Brasil,5,92.57
+Brasil,6,98.4
+Brasil,7,85.25
+Brasil,8,79.4
+Brasil,9,85.45
+Brasil,10,27.68
+Brasil,11,27.45
+Brasil,12,27.69
+Brasil,13,6.1
+Brasil,14,4.7
+Brasil,15,6.25
+Brasil,16,24.72
+Brasil,17,12.26
+Brasil,18,25.61
+Brasil,19,98.18
+Brasil,20,92.12
+Brasil,21,98.34
+Brasil,22,84.99
+Brasil,23,77.35
+Brasil,24,85.23
+Brasil,25,25.7
+Brasil,26,25.73
+Brasil,27,25.7
+Brasil,28,5.59
+Brasil,29,4.46
+Brasil,30,5.7
+Brasil,31,23.99
+Brasil,32,10.32
+Brasil,33,25.25
+Brasil,34,98.34
+Brasil,35,93.12
+Brasil,36,98.47
+Brasil,37,85.53
+Brasil,38,81.36
+Brasil,39,85.67
+Brasil,40,29.69
+Brasil,41,29.01
+Brasil,42,29.72
+Brasil,43,6.56
+Brasil,44,4.87
+Brasil,45,6.75
+Norte,1,30.3
+Norte,2,14.01
+Norte,3,31.63
+Norte,4,96.89
+Norte,5,90.29
+Norte,6,97.06
+Norte,7,83.67
+Norte,8,79.07
+Norte,9,83.82
+Norte,10,28.73
+Norte,11,30.8
+Norte,12,28.65
+Norte,13,7.6
+Norte,14,5.98
+Norte,15,7.79
+Norte,16,30.04
+Norte,17,14.41
+Norte,18,31.21
+Norte,19,96.78
+Norte,20,89.75
+Norte,21,96.97
+Norte,22,83.9
+Norte,23,76.81
+Norte,24,84.12
+Norte,25,27.38
+Norte,26,28.93
+Norte,27,27.33
+Norte,28,6.7
+Norte,29,5.36
+Norte,30,6.84
+Norte,31,30.56
+Norte,32,13.68
+Norte,33,32.06
+Norte,34,97.01
+Norte,35,90.97
+Norte,36,97.15
+Norte,37,83.43
+Norte,38,81.13
+Norte,39,83.51
+Norte,40,30.1
+Norte,41,32.5
+Norte,42,30.01
+Norte,43,8.48
+Norte,44,6.49
+Norte,45,8.72
+Rondônia,1,27.54
+Rondônia,2,13.6
+Rondônia,3,28.66
+Rondônia,4,97.62
+Rondônia,5,93.97
+Rondônia,6,97.71
+Rondônia,7,84.76
+Rondônia,8,84.05
+Rondônia,9,84.78
+Rondônia,10,29.78
+Rondônia,11,29.54
+Rondônia,12,29.79
+Rondônia,13,7.84
+Rondônia,14,6.22
+Rondônia,15,8.01
+Rondônia,16,26.8
+Rondônia,17,13.48
+Rondônia,18,27.79
+Rondônia,19,97.41
+Rondônia,20,93.62
+Rondônia,21,97.51
+Rondônia,22,83.09
+Rondônia,23,74.96
+Rondônia,24,83.33
+Rondônia,25,26.59
+Rondônia,26,30.34
+Rondônia,27,26.46
+Rondônia,28,6.94
+Rondônia,29,5.47
+Rondônia,30,7.08
+Rondônia,31,28.28
+Rondônia,32,13.71
+Rondônia,33,29.53
+Rondônia,34,97.84
+Rondônia,35,94.37
+Rondônia,36,97.93
+Rondônia,37,86.43
+Rondônia,38,91.87
+Rondônia,39,86.23
+Rondônia,40,33.03
+Rondônia,41,28.76
+Rondônia,42,33.18
+Rondônia,43,8.71
+Rondônia,44,6.85
+Rondônia,45,8.92
+Acre,1,30.99
+Acre,2,14.49
+Acre,3,32.38
+Acre,4,96.65
+Acre,5,93.82
+Acre,6,96.74
+Acre,7,81.44
+Acre,8,77.49
+Acre,9,81.59
+Acre,10,27.72
+Acre,11,27.74
+Acre,12,27.72
+Acre,13,6.64
+Acre,14,4.87
+Acre,15,6.85
+Acre,16,30.76
+Acre,17,16.03
+Acre,18,31.89
+Acre,19,96.51
+Acre,20,94.85
+Acre,21,96.56
+Acre,22,81.73
+Acre,23,79.99
+Acre,24,81.79
+Acre,25,25.79
+Acre,26,28.2
+Acre,27,25.7
+Acre,28,5.73
+Acre,29,3.82
+Acre,30,5.94
+Acre,31,31.21
+Acre,32,13.2
+Acre,33,32.88
+Acre,34,96.81
+Acre,35,92.21
+Acre,36,96.92
+Acre,37,81.15
+Acre,38,75.28
+Acre,39,81.38
+Acre,40,29.73
+Acre,41,27.29
+Acre,42,29.82
+Acre,43,7.52
+Acre,44,5.7
+Acre,45,7.76
+Amazonas,1,32.73
+Amazonas,2,16.04
+Amazonas,3,34.07
+Amazonas,4,95.93
+Amazonas,5,87.84
+Amazonas,6,96.14
+Amazonas,7,83.71
+Amazonas,8,78.1
+Amazonas,9,83.92
+Amazonas,10,27.8
+Amazonas,11,29.78
+Amazonas,12,27.72
+Amazonas,13,9.21
+Amazonas,14,7.16
+Amazonas,15,9.44
+Amazonas,16,32.55
+Amazonas,17,16.1
+Amazonas,18,33.77
+Amazonas,19,95.8
+Amazonas,20,86.68
+Amazonas,21,96.04
+Amazonas,22,83.92
+Amazonas,23,74.41
+Amazonas,24,84.29
+Amazonas,25,26.97
+Amazonas,26,28.43
+Amazonas,27,26.91
+Amazonas,28,8.33
+Amazonas,29,6.37
+Amazonas,30,8.53
+Amazonas,31,32.9
+Amazonas,32,15.99
+Amazonas,33,34.38
+Amazonas,34,96.06
+Amazonas,35,89.14
+Amazonas,36,96.24
+Amazonas,37,83.5
+Amazonas,38,82.06
+Amazonas,39,83.55
+Amazonas,40,28.63
+Amazonas,41,30.96
+Amazonas,42,28.54
+Amazonas,43,10.06
+Amazonas,44,7.82
+Amazonas,45,10.34
+Roraima,1,30.57
+Roraima,2,15.5
+Roraima,3,31.54
+Roraima,4,91.52
+Roraima,5,87.74
+Roraima,6,91.6
+Roraima,7,78.78
+Roraima,8,79.87
+Roraima,9,78.75
+Roraima,10,23.97
+Roraima,11,27.66
+Roraima,12,23.85
+Roraima,13,7.32
+Roraima,14,6.56
+Roraima,15,7.39
+Roraima,16,30.4
+Roraima,17,15.39
+Roraima,18,31.29
+Roraima,19,91.59
+Roraima,20,88.34
+Roraima,21,91.66
+Roraima,22,80.06
+Roraima,23,80.21
+Roraima,24,80.06
+Roraima,25,22.26
+Roraima,26,25.2
+Roraima,27,22.18
+Roraima,28,6.46
+Roraima,29,5.49
+Roraima,30,6.54
+Roraima,31,30.75
+Roraima,32,15.59
+Roraima,33,31.79
+Roraima,34,91.45
+Roraima,35,86.98
+Roraima,36,91.54
+Roraima,37,77.47
+Roraima,38,79.57
+Roraima,39,77.4
+Roraima,40,25.7
+Roraima,41,29.48
+Roraima,42,25.55
+Roraima,43,8.17
+Roraima,44,7.49
+Roraima,45,8.24
+Pará,1,29.96
+Pará,2,13.39
+Pará,3,31.35
+Pará,4,97.51
+Pará,5,90.61
+Pará,6,97.68
+Pará,7,83.72
+Pará,8,78.86
+Pará,9,83.87
+Pará,10,29.37
+Pará,11,32.45
+Pará,12,29.26
+Pará,13,7.27
+Pará,14,5.86
+Pará,15,7.44
+Pará,16,29.79
+Pará,17,13.97
+Pará,18,31.0
+Pará,19,97.45
+Pará,20,90.01
+Pará,21,97.64
+Pará,22,84.14
+Pará,23,77.59
+Pará,24,84.33
+Pará,25,28.41
+Pará,26,30.07
+Pará,27,28.35
+Pará,28,6.36
+Pará,29,5.34
+Pará,30,6.47
+Pará,31,30.11
+Pará,32,12.92
+Pará,33,31.7
+Pará,34,97.58
+Pará,35,91.39
+Pará,36,97.71
+Pará,37,83.28
+Pará,38,79.95
+Pará,39,83.4
+Pará,40,30.35
+Pará,41,34.65
+Pará,42,30.19
+Pará,43,8.15
+Pará,44,6.27
+Pará,45,8.4
+Amapá,1,32.35
+Amapá,2,16.52
+Amapá,3,33.64
+Amapá,4,96.45
+Amapá,5,88.76
+Amapá,6,96.68
+Amapá,7,83.08
+Amapá,8,75.8
+Amapá,9,83.33
+Amapá,10,30.19
+Amapá,11,35.71
+Amapá,12,29.97
+Amapá,13,8.34
+Amapá,14,6.57
+Amapá,15,8.54
+Amapá,16,32.23
+Amapá,17,17.17
+Amapá,18,33.37
+Amapá,19,95.99
+Amapá,20,85.73
+Amapá,21,96.34
+Amapá,22,84.84
+Amapá,23,77.07
+Amapá,24,85.08
+Amapá,25,29.15
+Amapá,26,32.54
+Amapá,27,29.01
+Amapá,28,7.31
+Amapá,29,6.05
+Amapá,30,7.44
+Amapá,31,32.47
+Amapá,32,15.96
+Amapá,33,33.9
+Amapá,34,96.91
+Amapá,35,92.75
+Amapá,36,97.02
+Amapá,37,81.22
+Amapá,38,74.67
+Amapá,39,81.47
+Amapá,40,31.23
+Amapá,41,39.02
+Amapá,42,30.93
+Amapá,43,9.32
+Amapá,44,6.99
+Amapá,45,9.6
+Tocantins,1,27.42
+Tocantins,2,10.67
+Tocantins,3,28.73
+Tocantins,4,98.7
+Tocantins,5,92.13
+Tocantins,6,98.85
+Tocantins,7,86.09
+Tocantins,8,81.46
+Tocantins,9,86.22
+Tocantins,10,28.76
+Tocantins,11,25.83
+Tocantins,12,28.85
+Tocantins,13,5.55
+Tocantins,14,3.64
+Tocantins,15,5.75
+Tocantins,16,26.81
+Tocantins,17,10.87
+Tocantins,18,27.98
+Tocantins,19,98.59
+Tocantins,20,93.16
+Tocantins,21,98.73
+Tocantins,22,85.79
+Tocantins,23,79.97
+Tocantins,24,85.94
+Tocantins,25,25.84
+Tocantins,26,20.83
+Tocantins,27,25.99
+Tocantins,28,4.69
+Tocantins,29,3.33
+Tocantins,30,4.82
+Tocantins,31,28.02
+Tocantins,32,10.5
+Tocantins,33,29.5
+Tocantins,34,98.81
+Tocantins,35,90.85
+Tocantins,36,98.97
+Tocantins,37,86.39
+Tocantins,38,82.68
+Tocantins,39,86.51
+Tocantins,40,31.7
+Tocantins,41,29.92
+Tocantins,42,31.76
+Tocantins,43,6.4
+Tocantins,44,3.91
+Tocantins,45,6.69
+Nordeste,1,25.49
+Nordeste,2,11.26
+Nordeste,3,26.9
+Nordeste,4,98.43
+Nordeste,5,92.1
+Nordeste,6,98.63
+Nordeste,7,85.74
+Nordeste,8,79.2
+Nordeste,9,86.0
+Nordeste,10,26.7
+Nordeste,11,26.76
+Nordeste,12,26.7
+Nordeste,13,5.64
+Nordeste,14,4.33
+Nordeste,15,5.81
+Nordeste,16,26.02
+Nordeste,17,12.3
+Nordeste,18,27.2
+Nordeste,19,98.32
+Nordeste,20,91.7
+Nordeste,21,98.54
+Nordeste,22,85.56
+Nordeste,23,76.33
+Nordeste,24,85.92
+Nordeste,25,25.45
+Nordeste,26,24.84
+Nordeste,27,25.48
+Nordeste,28,4.99
+Nordeste,29,3.9
+Nordeste,30,5.12
+Nordeste,31,25.01
+Nordeste,32,10.5
+Nordeste,33,26.62
+Nordeste,34,98.55
+Nordeste,35,92.59
+Nordeste,36,98.72
+Nordeste,37,85.92
+Nordeste,38,81.97
+Nordeste,39,86.08
+Nordeste,40,27.96
+Nordeste,41,28.48
+Nordeste,42,27.94
+Nordeste,43,6.22
+Nordeste,44,4.63
+Nordeste,45,6.45
+Maranhão,1,28.35
+Maranhão,2,11.68
+Maranhão,3,29.92
+Maranhão,4,98.44
+Maranhão,5,90.0
+Maranhão,6,98.67
+Maranhão,7,84.77
+Maranhão,8,77.73
+Maranhão,9,85.01
+Maranhão,10,24.29
+Maranhão,11,25.56
+Maranhão,12,24.24
+Maranhão,13,5.61
+Maranhão,14,4.45
+Maranhão,15,5.76
+Maranhão,16,28.54
+Maranhão,17,12.14
+Maranhão,18,29.93
+Maranhão,19,98.36
+Maranhão,20,89.04
+Maranhão,21,98.62
+Maranhão,22,84.83
+Maranhão,23,74.92
+Maranhão,24,85.14
+Maranhão,25,23.13
+Maranhão,26,23.19
+Maranhão,27,23.13
+Maranhão,28,4.76
+Maranhão,29,4.07
+Maranhão,30,4.84
+Maranhão,31,28.17
+Maranhão,32,11.32
+Maranhão,33,29.92
+Maranhão,34,98.53
+Maranhão,35,91.11
+Maranhão,36,98.72
+Maranhão,37,84.71
+Maranhão,38,80.12
+Maranhão,39,84.88
+Maranhão,40,25.46
+Maranhão,41,27.7
+Maranhão,42,25.37
+Maranhão,43,6.39
+Maranhão,44,4.74
+Maranhão,45,6.63
+Piauí,1,26.12
+Piauí,2,10.1
+Piauí,3,27.86
+Piauí,4,98.93
+Piauí,5,90.12
+Piauí,6,99.18
+Piauí,7,87.89
+Piauí,8,78.85
+Piauí,9,88.2
+Piauí,10,30.11
+Piauí,11,28.35
+Piauí,12,30.17
+Piauí,13,5.96
+Piauí,14,4.36
+Piauí,15,6.19
+Piauí,16,26.2
+Piauí,17,10.57
+Piauí,18,27.73
+Piauí,19,98.84
+Piauí,20,89.79
+Piauí,21,99.13
+Piauí,22,87.56
+Piauí,23,73.7
+Piauí,24,88.0
+Piauí,25,27.63
+Piauí,26,23.55
+Piauí,27,27.77
+Piauí,28,5.22
+Piauí,29,4.04
+Piauí,30,5.37
+Piauí,31,26.04
+Piauí,32,9.73
+Piauí,33,27.98
+Piauí,34,99.02
+Piauí,35,90.54
+Piauí,36,99.24
+Piauí,37,88.23
+Piauí,38,83.35
+Piauí,39,88.42
+Piauí,40,32.63
+Piauí,41,32.86
+Piauí,42,32.62
+Piauí,43,6.64
+Piauí,44,4.62
+Piauí,45,6.96
+Ceará,1,24.39
+Ceará,2,11.45
+Ceará,3,25.73
+Ceará,4,98.61
+Ceará,5,93.73
+Ceará,6,98.78
+Ceará,7,85.91
+Ceará,8,79.37
+Ceará,9,86.2
+Ceará,10,24.27
+Ceará,11,24.49
+Ceará,12,24.26
+Ceará,13,5.53
+Ceará,14,4.2
+Ceará,15,5.71
+Ceará,16,24.99
+Ceará,17,12.56
+Ceará,18,26.12
+Ceará,19,98.46
+Ceará,20,93.36
+Ceará,21,98.66
+Ceará,22,85.63
+Ceará,23,77.43
+Ceará,24,85.99
+Ceará,25,22.9
+Ceará,26,22.71
+Ceará,27,22.91
+Ceará,28,5.1
+Ceará,29,3.79
+Ceará,30,5.26
+Ceará,31,23.84
+Ceará,32,10.61
+Ceará,33,25.35
+Ceará,34,98.77
+Ceará,35,94.19
+Ceará,36,98.91
+Ceará,37,86.19
+Ceará,38,81.22
+Ceará,39,86.42
+Ceará,40,25.65
+Ceará,41,26.11
+Ceará,42,25.63
+Ceará,43,5.91
+Ceará,44,4.5
+Ceará,45,6.12
+Rio Grande do Norte,1,25.47
+Rio Grande do Norte,2,11.43
+Rio Grande do Norte,3,26.9
+Rio Grande do Norte,4,98.5
+Rio Grande do Norte,5,92.58
+Rio Grande do Norte,6,98.68
+Rio Grande do Norte,7,87.49
+Rio Grande do Norte,8,78.73
+Rio Grande do Norte,9,87.86
+Rio Grande do Norte,10,32.1
+Rio Grande do Norte,11,31.36
+Rio Grande do Norte,12,32.13
+Rio Grande do Norte,13,6.2
+Rio Grande do Norte,14,4.61
+Rio Grande do Norte,15,6.41
+Rio Grande do Norte,16,26.0
+Rio Grande do Norte,17,12.48
+Rio Grande do Norte,18,27.22
+Rio Grande do Norte,19,98.4
+Rio Grande do Norte,20,91.72
+Rio Grande do Norte,21,98.63
+Rio Grande do Norte,22,87.17
+Rio Grande do Norte,23,76.72
+Rio Grande do Norte,24,87.6
+Rio Grande do Norte,25,30.83
+Rio Grande do Norte,26,30.42
+Rio Grande do Norte,27,30.85
+Rio Grande do Norte,28,5.63
+Rio Grande do Norte,29,4.13
+Rio Grande do Norte,30,5.8
+Rio Grande do Norte,31,24.99
+Rio Grande do Norte,32,10.64
+Rio Grande do Norte,33,26.61
+Rio Grande do Norte,34,98.61
+Rio Grande do Norte,35,93.71
+Rio Grande do Norte,36,98.74
+Rio Grande do Norte,37,87.81
+Rio Grande do Norte,38,80.66
+Rio Grande do Norte,39,88.13
+Rio Grande do Norte,40,33.4
+Rio Grande do Norte,41,32.23
+Rio Grande do Norte,42,33.45
+Rio Grande do Norte,43,6.7
+Rio Grande do Norte,44,4.96
+Rio Grande do Norte,45,6.96
+Paraíba,1,25.23
+Paraíba,2,10.77
+Paraíba,3,26.67
+Paraíba,4,98.51
+Paraíba,5,91.88
+Paraíba,6,98.7
+Paraíba,7,85.35
+Paraíba,8,80.09
+Paraíba,9,85.54
+Paraíba,10,29.07
+Paraíba,11,29.09
+Paraíba,12,29.07
+Paraíba,13,5.7
+Paraíba,14,4.2
+Paraíba,15,5.9
+Paraíba,16,25.86
+Paraíba,17,11.76
+Paraíba,18,27.07
+Paraíba,19,98.36
+Paraíba,20,91.4
+Paraíba,21,98.59
+Paraíba,22,85.3
+Paraíba,23,77.94
+Paraíba,24,85.58
+Paraíba,25,27.85
+Paraíba,26,24.92
+Paraíba,27,27.96
+Paraíba,28,5.04
+Paraíba,29,3.57
+Paraíba,30,5.2
+Paraíba,31,24.65
+Paraíba,32,10.03
+Paraíba,33,26.28
+Paraíba,34,98.66
+Paraíba,35,92.51
+Paraíba,36,98.81
+Paraíba,37,85.39
+Paraíba,38,82.36
+Paraíba,39,85.51
+Paraíba,40,30.31
+Paraíba,41,32.84
+Paraíba,42,30.2
+Paraíba,43,6.28
+Paraíba,44,4.63
+Paraíba,45,6.52
+Pernambuco,1,24.91
+Pernambuco,2,11.5
+Pernambuco,3,26.29
+Pernambuco,4,98.18
+Pernambuco,5,92.76
+Pernambuco,6,98.37
+Pernambuco,7,84.75
+Pernambuco,8,80.46
+Pernambuco,9,84.94
+Pernambuco,10,25.32
+Pernambuco,11,25.59
+Pernambuco,12,25.31
+Pernambuco,13,5.52
+Pernambuco,14,4.3
+Pernambuco,15,5.69
+Pernambuco,16,25.81
+Pernambuco,17,13.19
+Pernambuco,18,26.91
+Pernambuco,19,98.07
+Pernambuco,20,92.8
+Pernambuco,21,98.26
+Pernambuco,22,84.67
+Pernambuco,23,77.89
+Pernambuco,24,84.96
+Pernambuco,25,24.13
+Pernambuco,26,24.37
+Pernambuco,27,24.12
+Pernambuco,28,5.01
+Pernambuco,29,4.08
+Pernambuco,30,5.11
+Pernambuco,31,24.09
+Pernambuco,32,10.34
+Pernambuco,33,25.71
+Pernambuco,34,98.3
+Pernambuco,35,92.72
+Pernambuco,36,98.48
+Pernambuco,37,84.83
+Pernambuco,38,83.02
+Pernambuco,39,84.91
+Pernambuco,40,26.52
+Pernambuco,41,26.68
+Pernambuco,42,26.51
+Pernambuco,43,5.96
+Pernambuco,44,4.44
+Pernambuco,45,6.19
+Alagoas,1,27.69
+Alagoas,2,12.63
+Alagoas,3,29.38
+Alagoas,4,97.92
+Alagoas,5,90.35
+Alagoas,6,98.18
+Alagoas,7,85.12
+Alagoas,8,77.64
+Alagoas,9,85.46
+Alagoas,10,26.83
+Alagoas,11,26.44
+Alagoas,12,26.85
+Alagoas,13,6.94
+Alagoas,14,5.63
+Alagoas,15,7.14
+Alagoas,16,28.1
+Alagoas,17,13.34
+Alagoas,18,29.5
+Alagoas,19,97.91
+Alagoas,20,88.79
+Alagoas,21,98.24
+Alagoas,22,85.29
+Alagoas,23,76.14
+Alagoas,24,85.71
+Alagoas,25,25.35
+Alagoas,26,22.63
+Alagoas,27,25.46
+Alagoas,28,5.79
+Alagoas,29,4.44
+Alagoas,30,5.96
+Alagoas,31,27.32
+Alagoas,32,12.13
+Alagoas,33,29.27
+Alagoas,34,97.93
+Alagoas,35,92.25
+Alagoas,36,98.11
+Alagoas,37,84.95
+Alagoas,38,79.32
+Alagoas,39,85.19
+Alagoas,40,28.29
+Alagoas,41,29.65
+Alagoas,42,28.23
+Alagoas,43,7.93
+Alagoas,44,6.4
+Alagoas,45,8.2
+Sergipe,1,25.8
+Sergipe,2,10.48
+Sergipe,3,27.32
+Sergipe,4,98.55
+Sergipe,5,92.64
+Sergipe,6,98.74
+Sergipe,7,88.22
+Sergipe,8,81.09
+Sergipe,9,88.48
+Sergipe,10,29.62
+Sergipe,11,26.99
+Sergipe,12,29.73
+Sergipe,13,5.06
+Sergipe,14,3.31
+Sergipe,15,5.29
+Sergipe,16,26.69
+Sergipe,17,12.04
+Sergipe,18,27.92
+Sergipe,19,98.49
+Sergipe,20,93.48
+Sergipe,21,98.66
+Sergipe,22,87.95
+Sergipe,23,75.79
+Sergipe,24,88.41
+Sergipe,25,28.28
+Sergipe,26,27.48
+Sergipe,27,28.31
+Sergipe,28,4.63
+Sergipe,29,2.91
+Sergipe,30,4.82
+Sergipe,31,24.99
+Sergipe,32,9.4
+Sergipe,33,26.77
+Sergipe,34,98.62
+Sergipe,35,91.71
+Sergipe,36,98.83
+Sergipe,37,88.48
+Sergipe,38,86.72
+Sergipe,39,88.55
+Sergipe,40,30.96
+Sergipe,41,26.5
+Sergipe,42,31.14
+Sergipe,43,5.42
+Sergipe,44,3.57
+Sergipe,45,5.7
+Bahia,1,24.61
+Bahia,2,10.95
+Bahia,3,25.84
+Bahia,4,98.43
+Bahia,5,92.31
+Bahia,6,98.6
+Bahia,7,85.77
+Bahia,8,79.05
+Bahia,9,86.01
+Bahia,10,27.22
+Bahia,11,27.73
+Bahia,12,27.2
+Bahia,13,5.41
+Bahia,14,4.15
+Bahia,15,5.55
+Bahia,16,25.03
+Bahia,17,11.95
+Bahia,18,26.06
+Bahia,19,98.27
+Bahia,20,92.06
+Bahia,21,98.46
+Bahia,22,85.42
+Bahia,23,75.2
+Bahia,24,85.79
+Bahia,25,26.3
+Bahia,26,26.55
+Bahia,27,26.29
+Bahia,28,4.7
+Bahia,29,3.8
+Bahia,30,4.79
+Bahia,31,24.22
+Bahia,32,10.21
+Bahia,33,25.64
+Bahia,34,98.59
+Bahia,35,92.61
+Bahia,36,98.75
+Bahia,37,86.12
+Bahia,38,82.71
+Bahia,39,86.25
+Bahia,40,28.13
+Bahia,41,28.77
+Bahia,42,28.11
+Bahia,43,6.03
+Bahia,44,4.4
+Bahia,45,6.24
+Sudeste,1,22.67
+Sudeste,2,10.76
+Sudeste,3,23.58
+Sudeste,4,98.44
+Sudeste,5,93.44
+Sudeste,6,98.56
+Sudeste,7,85.44
+Sudeste,8,79.9
+Sudeste,9,85.62
+Sudeste,10,27.11
+Sudeste,11,26.45
+Sudeste,12,27.14
+Sudeste,13,6.07
+Sudeste,14,4.87
+Sudeste,15,6.18
+Sudeste,16,23.19
+Sudeste,17,12.11
+Sudeste,18,23.91
+Sudeste,19,98.38
+Sudeste,20,93.17
+Sudeste,21,98.51
+Sudeste,22,85.08
+Sudeste,23,78.79
+Sudeste,24,85.27
+Sudeste,25,24.97
+Sudeste,26,24.95
+Sudeste,27,24.97
+Sudeste,28,5.69
+Sudeste,29,4.76
+Sudeste,30,5.77
+Sudeste,31,22.19
+Sudeste,32,9.8
+Sudeste,33,23.27
+Sudeste,34,98.51
+Sudeste,35,93.78
+Sudeste,36,98.62
+Sudeste,37,85.82
+Sudeste,38,80.98
+Sudeste,39,85.98
+Sudeste,40,29.31
+Sudeste,41,27.81
+Sudeste,42,29.36
+Sudeste,43,6.4
+Sudeste,44,4.94
+Sudeste,45,6.56
+Minas Gerais,1,22.22
+Minas Gerais,2,9.48
+Minas Gerais,3,23.27
+Minas Gerais,4,98.83
+Minas Gerais,5,94.13
+Minas Gerais,6,98.95
+Minas Gerais,7,86.08
+Minas Gerais,8,79.51
+Minas Gerais,9,86.29
+Minas Gerais,10,26.42
+Minas Gerais,11,26.08
+Minas Gerais,12,26.43
+Minas Gerais,13,5.34
+Minas Gerais,14,3.87
+Minas Gerais,15,5.49
+Minas Gerais,16,22.33
+Minas Gerais,17,10.68
+Minas Gerais,18,23.16
+Minas Gerais,19,98.74
+Minas Gerais,20,94.04
+Minas Gerais,21,98.87
+Minas Gerais,22,85.26
+Minas Gerais,23,78.78
+Minas Gerais,24,85.46
+Minas Gerais,25,23.97
+Minas Gerais,26,24.83
+Minas Gerais,27,23.94
+Minas Gerais,28,4.82
+Minas Gerais,29,3.79
+Minas Gerais,30,4.91
+Minas Gerais,31,22.12
+Minas Gerais,32,8.59
+Minas Gerais,33,23.38
+Minas Gerais,34,98.93
+Minas Gerais,35,94.24
+Minas Gerais,36,99.03
+Minas Gerais,37,86.93
+Minas Gerais,38,80.22
+Minas Gerais,39,87.14
+Minas Gerais,40,28.91
+Minas Gerais,41,27.24
+Minas Gerais,42,28.97
+Minas Gerais,43,5.81
+Minas Gerais,44,3.93
+Minas Gerais,45,6.03
+Espírito Santo,1,23.05
+Espírito Santo,2,10.08
+Espírito Santo,3,24.1
+Espírito Santo,4,98.49
+Espírito Santo,5,92.86
+Espírito Santo,6,98.63
+Espírito Santo,7,83.55
+Espírito Santo,8,78.68
+Espírito Santo,9,83.7
+Espírito Santo,10,28.19
+Espírito Santo,11,28.71
+Espírito Santo,12,28.17
+Espírito Santo,13,5.36
+Espírito Santo,14,3.97
+Espírito Santo,15,5.51
+Espírito Santo,16,23.38
+Espírito Santo,17,11.54
+Espírito Santo,18,24.22
+Espírito Santo,19,98.37
+Espírito Santo,20,92.44
+Espírito Santo,21,98.54
+Espírito Santo,22,82.81
+Espírito Santo,23,76.91
+Espírito Santo,24,82.99
+Espírito Santo,25,25.51
+Espírito Santo,26,26.19
+Espírito Santo,27,25.49
+Espírito Santo,28,5.12
+Espírito Santo,29,3.92
+Espírito Santo,30,5.22
+Espírito Santo,31,22.74
+Espírito Santo,32,8.97
+Espírito Santo,33,23.99
+Espírito Santo,34,98.61
+Espírito Santo,35,93.47
+Espírito Santo,36,98.72
+Espírito Santo,37,84.32
+Espírito Santo,38,80.46
+Espírito Santo,39,84.44
+Espírito Santo,40,30.91
+Espírito Santo,41,31.13
+Espírito Santo,42,30.9
+Espírito Santo,43,5.59
+Espírito Santo,44,4.0
+Espírito Santo,45,5.77
+Rio de Janeiro,1,23.34
+Rio de Janeiro,2,11.49
+Rio de Janeiro,3,24.32
+Rio de Janeiro,4,98.25
+Rio de Janeiro,5,93.05
+Rio de Janeiro,6,98.38
+Rio de Janeiro,7,86.33
+Rio de Janeiro,8,81.97
+Rio de Janeiro,9,86.47
+Rio de Janeiro,10,30.01
+Rio de Janeiro,11,30.93
+Rio de Janeiro,12,29.98
+Rio de Janeiro,13,6.86
+Rio de Janeiro,14,5.64
+Rio de Janeiro,15,6.99
+Rio de Janeiro,16,24.3
+Rio de Janeiro,17,13.21
+Rio de Janeiro,18,25.06
+Rio de Janeiro,19,98.15
+Rio de Janeiro,20,92.85
+Rio de Janeiro,21,98.3
+Rio de Janeiro,22,86.44
+Rio de Janeiro,23,81.66
+Rio de Janeiro,24,86.59
+Rio de Janeiro,25,28.38
+Rio de Janeiro,26,29.92
+Rio de Janeiro,27,28.32
+Rio de Janeiro,28,6.54
+Rio de Janeiro,29,5.43
+Rio de Janeiro,30,6.64
+Rio de Janeiro,31,22.49
+Rio de Janeiro,32,10.38
+Rio de Janeiro,33,23.66
+Rio de Janeiro,34,98.35
+Rio de Janeiro,35,93.3
+Rio de Janeiro,36,98.46
+Rio de Janeiro,37,86.21
+Rio de Janeiro,38,82.26
+Rio de Janeiro,39,86.34
+Rio de Janeiro,40,31.64
+Rio de Janeiro,41,31.79
+Rio de Janeiro,42,31.64
+Rio de Janeiro,43,7.13
+Rio de Janeiro,44,5.77
+Rio de Janeiro,45,7.29
+São Paulo,1,22.6
+São Paulo,2,11.2
+São Paulo,3,23.41
+São Paulo,4,98.33
+São Paulo,5,93.33
+São Paulo,6,98.45
+São Paulo,7,85.0
+São Paulo,8,79.42
+São Paulo,9,85.17
+São Paulo,10,26.31
+São Paulo,11,24.66
+São Paulo,12,26.37
+São Paulo,13,6.18
+São Paulo,14,5.16
+São Paulo,15,6.26
+São Paulo,16,23.18
+São Paulo,17,12.52
+São Paulo,18,23.83
+São Paulo,19,98.3
+São Paulo,20,92.95
+São Paulo,21,98.43
+São Paulo,22,84.72
+São Paulo,23,77.9
+São Paulo,24,84.92
+São Paulo,25,24.19
+São Paulo,26,23.04
+São Paulo,27,24.22
+São Paulo,28,5.85
+São Paulo,29,5.12
+São Paulo,30,5.91
+São Paulo,31,22.07
+São Paulo,32,10.26
+São Paulo,33,23.01
+São Paulo,34,98.37
+São Paulo,35,93.78
+São Paulo,36,98.47
+São Paulo,37,85.3
+São Paulo,38,80.91
+São Paulo,39,85.43
+São Paulo,40,28.51
+São Paulo,41,26.17
+São Paulo,42,28.59
+São Paulo,43,6.46
+São Paulo,44,5.19
+São Paulo,45,6.58
+Sul,1,22.97
+Sul,2,9.64
+Sul,3,23.95
+Sul,4,98.52
+Sul,5,92.9
+Sul,6,98.65
+Sul,7,85.77
+Sul,8,79.03
+Sul,9,85.95
+Sul,10,29.79
+Sul,11,27.61
+Sul,12,29.85
+Sul,13,5.91
+Sul,14,3.98
+Sul,15,6.09
+Sul,16,23.1
+Sul,17,10.7
+Sul,18,23.91
+Sul,19,98.47
+Sul,20,92.34
+Sul,21,98.61
+Sul,22,85.22
+Sul,23,77.2
+Sul,24,85.43
+Sul,25,26.58
+Sul,26,25.87
+Sul,27,26.6
+Sul,28,5.43
+Sul,29,3.91
+Sul,30,5.55
+Sul,31,22.84
+Sul,32,8.84
+Sul,33,24.0
+Sul,34,98.58
+Sul,35,93.58
+Sul,36,98.69
+Sul,37,86.34
+Sul,38,80.86
+Sul,39,86.49
+Sul,40,33.07
+Sul,41,29.29
+Sul,42,33.19
+Sul,43,6.35
+Sul,44,4.03
+Sul,45,6.59
+Paraná,1,23.96
+Paraná,2,10.19
+Paraná,3,24.94
+Paraná,4,98.77
+Paraná,5,92.58
+Paraná,6,98.89
+Paraná,7,84.94
+Paraná,8,77.83
+Paraná,9,85.12
+Paraná,10,30.4
+Paraná,11,30.23
+Paraná,12,30.4
+Paraná,13,6.15
+Paraná,14,4.35
+Paraná,15,6.31
+Paraná,16,24.17
+Paraná,17,11.18
+Paraná,18,25.01
+Paraná,19,98.68
+Paraná,20,91.76
+Paraná,21,98.83
+Paraná,22,84.63
+Paraná,23,76.58
+Paraná,24,84.83
+Paraná,25,27.56
+Paraná,26,28.78
+Paraná,27,27.52
+Paraná,28,5.73
+Paraná,29,4.33
+Paraná,30,5.84
+Paraná,31,23.76
+Paraná,32,9.42
+Paraná,33,24.88
+Paraná,34,98.86
+Paraná,35,93.59
+Paraná,36,98.96
+Paraná,37,85.25
+Paraná,38,79.0
+Paraná,39,85.42
+Paraná,40,33.3
+Paraná,41,31.67
+Paraná,42,33.35
+Paraná,43,6.53
+Paraná,44,4.36
+Paraná,45,6.75
+Santa Catarina,1,22.64
+Santa Catarina,2,9.75
+Santa Catarina,3,23.51
+Santa Catarina,4,98.62
+Santa Catarina,5,93.73
+Santa Catarina,6,98.72
+Santa Catarina,7,86.85
+Santa Catarina,8,80.97
+Santa Catarina,9,87.0
+Santa Catarina,10,28.34
+Santa Catarina,11,24.82
+Santa Catarina,12,28.44
+Santa Catarina,13,5.52
+Santa Catarina,14,4.0
+Santa Catarina,15,5.65
+Santa Catarina,16,22.59
+Santa Catarina,17,10.63
+Santa Catarina,18,23.29
+Santa Catarina,19,98.61
+Santa Catarina,20,93.05
+Santa Catarina,21,98.74
+Santa Catarina,22,86.3
+Santa Catarina,23,77.16
+Santa Catarina,24,86.54
+Santa Catarina,25,25.11
+Santa Catarina,26,20.13
+Santa Catarina,27,25.24
+Santa Catarina,28,4.97
+Santa Catarina,29,3.91
+Santa Catarina,30,5.05
+Santa Catarina,31,22.69
+Santa Catarina,32,9.08
+Santa Catarina,33,23.72
+Santa Catarina,34,98.63
+Santa Catarina,35,94.59
+Santa Catarina,36,98.7
+Santa Catarina,37,87.43
+Santa Catarina,38,85.12
+Santa Catarina,39,87.49
+Santa Catarina,40,31.66
+Santa Catarina,41,28.78
+Santa Catarina,42,31.75
+Santa Catarina,43,6.04
+Santa Catarina,44,4.06
+Santa Catarina,45,6.22
+Rio Grande do Sul,1,22.16
+Rio Grande do Sul,2,9.07
+Rio Grande do Sul,3,23.22
+Rio Grande do Sul,4,98.18
+Rio Grande do Sul,5,92.7
+Rio Grande do Sul,6,98.31
+Rio Grande do Sul,7,85.94
+Rio Grande do Sul,8,79.03
+Rio Grande do Sul,9,86.15
+Rio Grande do Sul,10,30.2
+Rio Grande do Sul,11,26.7
+Rio Grande do Sul,12,30.31
+Rio Grande do Sul,13,5.93
+Rio Grande do Sul,14,3.63
+Rio Grande do Sul,15,6.16
+Rio Grande do Sul,16,22.33
+Rio Grande do Sul,17,10.27
+Rio Grande do Sul,18,23.18
+Rio Grande do Sul,19,98.12
+Rio Grande do Sul,20,92.47
+Rio Grande do Sul,21,98.27
+Rio Grande do Sul,22,85.1
+Rio Grande do Sul,23,77.82
+Rio Grande do Sul,24,85.32
+Rio Grande do Sul,25,26.59
+Rio Grande do Sul,26,26.25
+Rio Grande do Sul,27,26.6
+Rio Grande do Sul,28,5.43
+Rio Grande do Sul,29,3.49
+Rio Grande do Sul,30,5.6
+Rio Grande do Sul,31,22.0
+Rio Grande do Sul,32,8.2
+Rio Grande do Sul,33,23.27
+Rio Grande do Sul,34,98.23
+Rio Grande do Sul,35,92.97
+Rio Grande do Sul,36,98.36
+Rio Grande do Sul,37,86.81
+Rio Grande do Sul,38,80.25
+Rio Grande do Sul,39,87.01
+Rio Grande do Sul,40,33.86
+Rio Grande do Sul,41,27.16
+Rio Grande do Sul,42,34.08
+Rio Grande do Sul,43,6.37
+Rio Grande do Sul,44,3.73
+Rio Grande do Sul,45,6.68
+Centro-Oeste,1,25.6
+Centro-Oeste,2,12.24
+Centro-Oeste,3,26.58
+Centro-Oeste,4,98.14
+Centro-Oeste,5,93.25
+Centro-Oeste,6,98.25
+Centro-Oeste,7,83.89
+Centro-Oeste,8,78.96
+Centro-Oeste,9,84.04
+Centro-Oeste,10,28.94
+Centro-Oeste,11,30.3
+Centro-Oeste,12,28.89
+Centro-Oeste,13,6.73
+Centro-Oeste,14,5.31
+Centro-Oeste,15,6.86
+Centro-Oeste,16,25.68
+Centro-Oeste,17,13.17
+Centro-Oeste,18,26.48
+Centro-Oeste,19,98.1
+Centro-Oeste,20,92.08
+Centro-Oeste,21,98.24
+Centro-Oeste,22,83.53
+Centro-Oeste,23,76.13
+Centro-Oeste,24,83.73
+Centro-Oeste,25,26.59
+Centro-Oeste,26,28.68
+Centro-Oeste,27,26.52
+Centro-Oeste,28,6.22
+Centro-Oeste,29,5.2
+Centro-Oeste,30,6.31
+Centro-Oeste,31,25.53
+Centro-Oeste,32,11.52
+Centro-Oeste,33,26.67
+Centro-Oeste,34,98.18
+Centro-Oeste,35,94.71
+Centro-Oeste,36,98.25
+Centro-Oeste,37,84.26
+Centro-Oeste,38,81.29
+Centro-Oeste,39,84.36
+Centro-Oeste,40,31.33
+Centro-Oeste,41,31.71
+Centro-Oeste,42,31.32
+Centro-Oeste,43,7.21
+Centro-Oeste,44,5.4
+Centro-Oeste,45,7.4
+Mato Grosso do Sul,1,26.35
+Mato Grosso do Sul,2,11.29
+Mato Grosso do Sul,3,27.46
+Mato Grosso do Sul,4,98.13
+Mato Grosso do Sul,5,92.73
+Mato Grosso do Sul,6,98.23
+Mato Grosso do Sul,7,82.81
+Mato Grosso do Sul,8,77.71
+Mato Grosso do Sul,9,82.95
+Mato Grosso do Sul,10,28.85
+Mato Grosso do Sul,11,31.89
+Mato Grosso do Sul,12,28.75
+Mato Grosso do Sul,13,7.05
+Mato Grosso do Sul,14,5.18
+Mato Grosso do Sul,15,7.23
+Mato Grosso do Sul,16,26.6
+Mato Grosso do Sul,17,12.09
+Mato Grosso do Sul,18,27.56
+Mato Grosso do Sul,19,98.14
+Mato Grosso do Sul,20,92.25
+Mato Grosso do Sul,21,98.27
+Mato Grosso do Sul,22,82.72
+Mato Grosso do Sul,23,79.21
+Mato Grosso do Sul,24,82.81
+Mato Grosso do Sul,25,27.0
+Mato Grosso do Sul,26,29.42
+Mato Grosso do Sul,27,26.92
+Mato Grosso do Sul,28,6.61
+Mato Grosso do Sul,29,4.72
+Mato Grosso do Sul,30,6.77
+Mato Grosso do Sul,31,26.1
+Mato Grosso do Sul,32,10.66
+Mato Grosso do Sul,33,27.36
+Mato Grosso do Sul,34,98.11
+Mato Grosso do Sul,35,93.4
+Mato Grosso do Sul,36,98.18
+Mato Grosso do Sul,37,82.91
+Mato Grosso do Sul,38,76.38
+Mato Grosso do Sul,39,83.1
+Mato Grosso do Sul,40,30.74
+Mato Grosso do Sul,41,34.19
+Mato Grosso do Sul,42,30.62
+Mato Grosso do Sul,43,7.45
+Mato Grosso do Sul,44,5.54
+Mato Grosso do Sul,45,7.66
+Mato Grosso,1,26.12
+Mato Grosso,2,12.82
+Mato Grosso,3,26.97
+Mato Grosso,4,97.66
+Mato Grosso,5,90.91
+Mato Grosso,6,97.79
+Mato Grosso,7,80.14
+Mato Grosso,8,70.26
+Mato Grosso,9,80.39
+Mato Grosso,10,25.66
+Mato Grosso,11,29.27
+Mato Grosso,12,25.55
+Mato Grosso,13,6.78
+Mato Grosso,14,6.24
+Mato Grosso,15,6.82
+Mato Grosso,16,25.7
+Mato Grosso,17,13.18
+Mato Grosso,18,26.42
+Mato Grosso,19,97.69
+Mato Grosso,20,89.7
+Mato Grosso,21,97.85
+Mato Grosso,22,80.04
+Mato Grosso,23,69.69
+Mato Grosso,24,80.26
+Mato Grosso,25,23.25
+Mato Grosso,26,28.02
+Mato Grosso,27,23.11
+Mato Grosso,28,6.16
+Mato Grosso,29,5.87
+Mato Grosso,30,6.18
+Mato Grosso,31,26.54
+Mato Grosso,32,12.53
+Mato Grosso,33,27.53
+Mato Grosso,34,97.64
+Mato Grosso,35,92.31
+Mato Grosso,36,97.74
+Mato Grosso,37,80.24
+Mato Grosso,38,70.72
+Mato Grosso,39,80.51
+Mato Grosso,40,28.14
+Mato Grosso,41,30.43
+Mato Grosso,42,28.07
+Mato Grosso,43,7.39
+Mato Grosso,44,6.54
+Mato Grosso,45,7.47
+Goiás,1,24.44
+Goiás,2,11.15
+Goiás,3,25.49
+Goiás,4,98.1
+Goiás,5,93.15
+Goiás,6,98.22
+Goiás,7,84.05
+Goiás,8,79.8
+Goiás,9,84.18
+Goiás,10,27.42
+Goiás,11,27.19
+Goiás,12,27.43
+Goiás,13,5.88
+Goiás,14,4.44
+Goiás,15,6.03
+Goiás,16,24.45
+Goiás,17,12.09
+Goiás,18,25.31
+Goiás,19,98.01
+Goiás,20,92.09
+Goiás,21,98.16
+Goiás,22,83.3
+Goiás,23,74.27
+Goiás,24,83.56
+Goiás,25,25.02
+Goiás,26,26.61
+Goiás,27,24.96
+Goiás,28,5.39
+Goiás,29,4.37
+Goiás,30,5.48
+Goiás,31,24.43
+Goiás,32,10.43
+Goiás,33,25.67
+Goiás,34,98.2
+Goiás,35,94.45
+Goiás,36,98.28
+Goiás,37,84.81
+Goiás,38,84.35
+Goiás,39,84.82
+Goiás,40,29.88
+Goiás,41,27.67
+Goiás,42,29.97
+Goiás,43,6.35
+Goiás,44,4.49
+Goiás,45,6.56
+Distrito Federal,1,27.13
+Distrito Federal,2,15.63
+Distrito Federal,3,27.91
+Distrito Federal,4,98.96
+Distrito Federal,5,96.6
+Distrito Federal,6,99.02
+Distrito Federal,7,89.49
+Distrito Federal,8,85.41
+Distrito Federal,9,89.66
+Distrito Federal,10,36.83
+Distrito Federal,11,37.79
+Distrito Federal,12,36.79
+Distrito Federal,13,8.48
+Distrito Federal,14,6.87
+Distrito Federal,15,8.61
+Distrito Federal,16,27.9
+Distrito Federal,17,17.64
+Distrito Federal,18,28.5
+Distrito Federal,19,98.89
+Distrito Federal,20,94.54
+Distrito Federal,21,99.01
+Distrito Federal,22,89.5
+Distrito Federal,23,83.09
+Distrito Federal,24,89.72
+Distrito Federal,25,34.27
+Distrito Federal,26,34.03
+Distrito Federal,27,34.28
+Distrito Federal,28,8.09
+Distrito Federal,29,7.46
+Distrito Federal,30,8.13
+Distrito Federal,31,26.43
+Distrito Federal,32,14.24
+Distrito Federal,33,27.38
+Distrito Federal,34,99.03
+Distrito Federal,35,99.2
+Distrito Federal,36,99.03
+Distrito Federal,37,89.49
+Distrito Federal,38,87.28
+Distrito Federal,39,89.58
+Distrito Federal,40,39.43
+Distrito Federal,41,40.77
+Distrito Federal,42,39.37
+Distrito Federal,43,8.81
+Distrito Federal,44,6.49
+Distrito Federal,45,9.03

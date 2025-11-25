@@ -1,0 +1,1486 @@
+localidade,ano,sexo,faixa_idade,tipo_deficiencia,taxa_escolarizacao
+Brasil,2022,Total,Total,Total,24.34
+Brasil,2022,Total,Total,Pessoa com deficiência,11.14
+Brasil,2022,Total,Total,Pessoa sem deficiência,25.42
+Brasil,2022,Total,6 a 14 anos,Total,98.26
+Brasil,2022,Total,6 a 14 anos,Pessoa com deficiência,92.57
+Brasil,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.4
+Brasil,2022,Total,15 a 17 anos,Total,85.25
+Brasil,2022,Total,15 a 17 anos,Pessoa com deficiência,79.4
+Brasil,2022,Total,15 a 17 anos,Pessoa sem deficiência,85.45
+Brasil,2022,Total,18 a 24 anos,Total,27.68
+Brasil,2022,Total,18 a 24 anos,Pessoa com deficiência,27.45
+Brasil,2022,Total,18 a 24 anos,Pessoa sem deficiência,27.69
+Brasil,2022,Total,25 anos ou mais,Total,6.1
+Brasil,2022,Total,25 anos ou mais,Pessoa com deficiência,4.7
+Brasil,2022,Total,25 anos ou mais,Pessoa sem deficiência,6.25
+Brasil,2022,Homens,Total,Total,24.72
+Brasil,2022,Homens,Total,Pessoa com deficiência,12.26
+Brasil,2022,Homens,Total,Pessoa sem deficiência,25.61
+Brasil,2022,Homens,6 a 14 anos,Total,98.18
+Brasil,2022,Homens,6 a 14 anos,Pessoa com deficiência,92.12
+Brasil,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.34
+Brasil,2022,Homens,15 a 17 anos,Total,84.99
+Brasil,2022,Homens,15 a 17 anos,Pessoa com deficiência,77.35
+Brasil,2022,Homens,15 a 17 anos,Pessoa sem deficiência,85.23
+Brasil,2022,Homens,18 a 24 anos,Total,25.7
+Brasil,2022,Homens,18 a 24 anos,Pessoa com deficiência,25.73
+Brasil,2022,Homens,18 a 24 anos,Pessoa sem deficiência,25.7
+Brasil,2022,Homens,25 anos ou mais,Total,5.59
+Brasil,2022,Homens,25 anos ou mais,Pessoa com deficiência,4.46
+Brasil,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.7
+Brasil,2022,Mulheres,Total,Total,23.99
+Brasil,2022,Mulheres,Total,Pessoa com deficiência,10.32
+Brasil,2022,Mulheres,Total,Pessoa sem deficiência,25.25
+Brasil,2022,Mulheres,6 a 14 anos,Total,98.34
+Brasil,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,93.12
+Brasil,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.47
+Brasil,2022,Mulheres,15 a 17 anos,Total,85.53
+Brasil,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,81.36
+Brasil,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,85.67
+Brasil,2022,Mulheres,18 a 24 anos,Total,29.69
+Brasil,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,29.01
+Brasil,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,29.72
+Brasil,2022,Mulheres,25 anos ou mais,Total,6.56
+Brasil,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,4.87
+Brasil,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.75
+Norte,2022,Total,Total,Total,30.3
+Norte,2022,Total,Total,Pessoa com deficiência,14.01
+Norte,2022,Total,Total,Pessoa sem deficiência,31.63
+Norte,2022,Total,6 a 14 anos,Total,96.89
+Norte,2022,Total,6 a 14 anos,Pessoa com deficiência,90.29
+Norte,2022,Total,6 a 14 anos,Pessoa sem deficiência,97.06
+Norte,2022,Total,15 a 17 anos,Total,83.67
+Norte,2022,Total,15 a 17 anos,Pessoa com deficiência,79.07
+Norte,2022,Total,15 a 17 anos,Pessoa sem deficiência,83.82
+Norte,2022,Total,18 a 24 anos,Total,28.73
+Norte,2022,Total,18 a 24 anos,Pessoa com deficiência,30.8
+Norte,2022,Total,18 a 24 anos,Pessoa sem deficiência,28.65
+Norte,2022,Total,25 anos ou mais,Total,7.6
+Norte,2022,Total,25 anos ou mais,Pessoa com deficiência,5.98
+Norte,2022,Total,25 anos ou mais,Pessoa sem deficiência,7.79
+Norte,2022,Homens,Total,Total,30.04
+Norte,2022,Homens,Total,Pessoa com deficiência,14.41
+Norte,2022,Homens,Total,Pessoa sem deficiência,31.21
+Norte,2022,Homens,6 a 14 anos,Total,96.78
+Norte,2022,Homens,6 a 14 anos,Pessoa com deficiência,89.75
+Norte,2022,Homens,6 a 14 anos,Pessoa sem deficiência,96.97
+Norte,2022,Homens,15 a 17 anos,Total,83.9
+Norte,2022,Homens,15 a 17 anos,Pessoa com deficiência,76.81
+Norte,2022,Homens,15 a 17 anos,Pessoa sem deficiência,84.12
+Norte,2022,Homens,18 a 24 anos,Total,27.38
+Norte,2022,Homens,18 a 24 anos,Pessoa com deficiência,28.93
+Norte,2022,Homens,18 a 24 anos,Pessoa sem deficiência,27.33
+Norte,2022,Homens,25 anos ou mais,Total,6.7
+Norte,2022,Homens,25 anos ou mais,Pessoa com deficiência,5.36
+Norte,2022,Homens,25 anos ou mais,Pessoa sem deficiência,6.84
+Norte,2022,Mulheres,Total,Total,30.56
+Norte,2022,Mulheres,Total,Pessoa com deficiência,13.68
+Norte,2022,Mulheres,Total,Pessoa sem deficiência,32.06
+Norte,2022,Mulheres,6 a 14 anos,Total,97.01
+Norte,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,90.97
+Norte,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,97.15
+Norte,2022,Mulheres,15 a 17 anos,Total,83.43
+Norte,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,81.13
+Norte,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,83.51
+Norte,2022,Mulheres,18 a 24 anos,Total,30.1
+Norte,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,32.5
+Norte,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,30.01
+Norte,2022,Mulheres,25 anos ou mais,Total,8.48
+Norte,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,6.49
+Norte,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,8.72
+Rondônia,2022,Total,Total,Total,27.54
+Rondônia,2022,Total,Total,Pessoa com deficiência,13.6
+Rondônia,2022,Total,Total,Pessoa sem deficiência,28.66
+Rondônia,2022,Total,6 a 14 anos,Total,97.62
+Rondônia,2022,Total,6 a 14 anos,Pessoa com deficiência,93.97
+Rondônia,2022,Total,6 a 14 anos,Pessoa sem deficiência,97.71
+Rondônia,2022,Total,15 a 17 anos,Total,84.76
+Rondônia,2022,Total,15 a 17 anos,Pessoa com deficiência,84.05
+Rondônia,2022,Total,15 a 17 anos,Pessoa sem deficiência,84.78
+Rondônia,2022,Total,18 a 24 anos,Total,29.78
+Rondônia,2022,Total,18 a 24 anos,Pessoa com deficiência,29.54
+Rondônia,2022,Total,18 a 24 anos,Pessoa sem deficiência,29.79
+Rondônia,2022,Total,25 anos ou mais,Total,7.84
+Rondônia,2022,Total,25 anos ou mais,Pessoa com deficiência,6.22
+Rondônia,2022,Total,25 anos ou mais,Pessoa sem deficiência,8.01
+Rondônia,2022,Homens,Total,Total,26.8
+Rondônia,2022,Homens,Total,Pessoa com deficiência,13.48
+Rondônia,2022,Homens,Total,Pessoa sem deficiência,27.79
+Rondônia,2022,Homens,6 a 14 anos,Total,97.41
+Rondônia,2022,Homens,6 a 14 anos,Pessoa com deficiência,93.62
+Rondônia,2022,Homens,6 a 14 anos,Pessoa sem deficiência,97.51
+Rondônia,2022,Homens,15 a 17 anos,Total,83.09
+Rondônia,2022,Homens,15 a 17 anos,Pessoa com deficiência,74.96
+Rondônia,2022,Homens,15 a 17 anos,Pessoa sem deficiência,83.33
+Rondônia,2022,Homens,18 a 24 anos,Total,26.59
+Rondônia,2022,Homens,18 a 24 anos,Pessoa com deficiência,30.34
+Rondônia,2022,Homens,18 a 24 anos,Pessoa sem deficiência,26.46
+Rondônia,2022,Homens,25 anos ou mais,Total,6.94
+Rondônia,2022,Homens,25 anos ou mais,Pessoa com deficiência,5.47
+Rondônia,2022,Homens,25 anos ou mais,Pessoa sem deficiência,7.08
+Rondônia,2022,Mulheres,Total,Total,28.28
+Rondônia,2022,Mulheres,Total,Pessoa com deficiência,13.71
+Rondônia,2022,Mulheres,Total,Pessoa sem deficiência,29.53
+Rondônia,2022,Mulheres,6 a 14 anos,Total,97.84
+Rondônia,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,94.37
+Rondônia,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,97.93
+Rondônia,2022,Mulheres,15 a 17 anos,Total,86.43
+Rondônia,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,91.87
+Rondônia,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,86.23
+Rondônia,2022,Mulheres,18 a 24 anos,Total,33.03
+Rondônia,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,28.76
+Rondônia,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,33.18
+Rondônia,2022,Mulheres,25 anos ou mais,Total,8.71
+Rondônia,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,6.85
+Rondônia,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,8.92
+Acre,2022,Total,Total,Total,30.99
+Acre,2022,Total,Total,Pessoa com deficiência,14.49
+Acre,2022,Total,Total,Pessoa sem deficiência,32.38
+Acre,2022,Total,6 a 14 anos,Total,96.65
+Acre,2022,Total,6 a 14 anos,Pessoa com deficiência,93.82
+Acre,2022,Total,6 a 14 anos,Pessoa sem deficiência,96.74
+Acre,2022,Total,15 a 17 anos,Total,81.44
+Acre,2022,Total,15 a 17 anos,Pessoa com deficiência,77.49
+Acre,2022,Total,15 a 17 anos,Pessoa sem deficiência,81.59
+Acre,2022,Total,18 a 24 anos,Total,27.72
+Acre,2022,Total,18 a 24 anos,Pessoa com deficiência,27.74
+Acre,2022,Total,18 a 24 anos,Pessoa sem deficiência,27.72
+Acre,2022,Total,25 anos ou mais,Total,6.64
+Acre,2022,Total,25 anos ou mais,Pessoa com deficiência,4.87
+Acre,2022,Total,25 anos ou mais,Pessoa sem deficiência,6.85
+Acre,2022,Homens,Total,Total,30.76
+Acre,2022,Homens,Total,Pessoa com deficiência,16.03
+Acre,2022,Homens,Total,Pessoa sem deficiência,31.89
+Acre,2022,Homens,6 a 14 anos,Total,96.51
+Acre,2022,Homens,6 a 14 anos,Pessoa com deficiência,94.85
+Acre,2022,Homens,6 a 14 anos,Pessoa sem deficiência,96.56
+Acre,2022,Homens,15 a 17 anos,Total,81.73
+Acre,2022,Homens,15 a 17 anos,Pessoa com deficiência,79.99
+Acre,2022,Homens,15 a 17 anos,Pessoa sem deficiência,81.79
+Acre,2022,Homens,18 a 24 anos,Total,25.79
+Acre,2022,Homens,18 a 24 anos,Pessoa com deficiência,28.2
+Acre,2022,Homens,18 a 24 anos,Pessoa sem deficiência,25.7
+Acre,2022,Homens,25 anos ou mais,Total,5.73
+Acre,2022,Homens,25 anos ou mais,Pessoa com deficiência,3.82
+Acre,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.94
+Acre,2022,Mulheres,Total,Total,31.21
+Acre,2022,Mulheres,Total,Pessoa com deficiência,13.2
+Acre,2022,Mulheres,Total,Pessoa sem deficiência,32.88
+Acre,2022,Mulheres,6 a 14 anos,Total,96.81
+Acre,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,92.21
+Acre,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,96.92
+Acre,2022,Mulheres,15 a 17 anos,Total,81.15
+Acre,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,75.28
+Acre,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,81.38
+Acre,2022,Mulheres,18 a 24 anos,Total,29.73
+Acre,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,27.29
+Acre,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,29.82
+Acre,2022,Mulheres,25 anos ou mais,Total,7.52
+Acre,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,5.7
+Acre,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,7.76
+Amazonas,2022,Total,Total,Total,32.73
+Amazonas,2022,Total,Total,Pessoa com deficiência,16.04
+Amazonas,2022,Total,Total,Pessoa sem deficiência,34.07
+Amazonas,2022,Total,6 a 14 anos,Total,95.93
+Amazonas,2022,Total,6 a 14 anos,Pessoa com deficiência,87.84
+Amazonas,2022,Total,6 a 14 anos,Pessoa sem deficiência,96.14
+Amazonas,2022,Total,15 a 17 anos,Total,83.71
+Amazonas,2022,Total,15 a 17 anos,Pessoa com deficiência,78.1
+Amazonas,2022,Total,15 a 17 anos,Pessoa sem deficiência,83.92
+Amazonas,2022,Total,18 a 24 anos,Total,27.8
+Amazonas,2022,Total,18 a 24 anos,Pessoa com deficiência,29.78
+Amazonas,2022,Total,18 a 24 anos,Pessoa sem deficiência,27.72
+Amazonas,2022,Total,25 anos ou mais,Total,9.21
+Amazonas,2022,Total,25 anos ou mais,Pessoa com deficiência,7.16
+Amazonas,2022,Total,25 anos ou mais,Pessoa sem deficiência,9.44
+Amazonas,2022,Homens,Total,Total,32.55
+Amazonas,2022,Homens,Total,Pessoa com deficiência,16.1
+Amazonas,2022,Homens,Total,Pessoa sem deficiência,33.77
+Amazonas,2022,Homens,6 a 14 anos,Total,95.8
+Amazonas,2022,Homens,6 a 14 anos,Pessoa com deficiência,86.68
+Amazonas,2022,Homens,6 a 14 anos,Pessoa sem deficiência,96.04
+Amazonas,2022,Homens,15 a 17 anos,Total,83.92
+Amazonas,2022,Homens,15 a 17 anos,Pessoa com deficiência,74.41
+Amazonas,2022,Homens,15 a 17 anos,Pessoa sem deficiência,84.29
+Amazonas,2022,Homens,18 a 24 anos,Total,26.97
+Amazonas,2022,Homens,18 a 24 anos,Pessoa com deficiência,28.43
+Amazonas,2022,Homens,18 a 24 anos,Pessoa sem deficiência,26.91
+Amazonas,2022,Homens,25 anos ou mais,Total,8.33
+Amazonas,2022,Homens,25 anos ou mais,Pessoa com deficiência,6.37
+Amazonas,2022,Homens,25 anos ou mais,Pessoa sem deficiência,8.53
+Amazonas,2022,Mulheres,Total,Total,32.9
+Amazonas,2022,Mulheres,Total,Pessoa com deficiência,15.99
+Amazonas,2022,Mulheres,Total,Pessoa sem deficiência,34.38
+Amazonas,2022,Mulheres,6 a 14 anos,Total,96.06
+Amazonas,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,89.14
+Amazonas,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,96.24
+Amazonas,2022,Mulheres,15 a 17 anos,Total,83.5
+Amazonas,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,82.06
+Amazonas,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,83.55
+Amazonas,2022,Mulheres,18 a 24 anos,Total,28.63
+Amazonas,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,30.96
+Amazonas,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,28.54
+Amazonas,2022,Mulheres,25 anos ou mais,Total,10.06
+Amazonas,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,7.82
+Amazonas,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,10.34
+Roraima,2022,Total,Total,Total,30.57
+Roraima,2022,Total,Total,Pessoa com deficiência,15.5
+Roraima,2022,Total,Total,Pessoa sem deficiência,31.54
+Roraima,2022,Total,6 a 14 anos,Total,91.52
+Roraima,2022,Total,6 a 14 anos,Pessoa com deficiência,87.74
+Roraima,2022,Total,6 a 14 anos,Pessoa sem deficiência,91.6
+Roraima,2022,Total,15 a 17 anos,Total,78.78
+Roraima,2022,Total,15 a 17 anos,Pessoa com deficiência,79.87
+Roraima,2022,Total,15 a 17 anos,Pessoa sem deficiência,78.75
+Roraima,2022,Total,18 a 24 anos,Total,23.97
+Roraima,2022,Total,18 a 24 anos,Pessoa com deficiência,27.66
+Roraima,2022,Total,18 a 24 anos,Pessoa sem deficiência,23.85
+Roraima,2022,Total,25 anos ou mais,Total,7.32
+Roraima,2022,Total,25 anos ou mais,Pessoa com deficiência,6.56
+Roraima,2022,Total,25 anos ou mais,Pessoa sem deficiência,7.39
+Roraima,2022,Homens,Total,Total,30.4
+Roraima,2022,Homens,Total,Pessoa com deficiência,15.39
+Roraima,2022,Homens,Total,Pessoa sem deficiência,31.29
+Roraima,2022,Homens,6 a 14 anos,Total,91.59
+Roraima,2022,Homens,6 a 14 anos,Pessoa com deficiência,88.34
+Roraima,2022,Homens,6 a 14 anos,Pessoa sem deficiência,91.66
+Roraima,2022,Homens,15 a 17 anos,Total,80.06
+Roraima,2022,Homens,15 a 17 anos,Pessoa com deficiência,80.21
+Roraima,2022,Homens,15 a 17 anos,Pessoa sem deficiência,80.06
+Roraima,2022,Homens,18 a 24 anos,Total,22.26
+Roraima,2022,Homens,18 a 24 anos,Pessoa com deficiência,25.2
+Roraima,2022,Homens,18 a 24 anos,Pessoa sem deficiência,22.18
+Roraima,2022,Homens,25 anos ou mais,Total,6.46
+Roraima,2022,Homens,25 anos ou mais,Pessoa com deficiência,5.49
+Roraima,2022,Homens,25 anos ou mais,Pessoa sem deficiência,6.54
+Roraima,2022,Mulheres,Total,Total,30.75
+Roraima,2022,Mulheres,Total,Pessoa com deficiência,15.59
+Roraima,2022,Mulheres,Total,Pessoa sem deficiência,31.79
+Roraima,2022,Mulheres,6 a 14 anos,Total,91.45
+Roraima,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,86.98
+Roraima,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,91.54
+Roraima,2022,Mulheres,15 a 17 anos,Total,77.47
+Roraima,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,79.57
+Roraima,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,77.4
+Roraima,2022,Mulheres,18 a 24 anos,Total,25.7
+Roraima,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,29.48
+Roraima,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,25.55
+Roraima,2022,Mulheres,25 anos ou mais,Total,8.17
+Roraima,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,7.49
+Roraima,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,8.24
+Pará,2022,Total,Total,Total,29.96
+Pará,2022,Total,Total,Pessoa com deficiência,13.39
+Pará,2022,Total,Total,Pessoa sem deficiência,31.35
+Pará,2022,Total,6 a 14 anos,Total,97.51
+Pará,2022,Total,6 a 14 anos,Pessoa com deficiência,90.61
+Pará,2022,Total,6 a 14 anos,Pessoa sem deficiência,97.68
+Pará,2022,Total,15 a 17 anos,Total,83.72
+Pará,2022,Total,15 a 17 anos,Pessoa com deficiência,78.86
+Pará,2022,Total,15 a 17 anos,Pessoa sem deficiência,83.87
+Pará,2022,Total,18 a 24 anos,Total,29.37
+Pará,2022,Total,18 a 24 anos,Pessoa com deficiência,32.45
+Pará,2022,Total,18 a 24 anos,Pessoa sem deficiência,29.26
+Pará,2022,Total,25 anos ou mais,Total,7.27
+Pará,2022,Total,25 anos ou mais,Pessoa com deficiência,5.86
+Pará,2022,Total,25 anos ou mais,Pessoa sem deficiência,7.44
+Pará,2022,Homens,Total,Total,29.79
+Pará,2022,Homens,Total,Pessoa com deficiência,13.97
+Pará,2022,Homens,Total,Pessoa sem deficiência,31.0
+Pará,2022,Homens,6 a 14 anos,Total,97.45
+Pará,2022,Homens,6 a 14 anos,Pessoa com deficiência,90.01
+Pará,2022,Homens,6 a 14 anos,Pessoa sem deficiência,97.64
+Pará,2022,Homens,15 a 17 anos,Total,84.14
+Pará,2022,Homens,15 a 17 anos,Pessoa com deficiência,77.59
+Pará,2022,Homens,15 a 17 anos,Pessoa sem deficiência,84.33
+Pará,2022,Homens,18 a 24 anos,Total,28.41
+Pará,2022,Homens,18 a 24 anos,Pessoa com deficiência,30.07
+Pará,2022,Homens,18 a 24 anos,Pessoa sem deficiência,28.35
+Pará,2022,Homens,25 anos ou mais,Total,6.36
+Pará,2022,Homens,25 anos ou mais,Pessoa com deficiência,5.34
+Pará,2022,Homens,25 anos ou mais,Pessoa sem deficiência,6.47
+Pará,2022,Mulheres,Total,Total,30.11
+Pará,2022,Mulheres,Total,Pessoa com deficiência,12.92
+Pará,2022,Mulheres,Total,Pessoa sem deficiência,31.7
+Pará,2022,Mulheres,6 a 14 anos,Total,97.58
+Pará,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,91.39
+Pará,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,97.71
+Pará,2022,Mulheres,15 a 17 anos,Total,83.28
+Pará,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,79.95
+Pará,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,83.4
+Pará,2022,Mulheres,18 a 24 anos,Total,30.35
+Pará,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,34.65
+Pará,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,30.19
+Pará,2022,Mulheres,25 anos ou mais,Total,8.15
+Pará,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,6.27
+Pará,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,8.4
+Amapá,2022,Total,Total,Total,32.35
+Amapá,2022,Total,Total,Pessoa com deficiência,16.52
+Amapá,2022,Total,Total,Pessoa sem deficiência,33.64
+Amapá,2022,Total,6 a 14 anos,Total,96.45
+Amapá,2022,Total,6 a 14 anos,Pessoa com deficiência,88.76
+Amapá,2022,Total,6 a 14 anos,Pessoa sem deficiência,96.68
+Amapá,2022,Total,15 a 17 anos,Total,83.08
+Amapá,2022,Total,15 a 17 anos,Pessoa com deficiência,75.8
+Amapá,2022,Total,15 a 17 anos,Pessoa sem deficiência,83.33
+Amapá,2022,Total,18 a 24 anos,Total,30.19
+Amapá,2022,Total,18 a 24 anos,Pessoa com deficiência,35.71
+Amapá,2022,Total,18 a 24 anos,Pessoa sem deficiência,29.97
+Amapá,2022,Total,25 anos ou mais,Total,8.34
+Amapá,2022,Total,25 anos ou mais,Pessoa com deficiência,6.57
+Amapá,2022,Total,25 anos ou mais,Pessoa sem deficiência,8.54
+Amapá,2022,Homens,Total,Total,32.23
+Amapá,2022,Homens,Total,Pessoa com deficiência,17.17
+Amapá,2022,Homens,Total,Pessoa sem deficiência,33.37
+Amapá,2022,Homens,6 a 14 anos,Total,95.99
+Amapá,2022,Homens,6 a 14 anos,Pessoa com deficiência,85.73
+Amapá,2022,Homens,6 a 14 anos,Pessoa sem deficiência,96.34
+Amapá,2022,Homens,15 a 17 anos,Total,84.84
+Amapá,2022,Homens,15 a 17 anos,Pessoa com deficiência,77.07
+Amapá,2022,Homens,15 a 17 anos,Pessoa sem deficiência,85.08
+Amapá,2022,Homens,18 a 24 anos,Total,29.15
+Amapá,2022,Homens,18 a 24 anos,Pessoa com deficiência,32.54
+Amapá,2022,Homens,18 a 24 anos,Pessoa sem deficiência,29.01
+Amapá,2022,Homens,25 anos ou mais,Total,7.31
+Amapá,2022,Homens,25 anos ou mais,Pessoa com deficiência,6.05
+Amapá,2022,Homens,25 anos ou mais,Pessoa sem deficiência,7.44
+Amapá,2022,Mulheres,Total,Total,32.47
+Amapá,2022,Mulheres,Total,Pessoa com deficiência,15.96
+Amapá,2022,Mulheres,Total,Pessoa sem deficiência,33.9
+Amapá,2022,Mulheres,6 a 14 anos,Total,96.91
+Amapá,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,92.75
+Amapá,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,97.02
+Amapá,2022,Mulheres,15 a 17 anos,Total,81.22
+Amapá,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,74.67
+Amapá,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,81.47
+Amapá,2022,Mulheres,18 a 24 anos,Total,31.23
+Amapá,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,39.02
+Amapá,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,30.93
+Amapá,2022,Mulheres,25 anos ou mais,Total,9.32
+Amapá,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,6.99
+Amapá,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,9.6
+Tocantins,2022,Total,Total,Total,27.42
+Tocantins,2022,Total,Total,Pessoa com deficiência,10.67
+Tocantins,2022,Total,Total,Pessoa sem deficiência,28.73
+Tocantins,2022,Total,6 a 14 anos,Total,98.7
+Tocantins,2022,Total,6 a 14 anos,Pessoa com deficiência,92.13
+Tocantins,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.85
+Tocantins,2022,Total,15 a 17 anos,Total,86.09
+Tocantins,2022,Total,15 a 17 anos,Pessoa com deficiência,81.46
+Tocantins,2022,Total,15 a 17 anos,Pessoa sem deficiência,86.22
+Tocantins,2022,Total,18 a 24 anos,Total,28.76
+Tocantins,2022,Total,18 a 24 anos,Pessoa com deficiência,25.83
+Tocantins,2022,Total,18 a 24 anos,Pessoa sem deficiência,28.85
+Tocantins,2022,Total,25 anos ou mais,Total,5.55
+Tocantins,2022,Total,25 anos ou mais,Pessoa com deficiência,3.64
+Tocantins,2022,Total,25 anos ou mais,Pessoa sem deficiência,5.75
+Tocantins,2022,Homens,Total,Total,26.81
+Tocantins,2022,Homens,Total,Pessoa com deficiência,10.87
+Tocantins,2022,Homens,Total,Pessoa sem deficiência,27.98
+Tocantins,2022,Homens,6 a 14 anos,Total,98.59
+Tocantins,2022,Homens,6 a 14 anos,Pessoa com deficiência,93.16
+Tocantins,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.73
+Tocantins,2022,Homens,15 a 17 anos,Total,85.79
+Tocantins,2022,Homens,15 a 17 anos,Pessoa com deficiência,79.97
+Tocantins,2022,Homens,15 a 17 anos,Pessoa sem deficiência,85.94
+Tocantins,2022,Homens,18 a 24 anos,Total,25.84
+Tocantins,2022,Homens,18 a 24 anos,Pessoa com deficiência,20.83
+Tocantins,2022,Homens,18 a 24 anos,Pessoa sem deficiência,25.99
+Tocantins,2022,Homens,25 anos ou mais,Total,4.69
+Tocantins,2022,Homens,25 anos ou mais,Pessoa com deficiência,3.33
+Tocantins,2022,Homens,25 anos ou mais,Pessoa sem deficiência,4.82
+Tocantins,2022,Mulheres,Total,Total,28.02
+Tocantins,2022,Mulheres,Total,Pessoa com deficiência,10.5
+Tocantins,2022,Mulheres,Total,Pessoa sem deficiência,29.5
+Tocantins,2022,Mulheres,6 a 14 anos,Total,98.81
+Tocantins,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,90.85
+Tocantins,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.97
+Tocantins,2022,Mulheres,15 a 17 anos,Total,86.39
+Tocantins,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,82.68
+Tocantins,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,86.51
+Tocantins,2022,Mulheres,18 a 24 anos,Total,31.7
+Tocantins,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,29.92
+Tocantins,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,31.76
+Tocantins,2022,Mulheres,25 anos ou mais,Total,6.4
+Tocantins,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,3.91
+Tocantins,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.69
+Nordeste,2022,Total,Total,Total,25.49
+Nordeste,2022,Total,Total,Pessoa com deficiência,11.26
+Nordeste,2022,Total,Total,Pessoa sem deficiência,26.9
+Nordeste,2022,Total,6 a 14 anos,Total,98.43
+Nordeste,2022,Total,6 a 14 anos,Pessoa com deficiência,92.1
+Nordeste,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.63
+Nordeste,2022,Total,15 a 17 anos,Total,85.74
+Nordeste,2022,Total,15 a 17 anos,Pessoa com deficiência,79.2
+Nordeste,2022,Total,15 a 17 anos,Pessoa sem deficiência,86.0
+Nordeste,2022,Total,18 a 24 anos,Total,26.7
+Nordeste,2022,Total,18 a 24 anos,Pessoa com deficiência,26.76
+Nordeste,2022,Total,18 a 24 anos,Pessoa sem deficiência,26.7
+Nordeste,2022,Total,25 anos ou mais,Total,5.64
+Nordeste,2022,Total,25 anos ou mais,Pessoa com deficiência,4.33
+Nordeste,2022,Total,25 anos ou mais,Pessoa sem deficiência,5.81
+Nordeste,2022,Homens,Total,Total,26.02
+Nordeste,2022,Homens,Total,Pessoa com deficiência,12.3
+Nordeste,2022,Homens,Total,Pessoa sem deficiência,27.2
+Nordeste,2022,Homens,6 a 14 anos,Total,98.32
+Nordeste,2022,Homens,6 a 14 anos,Pessoa com deficiência,91.7
+Nordeste,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.54
+Nordeste,2022,Homens,15 a 17 anos,Total,85.56
+Nordeste,2022,Homens,15 a 17 anos,Pessoa com deficiência,76.33
+Nordeste,2022,Homens,15 a 17 anos,Pessoa sem deficiência,85.92
+Nordeste,2022,Homens,18 a 24 anos,Total,25.45
+Nordeste,2022,Homens,18 a 24 anos,Pessoa com deficiência,24.84
+Nordeste,2022,Homens,18 a 24 anos,Pessoa sem deficiência,25.48
+Nordeste,2022,Homens,25 anos ou mais,Total,4.99
+Nordeste,2022,Homens,25 anos ou mais,Pessoa com deficiência,3.9
+Nordeste,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.12
+Nordeste,2022,Mulheres,Total,Total,25.01
+Nordeste,2022,Mulheres,Total,Pessoa com deficiência,10.5
+Nordeste,2022,Mulheres,Total,Pessoa sem deficiência,26.62
+Nordeste,2022,Mulheres,6 a 14 anos,Total,98.55
+Nordeste,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,92.59
+Nordeste,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.72
+Nordeste,2022,Mulheres,15 a 17 anos,Total,85.92
+Nordeste,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,81.97
+Nordeste,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,86.08
+Nordeste,2022,Mulheres,18 a 24 anos,Total,27.96
+Nordeste,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,28.48
+Nordeste,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,27.94
+Nordeste,2022,Mulheres,25 anos ou mais,Total,6.22
+Nordeste,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,4.63
+Nordeste,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.45
+Maranhão,2022,Total,Total,Total,28.35
+Maranhão,2022,Total,Total,Pessoa com deficiência,11.68
+Maranhão,2022,Total,Total,Pessoa sem deficiência,29.92
+Maranhão,2022,Total,6 a 14 anos,Total,98.44
+Maranhão,2022,Total,6 a 14 anos,Pessoa com deficiência,90.0
+Maranhão,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.67
+Maranhão,2022,Total,15 a 17 anos,Total,84.77
+Maranhão,2022,Total,15 a 17 anos,Pessoa com deficiência,77.73
+Maranhão,2022,Total,15 a 17 anos,Pessoa sem deficiência,85.01
+Maranhão,2022,Total,18 a 24 anos,Total,24.29
+Maranhão,2022,Total,18 a 24 anos,Pessoa com deficiência,25.56
+Maranhão,2022,Total,18 a 24 anos,Pessoa sem deficiência,24.24
+Maranhão,2022,Total,25 anos ou mais,Total,5.61
+Maranhão,2022,Total,25 anos ou mais,Pessoa com deficiência,4.45
+Maranhão,2022,Total,25 anos ou mais,Pessoa sem deficiência,5.76
+Maranhão,2022,Homens,Total,Total,28.54
+Maranhão,2022,Homens,Total,Pessoa com deficiência,12.14
+Maranhão,2022,Homens,Total,Pessoa sem deficiência,29.93
+Maranhão,2022,Homens,6 a 14 anos,Total,98.36
+Maranhão,2022,Homens,6 a 14 anos,Pessoa com deficiência,89.04
+Maranhão,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.62
+Maranhão,2022,Homens,15 a 17 anos,Total,84.83
+Maranhão,2022,Homens,15 a 17 anos,Pessoa com deficiência,74.92
+Maranhão,2022,Homens,15 a 17 anos,Pessoa sem deficiência,85.14
+Maranhão,2022,Homens,18 a 24 anos,Total,23.13
+Maranhão,2022,Homens,18 a 24 anos,Pessoa com deficiência,23.19
+Maranhão,2022,Homens,18 a 24 anos,Pessoa sem deficiência,23.13
+Maranhão,2022,Homens,25 anos ou mais,Total,4.76
+Maranhão,2022,Homens,25 anos ou mais,Pessoa com deficiência,4.07
+Maranhão,2022,Homens,25 anos ou mais,Pessoa sem deficiência,4.84
+Maranhão,2022,Mulheres,Total,Total,28.17
+Maranhão,2022,Mulheres,Total,Pessoa com deficiência,11.32
+Maranhão,2022,Mulheres,Total,Pessoa sem deficiência,29.92
+Maranhão,2022,Mulheres,6 a 14 anos,Total,98.53
+Maranhão,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,91.11
+Maranhão,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.72
+Maranhão,2022,Mulheres,15 a 17 anos,Total,84.71
+Maranhão,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,80.12
+Maranhão,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,84.88
+Maranhão,2022,Mulheres,18 a 24 anos,Total,25.46
+Maranhão,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,27.7
+Maranhão,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,25.37
+Maranhão,2022,Mulheres,25 anos ou mais,Total,6.39
+Maranhão,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,4.74
+Maranhão,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.63
+Piauí,2022,Total,Total,Total,26.12
+Piauí,2022,Total,Total,Pessoa com deficiência,10.1
+Piauí,2022,Total,Total,Pessoa sem deficiência,27.86
+Piauí,2022,Total,6 a 14 anos,Total,98.93
+Piauí,2022,Total,6 a 14 anos,Pessoa com deficiência,90.12
+Piauí,2022,Total,6 a 14 anos,Pessoa sem deficiência,99.18
+Piauí,2022,Total,15 a 17 anos,Total,87.89
+Piauí,2022,Total,15 a 17 anos,Pessoa com deficiência,78.85
+Piauí,2022,Total,15 a 17 anos,Pessoa sem deficiência,88.2
+Piauí,2022,Total,18 a 24 anos,Total,30.11
+Piauí,2022,Total,18 a 24 anos,Pessoa com deficiência,28.35
+Piauí,2022,Total,18 a 24 anos,Pessoa sem deficiência,30.17
+Piauí,2022,Total,25 anos ou mais,Total,5.96
+Piauí,2022,Total,25 anos ou mais,Pessoa com deficiência,4.36
+Piauí,2022,Total,25 anos ou mais,Pessoa sem deficiência,6.19
+Piauí,2022,Homens,Total,Total,26.2
+Piauí,2022,Homens,Total,Pessoa com deficiência,10.57
+Piauí,2022,Homens,Total,Pessoa sem deficiência,27.73
+Piauí,2022,Homens,6 a 14 anos,Total,98.84
+Piauí,2022,Homens,6 a 14 anos,Pessoa com deficiência,89.79
+Piauí,2022,Homens,6 a 14 anos,Pessoa sem deficiência,99.13
+Piauí,2022,Homens,15 a 17 anos,Total,87.56
+Piauí,2022,Homens,15 a 17 anos,Pessoa com deficiência,73.7
+Piauí,2022,Homens,15 a 17 anos,Pessoa sem deficiência,88.0
+Piauí,2022,Homens,18 a 24 anos,Total,27.63
+Piauí,2022,Homens,18 a 24 anos,Pessoa com deficiência,23.55
+Piauí,2022,Homens,18 a 24 anos,Pessoa sem deficiência,27.77
+Piauí,2022,Homens,25 anos ou mais,Total,5.22
+Piauí,2022,Homens,25 anos ou mais,Pessoa com deficiência,4.04
+Piauí,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.37
+Piauí,2022,Mulheres,Total,Total,26.04
+Piauí,2022,Mulheres,Total,Pessoa com deficiência,9.73
+Piauí,2022,Mulheres,Total,Pessoa sem deficiência,27.98
+Piauí,2022,Mulheres,6 a 14 anos,Total,99.02
+Piauí,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,90.54
+Piauí,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,99.24
+Piauí,2022,Mulheres,15 a 17 anos,Total,88.23
+Piauí,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,83.35
+Piauí,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,88.42
+Piauí,2022,Mulheres,18 a 24 anos,Total,32.63
+Piauí,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,32.86
+Piauí,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,32.62
+Piauí,2022,Mulheres,25 anos ou mais,Total,6.64
+Piauí,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,4.62
+Piauí,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.96
+Ceará,2022,Total,Total,Total,24.39
+Ceará,2022,Total,Total,Pessoa com deficiência,11.45
+Ceará,2022,Total,Total,Pessoa sem deficiência,25.73
+Ceará,2022,Total,6 a 14 anos,Total,98.61
+Ceará,2022,Total,6 a 14 anos,Pessoa com deficiência,93.73
+Ceará,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.78
+Ceará,2022,Total,15 a 17 anos,Total,85.91
+Ceará,2022,Total,15 a 17 anos,Pessoa com deficiência,79.37
+Ceará,2022,Total,15 a 17 anos,Pessoa sem deficiência,86.2
+Ceará,2022,Total,18 a 24 anos,Total,24.27
+Ceará,2022,Total,18 a 24 anos,Pessoa com deficiência,24.49
+Ceará,2022,Total,18 a 24 anos,Pessoa sem deficiência,24.26
+Ceará,2022,Total,25 anos ou mais,Total,5.53
+Ceará,2022,Total,25 anos ou mais,Pessoa com deficiência,4.2
+Ceará,2022,Total,25 anos ou mais,Pessoa sem deficiência,5.71
+Ceará,2022,Homens,Total,Total,24.99
+Ceará,2022,Homens,Total,Pessoa com deficiência,12.56
+Ceará,2022,Homens,Total,Pessoa sem deficiência,26.12
+Ceará,2022,Homens,6 a 14 anos,Total,98.46
+Ceará,2022,Homens,6 a 14 anos,Pessoa com deficiência,93.36
+Ceará,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.66
+Ceará,2022,Homens,15 a 17 anos,Total,85.63
+Ceará,2022,Homens,15 a 17 anos,Pessoa com deficiência,77.43
+Ceará,2022,Homens,15 a 17 anos,Pessoa sem deficiência,85.99
+Ceará,2022,Homens,18 a 24 anos,Total,22.9
+Ceará,2022,Homens,18 a 24 anos,Pessoa com deficiência,22.71
+Ceará,2022,Homens,18 a 24 anos,Pessoa sem deficiência,22.91
+Ceará,2022,Homens,25 anos ou mais,Total,5.1
+Ceará,2022,Homens,25 anos ou mais,Pessoa com deficiência,3.79
+Ceará,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.26
+Ceará,2022,Mulheres,Total,Total,23.84
+Ceará,2022,Mulheres,Total,Pessoa com deficiência,10.61
+Ceará,2022,Mulheres,Total,Pessoa sem deficiência,25.35
+Ceará,2022,Mulheres,6 a 14 anos,Total,98.77
+Ceará,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,94.19
+Ceará,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.91
+Ceará,2022,Mulheres,15 a 17 anos,Total,86.19
+Ceará,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,81.22
+Ceará,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,86.42
+Ceará,2022,Mulheres,18 a 24 anos,Total,25.65
+Ceará,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,26.11
+Ceará,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,25.63
+Ceará,2022,Mulheres,25 anos ou mais,Total,5.91
+Ceará,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,4.5
+Ceará,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.12
+Rio Grande do Norte,2022,Total,Total,Total,25.47
+Rio Grande do Norte,2022,Total,Total,Pessoa com deficiência,11.43
+Rio Grande do Norte,2022,Total,Total,Pessoa sem deficiência,26.9
+Rio Grande do Norte,2022,Total,6 a 14 anos,Total,98.5
+Rio Grande do Norte,2022,Total,6 a 14 anos,Pessoa com deficiência,92.58
+Rio Grande do Norte,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.68
+Rio Grande do Norte,2022,Total,15 a 17 anos,Total,87.49
+Rio Grande do Norte,2022,Total,15 a 17 anos,Pessoa com deficiência,78.73
+Rio Grande do Norte,2022,Total,15 a 17 anos,Pessoa sem deficiência,87.86
+Rio Grande do Norte,2022,Total,18 a 24 anos,Total,32.1
+Rio Grande do Norte,2022,Total,18 a 24 anos,Pessoa com deficiência,31.36
+Rio Grande do Norte,2022,Total,18 a 24 anos,Pessoa sem deficiência,32.13
+Rio Grande do Norte,2022,Total,25 anos ou mais,Total,6.2
+Rio Grande do Norte,2022,Total,25 anos ou mais,Pessoa com deficiência,4.61
+Rio Grande do Norte,2022,Total,25 anos ou mais,Pessoa sem deficiência,6.41
+Rio Grande do Norte,2022,Homens,Total,Total,26.0
+Rio Grande do Norte,2022,Homens,Total,Pessoa com deficiência,12.48
+Rio Grande do Norte,2022,Homens,Total,Pessoa sem deficiência,27.22
+Rio Grande do Norte,2022,Homens,6 a 14 anos,Total,98.4
+Rio Grande do Norte,2022,Homens,6 a 14 anos,Pessoa com deficiência,91.72
+Rio Grande do Norte,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.63
+Rio Grande do Norte,2022,Homens,15 a 17 anos,Total,87.17
+Rio Grande do Norte,2022,Homens,15 a 17 anos,Pessoa com deficiência,76.72
+Rio Grande do Norte,2022,Homens,15 a 17 anos,Pessoa sem deficiência,87.6
+Rio Grande do Norte,2022,Homens,18 a 24 anos,Total,30.83
+Rio Grande do Norte,2022,Homens,18 a 24 anos,Pessoa com deficiência,30.42
+Rio Grande do Norte,2022,Homens,18 a 24 anos,Pessoa sem deficiência,30.85
+Rio Grande do Norte,2022,Homens,25 anos ou mais,Total,5.63
+Rio Grande do Norte,2022,Homens,25 anos ou mais,Pessoa com deficiência,4.13
+Rio Grande do Norte,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.8
+Rio Grande do Norte,2022,Mulheres,Total,Total,24.99
+Rio Grande do Norte,2022,Mulheres,Total,Pessoa com deficiência,10.64
+Rio Grande do Norte,2022,Mulheres,Total,Pessoa sem deficiência,26.61
+Rio Grande do Norte,2022,Mulheres,6 a 14 anos,Total,98.61
+Rio Grande do Norte,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,93.71
+Rio Grande do Norte,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.74
+Rio Grande do Norte,2022,Mulheres,15 a 17 anos,Total,87.81
+Rio Grande do Norte,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,80.66
+Rio Grande do Norte,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,88.13
+Rio Grande do Norte,2022,Mulheres,18 a 24 anos,Total,33.4
+Rio Grande do Norte,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,32.23
+Rio Grande do Norte,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,33.45
+Rio Grande do Norte,2022,Mulheres,25 anos ou mais,Total,6.7
+Rio Grande do Norte,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,4.96
+Rio Grande do Norte,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.96
+Paraíba,2022,Total,Total,Total,25.23
+Paraíba,2022,Total,Total,Pessoa com deficiência,10.77
+Paraíba,2022,Total,Total,Pessoa sem deficiência,26.67
+Paraíba,2022,Total,6 a 14 anos,Total,98.51
+Paraíba,2022,Total,6 a 14 anos,Pessoa com deficiência,91.88
+Paraíba,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.7
+Paraíba,2022,Total,15 a 17 anos,Total,85.35
+Paraíba,2022,Total,15 a 17 anos,Pessoa com deficiência,80.09
+Paraíba,2022,Total,15 a 17 anos,Pessoa sem deficiência,85.54
+Paraíba,2022,Total,18 a 24 anos,Total,29.07
+Paraíba,2022,Total,18 a 24 anos,Pessoa com deficiência,29.09
+Paraíba,2022,Total,18 a 24 anos,Pessoa sem deficiência,29.07
+Paraíba,2022,Total,25 anos ou mais,Total,5.7
+Paraíba,2022,Total,25 anos ou mais,Pessoa com deficiência,4.2
+Paraíba,2022,Total,25 anos ou mais,Pessoa sem deficiência,5.9
+Paraíba,2022,Homens,Total,Total,25.86
+Paraíba,2022,Homens,Total,Pessoa com deficiência,11.76
+Paraíba,2022,Homens,Total,Pessoa sem deficiência,27.07
+Paraíba,2022,Homens,6 a 14 anos,Total,98.36
+Paraíba,2022,Homens,6 a 14 anos,Pessoa com deficiência,91.4
+Paraíba,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.59
+Paraíba,2022,Homens,15 a 17 anos,Total,85.3
+Paraíba,2022,Homens,15 a 17 anos,Pessoa com deficiência,77.94
+Paraíba,2022,Homens,15 a 17 anos,Pessoa sem deficiência,85.58
+Paraíba,2022,Homens,18 a 24 anos,Total,27.85
+Paraíba,2022,Homens,18 a 24 anos,Pessoa com deficiência,24.92
+Paraíba,2022,Homens,18 a 24 anos,Pessoa sem deficiência,27.96
+Paraíba,2022,Homens,25 anos ou mais,Total,5.04
+Paraíba,2022,Homens,25 anos ou mais,Pessoa com deficiência,3.57
+Paraíba,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.2
+Paraíba,2022,Mulheres,Total,Total,24.65
+Paraíba,2022,Mulheres,Total,Pessoa com deficiência,10.03
+Paraíba,2022,Mulheres,Total,Pessoa sem deficiência,26.28
+Paraíba,2022,Mulheres,6 a 14 anos,Total,98.66
+Paraíba,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,92.51
+Paraíba,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.81
+Paraíba,2022,Mulheres,15 a 17 anos,Total,85.39
+Paraíba,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,82.36
+Paraíba,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,85.51
+Paraíba,2022,Mulheres,18 a 24 anos,Total,30.31
+Paraíba,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,32.84
+Paraíba,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,30.2
+Paraíba,2022,Mulheres,25 anos ou mais,Total,6.28
+Paraíba,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,4.63
+Paraíba,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.52
+Pernambuco,2022,Total,Total,Total,24.91
+Pernambuco,2022,Total,Total,Pessoa com deficiência,11.5
+Pernambuco,2022,Total,Total,Pessoa sem deficiência,26.29
+Pernambuco,2022,Total,6 a 14 anos,Total,98.18
+Pernambuco,2022,Total,6 a 14 anos,Pessoa com deficiência,92.76
+Pernambuco,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.37
+Pernambuco,2022,Total,15 a 17 anos,Total,84.75
+Pernambuco,2022,Total,15 a 17 anos,Pessoa com deficiência,80.46
+Pernambuco,2022,Total,15 a 17 anos,Pessoa sem deficiência,84.94
+Pernambuco,2022,Total,18 a 24 anos,Total,25.32
+Pernambuco,2022,Total,18 a 24 anos,Pessoa com deficiência,25.59
+Pernambuco,2022,Total,18 a 24 anos,Pessoa sem deficiência,25.31
+Pernambuco,2022,Total,25 anos ou mais,Total,5.52
+Pernambuco,2022,Total,25 anos ou mais,Pessoa com deficiência,4.3
+Pernambuco,2022,Total,25 anos ou mais,Pessoa sem deficiência,5.69
+Pernambuco,2022,Homens,Total,Total,25.81
+Pernambuco,2022,Homens,Total,Pessoa com deficiência,13.19
+Pernambuco,2022,Homens,Total,Pessoa sem deficiência,26.91
+Pernambuco,2022,Homens,6 a 14 anos,Total,98.07
+Pernambuco,2022,Homens,6 a 14 anos,Pessoa com deficiência,92.8
+Pernambuco,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.26
+Pernambuco,2022,Homens,15 a 17 anos,Total,84.67
+Pernambuco,2022,Homens,15 a 17 anos,Pessoa com deficiência,77.89
+Pernambuco,2022,Homens,15 a 17 anos,Pessoa sem deficiência,84.96
+Pernambuco,2022,Homens,18 a 24 anos,Total,24.13
+Pernambuco,2022,Homens,18 a 24 anos,Pessoa com deficiência,24.37
+Pernambuco,2022,Homens,18 a 24 anos,Pessoa sem deficiência,24.12
+Pernambuco,2022,Homens,25 anos ou mais,Total,5.01
+Pernambuco,2022,Homens,25 anos ou mais,Pessoa com deficiência,4.08
+Pernambuco,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.11
+Pernambuco,2022,Mulheres,Total,Total,24.09
+Pernambuco,2022,Mulheres,Total,Pessoa com deficiência,10.34
+Pernambuco,2022,Mulheres,Total,Pessoa sem deficiência,25.71
+Pernambuco,2022,Mulheres,6 a 14 anos,Total,98.3
+Pernambuco,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,92.72
+Pernambuco,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.48
+Pernambuco,2022,Mulheres,15 a 17 anos,Total,84.83
+Pernambuco,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,83.02
+Pernambuco,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,84.91
+Pernambuco,2022,Mulheres,18 a 24 anos,Total,26.52
+Pernambuco,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,26.68
+Pernambuco,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,26.51
+Pernambuco,2022,Mulheres,25 anos ou mais,Total,5.96
+Pernambuco,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,4.44
+Pernambuco,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.19
+Alagoas,2022,Total,Total,Total,27.69
+Alagoas,2022,Total,Total,Pessoa com deficiência,12.63
+Alagoas,2022,Total,Total,Pessoa sem deficiência,29.38
+Alagoas,2022,Total,6 a 14 anos,Total,97.92
+Alagoas,2022,Total,6 a 14 anos,Pessoa com deficiência,90.35
+Alagoas,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.18
+Alagoas,2022,Total,15 a 17 anos,Total,85.12
+Alagoas,2022,Total,15 a 17 anos,Pessoa com deficiência,77.64
+Alagoas,2022,Total,15 a 17 anos,Pessoa sem deficiência,85.46
+Alagoas,2022,Total,18 a 24 anos,Total,26.83
+Alagoas,2022,Total,18 a 24 anos,Pessoa com deficiência,26.44
+Alagoas,2022,Total,18 a 24 anos,Pessoa sem deficiência,26.85
+Alagoas,2022,Total,25 anos ou mais,Total,6.94
+Alagoas,2022,Total,25 anos ou mais,Pessoa com deficiência,5.63
+Alagoas,2022,Total,25 anos ou mais,Pessoa sem deficiência,7.14
+Alagoas,2022,Homens,Total,Total,28.1
+Alagoas,2022,Homens,Total,Pessoa com deficiência,13.34
+Alagoas,2022,Homens,Total,Pessoa sem deficiência,29.5
+Alagoas,2022,Homens,6 a 14 anos,Total,97.91
+Alagoas,2022,Homens,6 a 14 anos,Pessoa com deficiência,88.79
+Alagoas,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.24
+Alagoas,2022,Homens,15 a 17 anos,Total,85.29
+Alagoas,2022,Homens,15 a 17 anos,Pessoa com deficiência,76.14
+Alagoas,2022,Homens,15 a 17 anos,Pessoa sem deficiência,85.71
+Alagoas,2022,Homens,18 a 24 anos,Total,25.35
+Alagoas,2022,Homens,18 a 24 anos,Pessoa com deficiência,22.63
+Alagoas,2022,Homens,18 a 24 anos,Pessoa sem deficiência,25.46
+Alagoas,2022,Homens,25 anos ou mais,Total,5.79
+Alagoas,2022,Homens,25 anos ou mais,Pessoa com deficiência,4.44
+Alagoas,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.96
+Alagoas,2022,Mulheres,Total,Total,27.32
+Alagoas,2022,Mulheres,Total,Pessoa com deficiência,12.13
+Alagoas,2022,Mulheres,Total,Pessoa sem deficiência,29.27
+Alagoas,2022,Mulheres,6 a 14 anos,Total,97.93
+Alagoas,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,92.25
+Alagoas,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.11
+Alagoas,2022,Mulheres,15 a 17 anos,Total,84.95
+Alagoas,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,79.32
+Alagoas,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,85.19
+Alagoas,2022,Mulheres,18 a 24 anos,Total,28.29
+Alagoas,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,29.65
+Alagoas,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,28.23
+Alagoas,2022,Mulheres,25 anos ou mais,Total,7.93
+Alagoas,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,6.4
+Alagoas,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,8.2
+Sergipe,2022,Total,Total,Total,25.8
+Sergipe,2022,Total,Total,Pessoa com deficiência,10.48
+Sergipe,2022,Total,Total,Pessoa sem deficiência,27.32
+Sergipe,2022,Total,6 a 14 anos,Total,98.55
+Sergipe,2022,Total,6 a 14 anos,Pessoa com deficiência,92.64
+Sergipe,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.74
+Sergipe,2022,Total,15 a 17 anos,Total,88.22
+Sergipe,2022,Total,15 a 17 anos,Pessoa com deficiência,81.09
+Sergipe,2022,Total,15 a 17 anos,Pessoa sem deficiência,88.48
+Sergipe,2022,Total,18 a 24 anos,Total,29.62
+Sergipe,2022,Total,18 a 24 anos,Pessoa com deficiência,26.99
+Sergipe,2022,Total,18 a 24 anos,Pessoa sem deficiência,29.73
+Sergipe,2022,Total,25 anos ou mais,Total,5.06
+Sergipe,2022,Total,25 anos ou mais,Pessoa com deficiência,3.31
+Sergipe,2022,Total,25 anos ou mais,Pessoa sem deficiência,5.29
+Sergipe,2022,Homens,Total,Total,26.69
+Sergipe,2022,Homens,Total,Pessoa com deficiência,12.04
+Sergipe,2022,Homens,Total,Pessoa sem deficiência,27.92
+Sergipe,2022,Homens,6 a 14 anos,Total,98.49
+Sergipe,2022,Homens,6 a 14 anos,Pessoa com deficiência,93.48
+Sergipe,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.66
+Sergipe,2022,Homens,15 a 17 anos,Total,87.95
+Sergipe,2022,Homens,15 a 17 anos,Pessoa com deficiência,75.79
+Sergipe,2022,Homens,15 a 17 anos,Pessoa sem deficiência,88.41
+Sergipe,2022,Homens,18 a 24 anos,Total,28.28
+Sergipe,2022,Homens,18 a 24 anos,Pessoa com deficiência,27.48
+Sergipe,2022,Homens,18 a 24 anos,Pessoa sem deficiência,28.31
+Sergipe,2022,Homens,25 anos ou mais,Total,4.63
+Sergipe,2022,Homens,25 anos ou mais,Pessoa com deficiência,2.91
+Sergipe,2022,Homens,25 anos ou mais,Pessoa sem deficiência,4.82
+Sergipe,2022,Mulheres,Total,Total,24.99
+Sergipe,2022,Mulheres,Total,Pessoa com deficiência,9.4
+Sergipe,2022,Mulheres,Total,Pessoa sem deficiência,26.77
+Sergipe,2022,Mulheres,6 a 14 anos,Total,98.62
+Sergipe,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,91.71
+Sergipe,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.83
+Sergipe,2022,Mulheres,15 a 17 anos,Total,88.48
+Sergipe,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,86.72
+Sergipe,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,88.55
+Sergipe,2022,Mulheres,18 a 24 anos,Total,30.96
+Sergipe,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,26.5
+Sergipe,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,31.14
+Sergipe,2022,Mulheres,25 anos ou mais,Total,5.42
+Sergipe,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,3.57
+Sergipe,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,5.7
+Bahia,2022,Total,Total,Total,24.61
+Bahia,2022,Total,Total,Pessoa com deficiência,10.95
+Bahia,2022,Total,Total,Pessoa sem deficiência,25.84
+Bahia,2022,Total,6 a 14 anos,Total,98.43
+Bahia,2022,Total,6 a 14 anos,Pessoa com deficiência,92.31
+Bahia,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.6
+Bahia,2022,Total,15 a 17 anos,Total,85.77
+Bahia,2022,Total,15 a 17 anos,Pessoa com deficiência,79.05
+Bahia,2022,Total,15 a 17 anos,Pessoa sem deficiência,86.01
+Bahia,2022,Total,18 a 24 anos,Total,27.22
+Bahia,2022,Total,18 a 24 anos,Pessoa com deficiência,27.73
+Bahia,2022,Total,18 a 24 anos,Pessoa sem deficiência,27.2
+Bahia,2022,Total,25 anos ou mais,Total,5.41
+Bahia,2022,Total,25 anos ou mais,Pessoa com deficiência,4.15
+Bahia,2022,Total,25 anos ou mais,Pessoa sem deficiência,5.55
+Bahia,2022,Homens,Total,Total,25.03
+Bahia,2022,Homens,Total,Pessoa com deficiência,11.95
+Bahia,2022,Homens,Total,Pessoa sem deficiência,26.06
+Bahia,2022,Homens,6 a 14 anos,Total,98.27
+Bahia,2022,Homens,6 a 14 anos,Pessoa com deficiência,92.06
+Bahia,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.46
+Bahia,2022,Homens,15 a 17 anos,Total,85.42
+Bahia,2022,Homens,15 a 17 anos,Pessoa com deficiência,75.2
+Bahia,2022,Homens,15 a 17 anos,Pessoa sem deficiência,85.79
+Bahia,2022,Homens,18 a 24 anos,Total,26.3
+Bahia,2022,Homens,18 a 24 anos,Pessoa com deficiência,26.55
+Bahia,2022,Homens,18 a 24 anos,Pessoa sem deficiência,26.29
+Bahia,2022,Homens,25 anos ou mais,Total,4.7
+Bahia,2022,Homens,25 anos ou mais,Pessoa com deficiência,3.8
+Bahia,2022,Homens,25 anos ou mais,Pessoa sem deficiência,4.79
+Bahia,2022,Mulheres,Total,Total,24.22
+Bahia,2022,Mulheres,Total,Pessoa com deficiência,10.21
+Bahia,2022,Mulheres,Total,Pessoa sem deficiência,25.64
+Bahia,2022,Mulheres,6 a 14 anos,Total,98.59
+Bahia,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,92.61
+Bahia,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.75
+Bahia,2022,Mulheres,15 a 17 anos,Total,86.12
+Bahia,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,82.71
+Bahia,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,86.25
+Bahia,2022,Mulheres,18 a 24 anos,Total,28.13
+Bahia,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,28.77
+Bahia,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,28.11
+Bahia,2022,Mulheres,25 anos ou mais,Total,6.03
+Bahia,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,4.4
+Bahia,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.24
+Sudeste,2022,Total,Total,Total,22.67
+Sudeste,2022,Total,Total,Pessoa com deficiência,10.76
+Sudeste,2022,Total,Total,Pessoa sem deficiência,23.58
+Sudeste,2022,Total,6 a 14 anos,Total,98.44
+Sudeste,2022,Total,6 a 14 anos,Pessoa com deficiência,93.44
+Sudeste,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.56
+Sudeste,2022,Total,15 a 17 anos,Total,85.44
+Sudeste,2022,Total,15 a 17 anos,Pessoa com deficiência,79.9
+Sudeste,2022,Total,15 a 17 anos,Pessoa sem deficiência,85.62
+Sudeste,2022,Total,18 a 24 anos,Total,27.11
+Sudeste,2022,Total,18 a 24 anos,Pessoa com deficiência,26.45
+Sudeste,2022,Total,18 a 24 anos,Pessoa sem deficiência,27.14
+Sudeste,2022,Total,25 anos ou mais,Total,6.07
+Sudeste,2022,Total,25 anos ou mais,Pessoa com deficiência,4.87
+Sudeste,2022,Total,25 anos ou mais,Pessoa sem deficiência,6.18
+Sudeste,2022,Homens,Total,Total,23.19
+Sudeste,2022,Homens,Total,Pessoa com deficiência,12.11
+Sudeste,2022,Homens,Total,Pessoa sem deficiência,23.91
+Sudeste,2022,Homens,6 a 14 anos,Total,98.38
+Sudeste,2022,Homens,6 a 14 anos,Pessoa com deficiência,93.17
+Sudeste,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.51
+Sudeste,2022,Homens,15 a 17 anos,Total,85.08
+Sudeste,2022,Homens,15 a 17 anos,Pessoa com deficiência,78.79
+Sudeste,2022,Homens,15 a 17 anos,Pessoa sem deficiência,85.27
+Sudeste,2022,Homens,18 a 24 anos,Total,24.97
+Sudeste,2022,Homens,18 a 24 anos,Pessoa com deficiência,24.95
+Sudeste,2022,Homens,18 a 24 anos,Pessoa sem deficiência,24.97
+Sudeste,2022,Homens,25 anos ou mais,Total,5.69
+Sudeste,2022,Homens,25 anos ou mais,Pessoa com deficiência,4.76
+Sudeste,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.77
+Sudeste,2022,Mulheres,Total,Total,22.19
+Sudeste,2022,Mulheres,Total,Pessoa com deficiência,9.8
+Sudeste,2022,Mulheres,Total,Pessoa sem deficiência,23.27
+Sudeste,2022,Mulheres,6 a 14 anos,Total,98.51
+Sudeste,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,93.78
+Sudeste,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.62
+Sudeste,2022,Mulheres,15 a 17 anos,Total,85.82
+Sudeste,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,80.98
+Sudeste,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,85.98
+Sudeste,2022,Mulheres,18 a 24 anos,Total,29.31
+Sudeste,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,27.81
+Sudeste,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,29.36
+Sudeste,2022,Mulheres,25 anos ou mais,Total,6.4
+Sudeste,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,4.94
+Sudeste,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.56
+Minas Gerais,2022,Total,Total,Total,22.22
+Minas Gerais,2022,Total,Total,Pessoa com deficiência,9.48
+Minas Gerais,2022,Total,Total,Pessoa sem deficiência,23.27
+Minas Gerais,2022,Total,6 a 14 anos,Total,98.83
+Minas Gerais,2022,Total,6 a 14 anos,Pessoa com deficiência,94.13
+Minas Gerais,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.95
+Minas Gerais,2022,Total,15 a 17 anos,Total,86.08
+Minas Gerais,2022,Total,15 a 17 anos,Pessoa com deficiência,79.51
+Minas Gerais,2022,Total,15 a 17 anos,Pessoa sem deficiência,86.29
+Minas Gerais,2022,Total,18 a 24 anos,Total,26.42
+Minas Gerais,2022,Total,18 a 24 anos,Pessoa com deficiência,26.08
+Minas Gerais,2022,Total,18 a 24 anos,Pessoa sem deficiência,26.43
+Minas Gerais,2022,Total,25 anos ou mais,Total,5.34
+Minas Gerais,2022,Total,25 anos ou mais,Pessoa com deficiência,3.87
+Minas Gerais,2022,Total,25 anos ou mais,Pessoa sem deficiência,5.49
+Minas Gerais,2022,Homens,Total,Total,22.33
+Minas Gerais,2022,Homens,Total,Pessoa com deficiência,10.68
+Minas Gerais,2022,Homens,Total,Pessoa sem deficiência,23.16
+Minas Gerais,2022,Homens,6 a 14 anos,Total,98.74
+Minas Gerais,2022,Homens,6 a 14 anos,Pessoa com deficiência,94.04
+Minas Gerais,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.87
+Minas Gerais,2022,Homens,15 a 17 anos,Total,85.26
+Minas Gerais,2022,Homens,15 a 17 anos,Pessoa com deficiência,78.78
+Minas Gerais,2022,Homens,15 a 17 anos,Pessoa sem deficiência,85.46
+Minas Gerais,2022,Homens,18 a 24 anos,Total,23.97
+Minas Gerais,2022,Homens,18 a 24 anos,Pessoa com deficiência,24.83
+Minas Gerais,2022,Homens,18 a 24 anos,Pessoa sem deficiência,23.94
+Minas Gerais,2022,Homens,25 anos ou mais,Total,4.82
+Minas Gerais,2022,Homens,25 anos ou mais,Pessoa com deficiência,3.79
+Minas Gerais,2022,Homens,25 anos ou mais,Pessoa sem deficiência,4.91
+Minas Gerais,2022,Mulheres,Total,Total,22.12
+Minas Gerais,2022,Mulheres,Total,Pessoa com deficiência,8.59
+Minas Gerais,2022,Mulheres,Total,Pessoa sem deficiência,23.38
+Minas Gerais,2022,Mulheres,6 a 14 anos,Total,98.93
+Minas Gerais,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,94.24
+Minas Gerais,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,99.03
+Minas Gerais,2022,Mulheres,15 a 17 anos,Total,86.93
+Minas Gerais,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,80.22
+Minas Gerais,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,87.14
+Minas Gerais,2022,Mulheres,18 a 24 anos,Total,28.91
+Minas Gerais,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,27.24
+Minas Gerais,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,28.97
+Minas Gerais,2022,Mulheres,25 anos ou mais,Total,5.81
+Minas Gerais,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,3.93
+Minas Gerais,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.03
+Espírito Santo,2022,Total,Total,Total,23.05
+Espírito Santo,2022,Total,Total,Pessoa com deficiência,10.08
+Espírito Santo,2022,Total,Total,Pessoa sem deficiência,24.1
+Espírito Santo,2022,Total,6 a 14 anos,Total,98.49
+Espírito Santo,2022,Total,6 a 14 anos,Pessoa com deficiência,92.86
+Espírito Santo,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.63
+Espírito Santo,2022,Total,15 a 17 anos,Total,83.55
+Espírito Santo,2022,Total,15 a 17 anos,Pessoa com deficiência,78.68
+Espírito Santo,2022,Total,15 a 17 anos,Pessoa sem deficiência,83.7
+Espírito Santo,2022,Total,18 a 24 anos,Total,28.19
+Espírito Santo,2022,Total,18 a 24 anos,Pessoa com deficiência,28.71
+Espírito Santo,2022,Total,18 a 24 anos,Pessoa sem deficiência,28.17
+Espírito Santo,2022,Total,25 anos ou mais,Total,5.36
+Espírito Santo,2022,Total,25 anos ou mais,Pessoa com deficiência,3.97
+Espírito Santo,2022,Total,25 anos ou mais,Pessoa sem deficiência,5.51
+Espírito Santo,2022,Homens,Total,Total,23.38
+Espírito Santo,2022,Homens,Total,Pessoa com deficiência,11.54
+Espírito Santo,2022,Homens,Total,Pessoa sem deficiência,24.22
+Espírito Santo,2022,Homens,6 a 14 anos,Total,98.37
+Espírito Santo,2022,Homens,6 a 14 anos,Pessoa com deficiência,92.44
+Espírito Santo,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.54
+Espírito Santo,2022,Homens,15 a 17 anos,Total,82.81
+Espírito Santo,2022,Homens,15 a 17 anos,Pessoa com deficiência,76.91
+Espírito Santo,2022,Homens,15 a 17 anos,Pessoa sem deficiência,82.99
+Espírito Santo,2022,Homens,18 a 24 anos,Total,25.51
+Espírito Santo,2022,Homens,18 a 24 anos,Pessoa com deficiência,26.19
+Espírito Santo,2022,Homens,18 a 24 anos,Pessoa sem deficiência,25.49
+Espírito Santo,2022,Homens,25 anos ou mais,Total,5.12
+Espírito Santo,2022,Homens,25 anos ou mais,Pessoa com deficiência,3.92
+Espírito Santo,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.22
+Espírito Santo,2022,Mulheres,Total,Total,22.74
+Espírito Santo,2022,Mulheres,Total,Pessoa com deficiência,8.97
+Espírito Santo,2022,Mulheres,Total,Pessoa sem deficiência,23.99
+Espírito Santo,2022,Mulheres,6 a 14 anos,Total,98.61
+Espírito Santo,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,93.47
+Espírito Santo,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.72
+Espírito Santo,2022,Mulheres,15 a 17 anos,Total,84.32
+Espírito Santo,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,80.46
+Espírito Santo,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,84.44
+Espírito Santo,2022,Mulheres,18 a 24 anos,Total,30.91
+Espírito Santo,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,31.13
+Espírito Santo,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,30.9
+Espírito Santo,2022,Mulheres,25 anos ou mais,Total,5.59
+Espírito Santo,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,4.0
+Espírito Santo,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,5.77
+Rio de Janeiro,2022,Total,Total,Total,23.34
+Rio de Janeiro,2022,Total,Total,Pessoa com deficiência,11.49
+Rio de Janeiro,2022,Total,Total,Pessoa sem deficiência,24.32
+Rio de Janeiro,2022,Total,6 a 14 anos,Total,98.25
+Rio de Janeiro,2022,Total,6 a 14 anos,Pessoa com deficiência,93.05
+Rio de Janeiro,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.38
+Rio de Janeiro,2022,Total,15 a 17 anos,Total,86.33
+Rio de Janeiro,2022,Total,15 a 17 anos,Pessoa com deficiência,81.97
+Rio de Janeiro,2022,Total,15 a 17 anos,Pessoa sem deficiência,86.47
+Rio de Janeiro,2022,Total,18 a 24 anos,Total,30.01
+Rio de Janeiro,2022,Total,18 a 24 anos,Pessoa com deficiência,30.93
+Rio de Janeiro,2022,Total,18 a 24 anos,Pessoa sem deficiência,29.98
+Rio de Janeiro,2022,Total,25 anos ou mais,Total,6.86
+Rio de Janeiro,2022,Total,25 anos ou mais,Pessoa com deficiência,5.64
+Rio de Janeiro,2022,Total,25 anos ou mais,Pessoa sem deficiência,6.99
+Rio de Janeiro,2022,Homens,Total,Total,24.3
+Rio de Janeiro,2022,Homens,Total,Pessoa com deficiência,13.21
+Rio de Janeiro,2022,Homens,Total,Pessoa sem deficiência,25.06
+Rio de Janeiro,2022,Homens,6 a 14 anos,Total,98.15
+Rio de Janeiro,2022,Homens,6 a 14 anos,Pessoa com deficiência,92.85
+Rio de Janeiro,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.3
+Rio de Janeiro,2022,Homens,15 a 17 anos,Total,86.44
+Rio de Janeiro,2022,Homens,15 a 17 anos,Pessoa com deficiência,81.66
+Rio de Janeiro,2022,Homens,15 a 17 anos,Pessoa sem deficiência,86.59
+Rio de Janeiro,2022,Homens,18 a 24 anos,Total,28.38
+Rio de Janeiro,2022,Homens,18 a 24 anos,Pessoa com deficiência,29.92
+Rio de Janeiro,2022,Homens,18 a 24 anos,Pessoa sem deficiência,28.32
+Rio de Janeiro,2022,Homens,25 anos ou mais,Total,6.54
+Rio de Janeiro,2022,Homens,25 anos ou mais,Pessoa com deficiência,5.43
+Rio de Janeiro,2022,Homens,25 anos ou mais,Pessoa sem deficiência,6.64
+Rio de Janeiro,2022,Mulheres,Total,Total,22.49
+Rio de Janeiro,2022,Mulheres,Total,Pessoa com deficiência,10.38
+Rio de Janeiro,2022,Mulheres,Total,Pessoa sem deficiência,23.66
+Rio de Janeiro,2022,Mulheres,6 a 14 anos,Total,98.35
+Rio de Janeiro,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,93.3
+Rio de Janeiro,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.46
+Rio de Janeiro,2022,Mulheres,15 a 17 anos,Total,86.21
+Rio de Janeiro,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,82.26
+Rio de Janeiro,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,86.34
+Rio de Janeiro,2022,Mulheres,18 a 24 anos,Total,31.64
+Rio de Janeiro,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,31.79
+Rio de Janeiro,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,31.64
+Rio de Janeiro,2022,Mulheres,25 anos ou mais,Total,7.13
+Rio de Janeiro,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,5.77
+Rio de Janeiro,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,7.29
+São Paulo,2022,Total,Total,Total,22.6
+São Paulo,2022,Total,Total,Pessoa com deficiência,11.2
+São Paulo,2022,Total,Total,Pessoa sem deficiência,23.41
+São Paulo,2022,Total,6 a 14 anos,Total,98.33
+São Paulo,2022,Total,6 a 14 anos,Pessoa com deficiência,93.33
+São Paulo,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.45
+São Paulo,2022,Total,15 a 17 anos,Total,85.0
+São Paulo,2022,Total,15 a 17 anos,Pessoa com deficiência,79.42
+São Paulo,2022,Total,15 a 17 anos,Pessoa sem deficiência,85.17
+São Paulo,2022,Total,18 a 24 anos,Total,26.31
+São Paulo,2022,Total,18 a 24 anos,Pessoa com deficiência,24.66
+São Paulo,2022,Total,18 a 24 anos,Pessoa sem deficiência,26.37
+São Paulo,2022,Total,25 anos ou mais,Total,6.18
+São Paulo,2022,Total,25 anos ou mais,Pessoa com deficiência,5.16
+São Paulo,2022,Total,25 anos ou mais,Pessoa sem deficiência,6.26
+São Paulo,2022,Homens,Total,Total,23.18
+São Paulo,2022,Homens,Total,Pessoa com deficiência,12.52
+São Paulo,2022,Homens,Total,Pessoa sem deficiência,23.83
+São Paulo,2022,Homens,6 a 14 anos,Total,98.3
+São Paulo,2022,Homens,6 a 14 anos,Pessoa com deficiência,92.95
+São Paulo,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.43
+São Paulo,2022,Homens,15 a 17 anos,Total,84.72
+São Paulo,2022,Homens,15 a 17 anos,Pessoa com deficiência,77.9
+São Paulo,2022,Homens,15 a 17 anos,Pessoa sem deficiência,84.92
+São Paulo,2022,Homens,18 a 24 anos,Total,24.19
+São Paulo,2022,Homens,18 a 24 anos,Pessoa com deficiência,23.04
+São Paulo,2022,Homens,18 a 24 anos,Pessoa sem deficiência,24.22
+São Paulo,2022,Homens,25 anos ou mais,Total,5.85
+São Paulo,2022,Homens,25 anos ou mais,Pessoa com deficiência,5.12
+São Paulo,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.91
+São Paulo,2022,Mulheres,Total,Total,22.07
+São Paulo,2022,Mulheres,Total,Pessoa com deficiência,10.26
+São Paulo,2022,Mulheres,Total,Pessoa sem deficiência,23.01
+São Paulo,2022,Mulheres,6 a 14 anos,Total,98.37
+São Paulo,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,93.78
+São Paulo,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.47
+São Paulo,2022,Mulheres,15 a 17 anos,Total,85.3
+São Paulo,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,80.91
+São Paulo,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,85.43
+São Paulo,2022,Mulheres,18 a 24 anos,Total,28.51
+São Paulo,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,26.17
+São Paulo,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,28.59
+São Paulo,2022,Mulheres,25 anos ou mais,Total,6.46
+São Paulo,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,5.19
+São Paulo,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.58
+Sul,2022,Total,Total,Total,22.97
+Sul,2022,Total,Total,Pessoa com deficiência,9.64
+Sul,2022,Total,Total,Pessoa sem deficiência,23.95
+Sul,2022,Total,6 a 14 anos,Total,98.52
+Sul,2022,Total,6 a 14 anos,Pessoa com deficiência,92.9
+Sul,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.65
+Sul,2022,Total,15 a 17 anos,Total,85.77
+Sul,2022,Total,15 a 17 anos,Pessoa com deficiência,79.03
+Sul,2022,Total,15 a 17 anos,Pessoa sem deficiência,85.95
+Sul,2022,Total,18 a 24 anos,Total,29.79
+Sul,2022,Total,18 a 24 anos,Pessoa com deficiência,27.61
+Sul,2022,Total,18 a 24 anos,Pessoa sem deficiência,29.85
+Sul,2022,Total,25 anos ou mais,Total,5.91
+Sul,2022,Total,25 anos ou mais,Pessoa com deficiência,3.98
+Sul,2022,Total,25 anos ou mais,Pessoa sem deficiência,6.09
+Sul,2022,Homens,Total,Total,23.1
+Sul,2022,Homens,Total,Pessoa com deficiência,10.7
+Sul,2022,Homens,Total,Pessoa sem deficiência,23.91
+Sul,2022,Homens,6 a 14 anos,Total,98.47
+Sul,2022,Homens,6 a 14 anos,Pessoa com deficiência,92.34
+Sul,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.61
+Sul,2022,Homens,15 a 17 anos,Total,85.22
+Sul,2022,Homens,15 a 17 anos,Pessoa com deficiência,77.2
+Sul,2022,Homens,15 a 17 anos,Pessoa sem deficiência,85.43
+Sul,2022,Homens,18 a 24 anos,Total,26.58
+Sul,2022,Homens,18 a 24 anos,Pessoa com deficiência,25.87
+Sul,2022,Homens,18 a 24 anos,Pessoa sem deficiência,26.6
+Sul,2022,Homens,25 anos ou mais,Total,5.43
+Sul,2022,Homens,25 anos ou mais,Pessoa com deficiência,3.91
+Sul,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.55
+Sul,2022,Mulheres,Total,Total,22.84
+Sul,2022,Mulheres,Total,Pessoa com deficiência,8.84
+Sul,2022,Mulheres,Total,Pessoa sem deficiência,24.0
+Sul,2022,Mulheres,6 a 14 anos,Total,98.58
+Sul,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,93.58
+Sul,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.69
+Sul,2022,Mulheres,15 a 17 anos,Total,86.34
+Sul,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,80.86
+Sul,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,86.49
+Sul,2022,Mulheres,18 a 24 anos,Total,33.07
+Sul,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,29.29
+Sul,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,33.19
+Sul,2022,Mulheres,25 anos ou mais,Total,6.35
+Sul,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,4.03
+Sul,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.59
+Paraná,2022,Total,Total,Total,23.96
+Paraná,2022,Total,Total,Pessoa com deficiência,10.19
+Paraná,2022,Total,Total,Pessoa sem deficiência,24.94
+Paraná,2022,Total,6 a 14 anos,Total,98.77
+Paraná,2022,Total,6 a 14 anos,Pessoa com deficiência,92.58
+Paraná,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.89
+Paraná,2022,Total,15 a 17 anos,Total,84.94
+Paraná,2022,Total,15 a 17 anos,Pessoa com deficiência,77.83
+Paraná,2022,Total,15 a 17 anos,Pessoa sem deficiência,85.12
+Paraná,2022,Total,18 a 24 anos,Total,30.4
+Paraná,2022,Total,18 a 24 anos,Pessoa com deficiência,30.23
+Paraná,2022,Total,18 a 24 anos,Pessoa sem deficiência,30.4
+Paraná,2022,Total,25 anos ou mais,Total,6.15
+Paraná,2022,Total,25 anos ou mais,Pessoa com deficiência,4.35
+Paraná,2022,Total,25 anos ou mais,Pessoa sem deficiência,6.31
+Paraná,2022,Homens,Total,Total,24.17
+Paraná,2022,Homens,Total,Pessoa com deficiência,11.18
+Paraná,2022,Homens,Total,Pessoa sem deficiência,25.01
+Paraná,2022,Homens,6 a 14 anos,Total,98.68
+Paraná,2022,Homens,6 a 14 anos,Pessoa com deficiência,91.76
+Paraná,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.83
+Paraná,2022,Homens,15 a 17 anos,Total,84.63
+Paraná,2022,Homens,15 a 17 anos,Pessoa com deficiência,76.58
+Paraná,2022,Homens,15 a 17 anos,Pessoa sem deficiência,84.83
+Paraná,2022,Homens,18 a 24 anos,Total,27.56
+Paraná,2022,Homens,18 a 24 anos,Pessoa com deficiência,28.78
+Paraná,2022,Homens,18 a 24 anos,Pessoa sem deficiência,27.52
+Paraná,2022,Homens,25 anos ou mais,Total,5.73
+Paraná,2022,Homens,25 anos ou mais,Pessoa com deficiência,4.33
+Paraná,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.84
+Paraná,2022,Mulheres,Total,Total,23.76
+Paraná,2022,Mulheres,Total,Pessoa com deficiência,9.42
+Paraná,2022,Mulheres,Total,Pessoa sem deficiência,24.88
+Paraná,2022,Mulheres,6 a 14 anos,Total,98.86
+Paraná,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,93.59
+Paraná,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.96
+Paraná,2022,Mulheres,15 a 17 anos,Total,85.25
+Paraná,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,79.0
+Paraná,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,85.42
+Paraná,2022,Mulheres,18 a 24 anos,Total,33.3
+Paraná,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,31.67
+Paraná,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,33.35
+Paraná,2022,Mulheres,25 anos ou mais,Total,6.53
+Paraná,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,4.36
+Paraná,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.75
+Santa Catarina,2022,Total,Total,Total,22.64
+Santa Catarina,2022,Total,Total,Pessoa com deficiência,9.75
+Santa Catarina,2022,Total,Total,Pessoa sem deficiência,23.51
+Santa Catarina,2022,Total,6 a 14 anos,Total,98.62
+Santa Catarina,2022,Total,6 a 14 anos,Pessoa com deficiência,93.73
+Santa Catarina,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.72
+Santa Catarina,2022,Total,15 a 17 anos,Total,86.85
+Santa Catarina,2022,Total,15 a 17 anos,Pessoa com deficiência,80.97
+Santa Catarina,2022,Total,15 a 17 anos,Pessoa sem deficiência,87.0
+Santa Catarina,2022,Total,18 a 24 anos,Total,28.34
+Santa Catarina,2022,Total,18 a 24 anos,Pessoa com deficiência,24.82
+Santa Catarina,2022,Total,18 a 24 anos,Pessoa sem deficiência,28.44
+Santa Catarina,2022,Total,25 anos ou mais,Total,5.52
+Santa Catarina,2022,Total,25 anos ou mais,Pessoa com deficiência,4.0
+Santa Catarina,2022,Total,25 anos ou mais,Pessoa sem deficiência,5.65
+Santa Catarina,2022,Homens,Total,Total,22.59
+Santa Catarina,2022,Homens,Total,Pessoa com deficiência,10.63
+Santa Catarina,2022,Homens,Total,Pessoa sem deficiência,23.29
+Santa Catarina,2022,Homens,6 a 14 anos,Total,98.61
+Santa Catarina,2022,Homens,6 a 14 anos,Pessoa com deficiência,93.05
+Santa Catarina,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.74
+Santa Catarina,2022,Homens,15 a 17 anos,Total,86.3
+Santa Catarina,2022,Homens,15 a 17 anos,Pessoa com deficiência,77.16
+Santa Catarina,2022,Homens,15 a 17 anos,Pessoa sem deficiência,86.54
+Santa Catarina,2022,Homens,18 a 24 anos,Total,25.11
+Santa Catarina,2022,Homens,18 a 24 anos,Pessoa com deficiência,20.13
+Santa Catarina,2022,Homens,18 a 24 anos,Pessoa sem deficiência,25.24
+Santa Catarina,2022,Homens,25 anos ou mais,Total,4.97
+Santa Catarina,2022,Homens,25 anos ou mais,Pessoa com deficiência,3.91
+Santa Catarina,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.05
+Santa Catarina,2022,Mulheres,Total,Total,22.69
+Santa Catarina,2022,Mulheres,Total,Pessoa com deficiência,9.08
+Santa Catarina,2022,Mulheres,Total,Pessoa sem deficiência,23.72
+Santa Catarina,2022,Mulheres,6 a 14 anos,Total,98.63
+Santa Catarina,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,94.59
+Santa Catarina,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.7
+Santa Catarina,2022,Mulheres,15 a 17 anos,Total,87.43
+Santa Catarina,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,85.12
+Santa Catarina,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,87.49
+Santa Catarina,2022,Mulheres,18 a 24 anos,Total,31.66
+Santa Catarina,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,28.78
+Santa Catarina,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,31.75
+Santa Catarina,2022,Mulheres,25 anos ou mais,Total,6.04
+Santa Catarina,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,4.06
+Santa Catarina,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.22
+Rio Grande do Sul,2022,Total,Total,Total,22.16
+Rio Grande do Sul,2022,Total,Total,Pessoa com deficiência,9.07
+Rio Grande do Sul,2022,Total,Total,Pessoa sem deficiência,23.22
+Rio Grande do Sul,2022,Total,6 a 14 anos,Total,98.18
+Rio Grande do Sul,2022,Total,6 a 14 anos,Pessoa com deficiência,92.7
+Rio Grande do Sul,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.31
+Rio Grande do Sul,2022,Total,15 a 17 anos,Total,85.94
+Rio Grande do Sul,2022,Total,15 a 17 anos,Pessoa com deficiência,79.03
+Rio Grande do Sul,2022,Total,15 a 17 anos,Pessoa sem deficiência,86.15
+Rio Grande do Sul,2022,Total,18 a 24 anos,Total,30.2
+Rio Grande do Sul,2022,Total,18 a 24 anos,Pessoa com deficiência,26.7
+Rio Grande do Sul,2022,Total,18 a 24 anos,Pessoa sem deficiência,30.31
+Rio Grande do Sul,2022,Total,25 anos ou mais,Total,5.93
+Rio Grande do Sul,2022,Total,25 anos ou mais,Pessoa com deficiência,3.63
+Rio Grande do Sul,2022,Total,25 anos ou mais,Pessoa sem deficiência,6.16
+Rio Grande do Sul,2022,Homens,Total,Total,22.33
+Rio Grande do Sul,2022,Homens,Total,Pessoa com deficiência,10.27
+Rio Grande do Sul,2022,Homens,Total,Pessoa sem deficiência,23.18
+Rio Grande do Sul,2022,Homens,6 a 14 anos,Total,98.12
+Rio Grande do Sul,2022,Homens,6 a 14 anos,Pessoa com deficiência,92.47
+Rio Grande do Sul,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.27
+Rio Grande do Sul,2022,Homens,15 a 17 anos,Total,85.1
+Rio Grande do Sul,2022,Homens,15 a 17 anos,Pessoa com deficiência,77.82
+Rio Grande do Sul,2022,Homens,15 a 17 anos,Pessoa sem deficiência,85.32
+Rio Grande do Sul,2022,Homens,18 a 24 anos,Total,26.59
+Rio Grande do Sul,2022,Homens,18 a 24 anos,Pessoa com deficiência,26.25
+Rio Grande do Sul,2022,Homens,18 a 24 anos,Pessoa sem deficiência,26.6
+Rio Grande do Sul,2022,Homens,25 anos ou mais,Total,5.43
+Rio Grande do Sul,2022,Homens,25 anos ou mais,Pessoa com deficiência,3.49
+Rio Grande do Sul,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.6
+Rio Grande do Sul,2022,Mulheres,Total,Total,22.0
+Rio Grande do Sul,2022,Mulheres,Total,Pessoa com deficiência,8.2
+Rio Grande do Sul,2022,Mulheres,Total,Pessoa sem deficiência,23.27
+Rio Grande do Sul,2022,Mulheres,6 a 14 anos,Total,98.23
+Rio Grande do Sul,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,92.97
+Rio Grande do Sul,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.36
+Rio Grande do Sul,2022,Mulheres,15 a 17 anos,Total,86.81
+Rio Grande do Sul,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,80.25
+Rio Grande do Sul,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,87.01
+Rio Grande do Sul,2022,Mulheres,18 a 24 anos,Total,33.86
+Rio Grande do Sul,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,27.16
+Rio Grande do Sul,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,34.08
+Rio Grande do Sul,2022,Mulheres,25 anos ou mais,Total,6.37
+Rio Grande do Sul,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,3.73
+Rio Grande do Sul,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.68
+Centro-Oeste,2022,Total,Total,Total,25.6
+Centro-Oeste,2022,Total,Total,Pessoa com deficiência,12.24
+Centro-Oeste,2022,Total,Total,Pessoa sem deficiência,26.58
+Centro-Oeste,2022,Total,6 a 14 anos,Total,98.14
+Centro-Oeste,2022,Total,6 a 14 anos,Pessoa com deficiência,93.25
+Centro-Oeste,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.25
+Centro-Oeste,2022,Total,15 a 17 anos,Total,83.89
+Centro-Oeste,2022,Total,15 a 17 anos,Pessoa com deficiência,78.96
+Centro-Oeste,2022,Total,15 a 17 anos,Pessoa sem deficiência,84.04
+Centro-Oeste,2022,Total,18 a 24 anos,Total,28.94
+Centro-Oeste,2022,Total,18 a 24 anos,Pessoa com deficiência,30.3
+Centro-Oeste,2022,Total,18 a 24 anos,Pessoa sem deficiência,28.89
+Centro-Oeste,2022,Total,25 anos ou mais,Total,6.73
+Centro-Oeste,2022,Total,25 anos ou mais,Pessoa com deficiência,5.31
+Centro-Oeste,2022,Total,25 anos ou mais,Pessoa sem deficiência,6.86
+Centro-Oeste,2022,Homens,Total,Total,25.68
+Centro-Oeste,2022,Homens,Total,Pessoa com deficiência,13.17
+Centro-Oeste,2022,Homens,Total,Pessoa sem deficiência,26.48
+Centro-Oeste,2022,Homens,6 a 14 anos,Total,98.1
+Centro-Oeste,2022,Homens,6 a 14 anos,Pessoa com deficiência,92.08
+Centro-Oeste,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.24
+Centro-Oeste,2022,Homens,15 a 17 anos,Total,83.53
+Centro-Oeste,2022,Homens,15 a 17 anos,Pessoa com deficiência,76.13
+Centro-Oeste,2022,Homens,15 a 17 anos,Pessoa sem deficiência,83.73
+Centro-Oeste,2022,Homens,18 a 24 anos,Total,26.59
+Centro-Oeste,2022,Homens,18 a 24 anos,Pessoa com deficiência,28.68
+Centro-Oeste,2022,Homens,18 a 24 anos,Pessoa sem deficiência,26.52
+Centro-Oeste,2022,Homens,25 anos ou mais,Total,6.22
+Centro-Oeste,2022,Homens,25 anos ou mais,Pessoa com deficiência,5.2
+Centro-Oeste,2022,Homens,25 anos ou mais,Pessoa sem deficiência,6.31
+Centro-Oeste,2022,Mulheres,Total,Total,25.53
+Centro-Oeste,2022,Mulheres,Total,Pessoa com deficiência,11.52
+Centro-Oeste,2022,Mulheres,Total,Pessoa sem deficiência,26.67
+Centro-Oeste,2022,Mulheres,6 a 14 anos,Total,98.18
+Centro-Oeste,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,94.71
+Centro-Oeste,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.25
+Centro-Oeste,2022,Mulheres,15 a 17 anos,Total,84.26
+Centro-Oeste,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,81.29
+Centro-Oeste,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,84.36
+Centro-Oeste,2022,Mulheres,18 a 24 anos,Total,31.33
+Centro-Oeste,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,31.71
+Centro-Oeste,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,31.32
+Centro-Oeste,2022,Mulheres,25 anos ou mais,Total,7.21
+Centro-Oeste,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,5.4
+Centro-Oeste,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,7.4
+Mato Grosso do Sul,2022,Total,Total,Total,26.35
+Mato Grosso do Sul,2022,Total,Total,Pessoa com deficiência,11.29
+Mato Grosso do Sul,2022,Total,Total,Pessoa sem deficiência,27.46
+Mato Grosso do Sul,2022,Total,6 a 14 anos,Total,98.13
+Mato Grosso do Sul,2022,Total,6 a 14 anos,Pessoa com deficiência,92.73
+Mato Grosso do Sul,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.23
+Mato Grosso do Sul,2022,Total,15 a 17 anos,Total,82.81
+Mato Grosso do Sul,2022,Total,15 a 17 anos,Pessoa com deficiência,77.71
+Mato Grosso do Sul,2022,Total,15 a 17 anos,Pessoa sem deficiência,82.95
+Mato Grosso do Sul,2022,Total,18 a 24 anos,Total,28.85
+Mato Grosso do Sul,2022,Total,18 a 24 anos,Pessoa com deficiência,31.89
+Mato Grosso do Sul,2022,Total,18 a 24 anos,Pessoa sem deficiência,28.75
+Mato Grosso do Sul,2022,Total,25 anos ou mais,Total,7.05
+Mato Grosso do Sul,2022,Total,25 anos ou mais,Pessoa com deficiência,5.18
+Mato Grosso do Sul,2022,Total,25 anos ou mais,Pessoa sem deficiência,7.23
+Mato Grosso do Sul,2022,Homens,Total,Total,26.6
+Mato Grosso do Sul,2022,Homens,Total,Pessoa com deficiência,12.09
+Mato Grosso do Sul,2022,Homens,Total,Pessoa sem deficiência,27.56
+Mato Grosso do Sul,2022,Homens,6 a 14 anos,Total,98.14
+Mato Grosso do Sul,2022,Homens,6 a 14 anos,Pessoa com deficiência,92.25
+Mato Grosso do Sul,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.27
+Mato Grosso do Sul,2022,Homens,15 a 17 anos,Total,82.72
+Mato Grosso do Sul,2022,Homens,15 a 17 anos,Pessoa com deficiência,79.21
+Mato Grosso do Sul,2022,Homens,15 a 17 anos,Pessoa sem deficiência,82.81
+Mato Grosso do Sul,2022,Homens,18 a 24 anos,Total,27.0
+Mato Grosso do Sul,2022,Homens,18 a 24 anos,Pessoa com deficiência,29.42
+Mato Grosso do Sul,2022,Homens,18 a 24 anos,Pessoa sem deficiência,26.92
+Mato Grosso do Sul,2022,Homens,25 anos ou mais,Total,6.61
+Mato Grosso do Sul,2022,Homens,25 anos ou mais,Pessoa com deficiência,4.72
+Mato Grosso do Sul,2022,Homens,25 anos ou mais,Pessoa sem deficiência,6.77
+Mato Grosso do Sul,2022,Mulheres,Total,Total,26.1
+Mato Grosso do Sul,2022,Mulheres,Total,Pessoa com deficiência,10.66
+Mato Grosso do Sul,2022,Mulheres,Total,Pessoa sem deficiência,27.36
+Mato Grosso do Sul,2022,Mulheres,6 a 14 anos,Total,98.11
+Mato Grosso do Sul,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,93.4
+Mato Grosso do Sul,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.18
+Mato Grosso do Sul,2022,Mulheres,15 a 17 anos,Total,82.91
+Mato Grosso do Sul,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,76.38
+Mato Grosso do Sul,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,83.1
+Mato Grosso do Sul,2022,Mulheres,18 a 24 anos,Total,30.74
+Mato Grosso do Sul,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,34.19
+Mato Grosso do Sul,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,30.62
+Mato Grosso do Sul,2022,Mulheres,25 anos ou mais,Total,7.45
+Mato Grosso do Sul,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,5.54
+Mato Grosso do Sul,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,7.66
+Mato Grosso,2022,Total,Total,Total,26.12
+Mato Grosso,2022,Total,Total,Pessoa com deficiência,12.82
+Mato Grosso,2022,Total,Total,Pessoa sem deficiência,26.97
+Mato Grosso,2022,Total,6 a 14 anos,Total,97.66
+Mato Grosso,2022,Total,6 a 14 anos,Pessoa com deficiência,90.91
+Mato Grosso,2022,Total,6 a 14 anos,Pessoa sem deficiência,97.79
+Mato Grosso,2022,Total,15 a 17 anos,Total,80.14
+Mato Grosso,2022,Total,15 a 17 anos,Pessoa com deficiência,70.26
+Mato Grosso,2022,Total,15 a 17 anos,Pessoa sem deficiência,80.39
+Mato Grosso,2022,Total,18 a 24 anos,Total,25.66
+Mato Grosso,2022,Total,18 a 24 anos,Pessoa com deficiência,29.27
+Mato Grosso,2022,Total,18 a 24 anos,Pessoa sem deficiência,25.55
+Mato Grosso,2022,Total,25 anos ou mais,Total,6.78
+Mato Grosso,2022,Total,25 anos ou mais,Pessoa com deficiência,6.24
+Mato Grosso,2022,Total,25 anos ou mais,Pessoa sem deficiência,6.82
+Mato Grosso,2022,Homens,Total,Total,25.7
+Mato Grosso,2022,Homens,Total,Pessoa com deficiência,13.18
+Mato Grosso,2022,Homens,Total,Pessoa sem deficiência,26.42
+Mato Grosso,2022,Homens,6 a 14 anos,Total,97.69
+Mato Grosso,2022,Homens,6 a 14 anos,Pessoa com deficiência,89.7
+Mato Grosso,2022,Homens,6 a 14 anos,Pessoa sem deficiência,97.85
+Mato Grosso,2022,Homens,15 a 17 anos,Total,80.04
+Mato Grosso,2022,Homens,15 a 17 anos,Pessoa com deficiência,69.69
+Mato Grosso,2022,Homens,15 a 17 anos,Pessoa sem deficiência,80.26
+Mato Grosso,2022,Homens,18 a 24 anos,Total,23.25
+Mato Grosso,2022,Homens,18 a 24 anos,Pessoa com deficiência,28.02
+Mato Grosso,2022,Homens,18 a 24 anos,Pessoa sem deficiência,23.11
+Mato Grosso,2022,Homens,25 anos ou mais,Total,6.16
+Mato Grosso,2022,Homens,25 anos ou mais,Pessoa com deficiência,5.87
+Mato Grosso,2022,Homens,25 anos ou mais,Pessoa sem deficiência,6.18
+Mato Grosso,2022,Mulheres,Total,Total,26.54
+Mato Grosso,2022,Mulheres,Total,Pessoa com deficiência,12.53
+Mato Grosso,2022,Mulheres,Total,Pessoa sem deficiência,27.53
+Mato Grosso,2022,Mulheres,6 a 14 anos,Total,97.64
+Mato Grosso,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,92.31
+Mato Grosso,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,97.74
+Mato Grosso,2022,Mulheres,15 a 17 anos,Total,80.24
+Mato Grosso,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,70.72
+Mato Grosso,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,80.51
+Mato Grosso,2022,Mulheres,18 a 24 anos,Total,28.14
+Mato Grosso,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,30.43
+Mato Grosso,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,28.07
+Mato Grosso,2022,Mulheres,25 anos ou mais,Total,7.39
+Mato Grosso,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,6.54
+Mato Grosso,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,7.47
+Goiás,2022,Total,Total,Total,24.44
+Goiás,2022,Total,Total,Pessoa com deficiência,11.15
+Goiás,2022,Total,Total,Pessoa sem deficiência,25.49
+Goiás,2022,Total,6 a 14 anos,Total,98.1
+Goiás,2022,Total,6 a 14 anos,Pessoa com deficiência,93.15
+Goiás,2022,Total,6 a 14 anos,Pessoa sem deficiência,98.22
+Goiás,2022,Total,15 a 17 anos,Total,84.05
+Goiás,2022,Total,15 a 17 anos,Pessoa com deficiência,79.8
+Goiás,2022,Total,15 a 17 anos,Pessoa sem deficiência,84.18
+Goiás,2022,Total,18 a 24 anos,Total,27.42
+Goiás,2022,Total,18 a 24 anos,Pessoa com deficiência,27.19
+Goiás,2022,Total,18 a 24 anos,Pessoa sem deficiência,27.43
+Goiás,2022,Total,25 anos ou mais,Total,5.88
+Goiás,2022,Total,25 anos ou mais,Pessoa com deficiência,4.44
+Goiás,2022,Total,25 anos ou mais,Pessoa sem deficiência,6.03
+Goiás,2022,Homens,Total,Total,24.45
+Goiás,2022,Homens,Total,Pessoa com deficiência,12.09
+Goiás,2022,Homens,Total,Pessoa sem deficiência,25.31
+Goiás,2022,Homens,6 a 14 anos,Total,98.01
+Goiás,2022,Homens,6 a 14 anos,Pessoa com deficiência,92.09
+Goiás,2022,Homens,6 a 14 anos,Pessoa sem deficiência,98.16
+Goiás,2022,Homens,15 a 17 anos,Total,83.3
+Goiás,2022,Homens,15 a 17 anos,Pessoa com deficiência,74.27
+Goiás,2022,Homens,15 a 17 anos,Pessoa sem deficiência,83.56
+Goiás,2022,Homens,18 a 24 anos,Total,25.02
+Goiás,2022,Homens,18 a 24 anos,Pessoa com deficiência,26.61
+Goiás,2022,Homens,18 a 24 anos,Pessoa sem deficiência,24.96
+Goiás,2022,Homens,25 anos ou mais,Total,5.39
+Goiás,2022,Homens,25 anos ou mais,Pessoa com deficiência,4.37
+Goiás,2022,Homens,25 anos ou mais,Pessoa sem deficiência,5.48
+Goiás,2022,Mulheres,Total,Total,24.43
+Goiás,2022,Mulheres,Total,Pessoa com deficiência,10.43
+Goiás,2022,Mulheres,Total,Pessoa sem deficiência,25.67
+Goiás,2022,Mulheres,6 a 14 anos,Total,98.2
+Goiás,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,94.45
+Goiás,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,98.28
+Goiás,2022,Mulheres,15 a 17 anos,Total,84.81
+Goiás,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,84.35
+Goiás,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,84.82
+Goiás,2022,Mulheres,18 a 24 anos,Total,29.88
+Goiás,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,27.67
+Goiás,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,29.97
+Goiás,2022,Mulheres,25 anos ou mais,Total,6.35
+Goiás,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,4.49
+Goiás,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,6.56
+Distrito Federal,2022,Total,Total,Total,27.13
+Distrito Federal,2022,Total,Total,Pessoa com deficiência,15.63
+Distrito Federal,2022,Total,Total,Pessoa sem deficiência,27.91
+Distrito Federal,2022,Total,6 a 14 anos,Total,98.96
+Distrito Federal,2022,Total,6 a 14 anos,Pessoa com deficiência,96.6
+Distrito Federal,2022,Total,6 a 14 anos,Pessoa sem deficiência,99.02
+Distrito Federal,2022,Total,15 a 17 anos,Total,89.49
+Distrito Federal,2022,Total,15 a 17 anos,Pessoa com deficiência,85.41
+Distrito Federal,2022,Total,15 a 17 anos,Pessoa sem deficiência,89.66
+Distrito Federal,2022,Total,18 a 24 anos,Total,36.83
+Distrito Federal,2022,Total,18 a 24 anos,Pessoa com deficiência,37.79
+Distrito Federal,2022,Total,18 a 24 anos,Pessoa sem deficiência,36.79
+Distrito Federal,2022,Total,25 anos ou mais,Total,8.48
+Distrito Federal,2022,Total,25 anos ou mais,Pessoa com deficiência,6.87
+Distrito Federal,2022,Total,25 anos ou mais,Pessoa sem deficiência,8.61
+Distrito Federal,2022,Homens,Total,Total,27.9
+Distrito Federal,2022,Homens,Total,Pessoa com deficiência,17.64
+Distrito Federal,2022,Homens,Total,Pessoa sem deficiência,28.5
+Distrito Federal,2022,Homens,6 a 14 anos,Total,98.89
+Distrito Federal,2022,Homens,6 a 14 anos,Pessoa com deficiência,94.54
+Distrito Federal,2022,Homens,6 a 14 anos,Pessoa sem deficiência,99.01
+Distrito Federal,2022,Homens,15 a 17 anos,Total,89.5
+Distrito Federal,2022,Homens,15 a 17 anos,Pessoa com deficiência,83.09
+Distrito Federal,2022,Homens,15 a 17 anos,Pessoa sem deficiência,89.72
+Distrito Federal,2022,Homens,18 a 24 anos,Total,34.27
+Distrito Federal,2022,Homens,18 a 24 anos,Pessoa com deficiência,34.03
+Distrito Federal,2022,Homens,18 a 24 anos,Pessoa sem deficiência,34.28
+Distrito Federal,2022,Homens,25 anos ou mais,Total,8.09
+Distrito Federal,2022,Homens,25 anos ou mais,Pessoa com deficiência,7.46
+Distrito Federal,2022,Homens,25 anos ou mais,Pessoa sem deficiência,8.13
+Distrito Federal,2022,Mulheres,Total,Total,26.43
+Distrito Federal,2022,Mulheres,Total,Pessoa com deficiência,14.24
+Distrito Federal,2022,Mulheres,Total,Pessoa sem deficiência,27.38
+Distrito Federal,2022,Mulheres,6 a 14 anos,Total,99.03
+Distrito Federal,2022,Mulheres,6 a 14 anos,Pessoa com deficiência,99.2
+Distrito Federal,2022,Mulheres,6 a 14 anos,Pessoa sem deficiência,99.03
+Distrito Federal,2022,Mulheres,15 a 17 anos,Total,89.49
+Distrito Federal,2022,Mulheres,15 a 17 anos,Pessoa com deficiência,87.28
+Distrito Federal,2022,Mulheres,15 a 17 anos,Pessoa sem deficiência,89.58
+Distrito Federal,2022,Mulheres,18 a 24 anos,Total,39.43
+Distrito Federal,2022,Mulheres,18 a 24 anos,Pessoa com deficiência,40.77
+Distrito Federal,2022,Mulheres,18 a 24 anos,Pessoa sem deficiência,39.37
+Distrito Federal,2022,Mulheres,25 anos ou mais,Total,8.81
+Distrito Federal,2022,Mulheres,25 anos ou mais,Pessoa com deficiência,6.49
+Distrito Federal,2022,Mulheres,25 anos ou mais,Pessoa sem deficiência,9.03

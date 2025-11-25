@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Explore from "./pages/Explore";
 import Auth from "./pages/Auth";
+import Statistics from "./pages/Statistics";
+import TestTEA from "./pages/TestTEA";
 import DashboardLayout from "./components/DashboardLayout";
 import Profile from "./pages/dashboard/Profile";
 import Favorites from "./pages/dashboard/Favorites";
@@ -25,6 +27,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/explorar" element={<Explore />} />
+          <Route path="/estatisticas" element={<Statistics />} />
+          <Route path="/test-tea" element={<TestTEA />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/dashboard" element={<DashboardLayout />}>
             <Route index element={<Profile />} />

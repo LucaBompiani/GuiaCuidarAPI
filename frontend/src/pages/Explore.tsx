@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, BookOpen, BarChart2 } from "lucide-react";
+import { ArrowLeft, BookOpen, BarChart2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import ArticleModal from "@/components/ui/article-modal";
@@ -122,6 +122,30 @@ const Explore = () => {
                 <BarChart2 className="w-6 h-6 text-primary" />
                 Dados e Fatos
               </h3>
+              
+              {/* Card de destaque para Estatísticas */}
+              <Card className="shadow-medium hover:shadow-large transition-all mb-6 bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20">
+                <CardHeader>
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <CardTitle className="text-2xl mb-2">Estatísticas Completas sobre TEA no Brasil</CardTitle>
+                      <CardDescription className="text-base">
+                        Explore dados detalhados do Censo 2022 com gráficos interativos por estado e região
+                      </CardDescription>
+                    </div>
+                    <BarChart2 className="w-16 h-16 text-primary" />
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <Button asChild size="lg" className="w-full sm:w-auto">
+                    <Link to="/estatisticas">
+                      Ver Estatísticas Completas
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {dados.map((dado) => (
                   <Card key={dado.id} className="shadow-soft hover:shadow-medium transition-all text-center">
