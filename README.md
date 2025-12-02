@@ -10,7 +10,6 @@ Plataforma web para apoio a responsáveis de pessoas com Transtorno do Espectro 
 - [Estrutura do Projeto](#-estrutura-do-projeto)
 - [Configuração do Backend (Supabase)](#-configuração-do-backend-supabase)
 - [Configuração do Frontend](#-configuração-do-frontend)
-- [Configuração da API Django (Opcional)](#-configuração-da-api-django-opcional)
 - [Executando a Aplicação](#-executando-a-aplicação)
 - [Funcionalidades](#-funcionalidades)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
@@ -25,7 +24,6 @@ Antes de começar, certifique-se de ter instalado:
 - **Node.js** (versão 18 ou superior) - [Download](https://nodejs.org/)
 - **npm** ou **yarn** (gerenciador de pacotes)
 - **Docker** e **Docker Compose** - [Download](https://www.docker.com/)
-- **Python** (versão 3.13 ou superior) - [Download](https://www.python.org/) *(opcional, apenas se for usar a API Django)*
 - **Git** - [Download](https://git-scm.com/)
 
 ---
@@ -35,10 +33,15 @@ Antes de começar, certifique-se de ter instalado:
 ```
 guia-cuidar/
 ├── frontend/              # Aplicação React + Vite + TypeScript
-├── guia_cuidar_api/      # API Django (opcional)
+│   ├── src/              # Código fonte da aplicação
+│   ├── public/           # Arquivos estáticos
+│   └── supabase/         # Configurações do cliente Supabase
 ├── supabase-project/     # Configuração do Supabase local
 ├── Docs/                 # Documentação e diagramas
+│   ├── DiagramaER.png    # Diagrama Entidade-Relacionamento
+│   └── GuiaCuidarBDinit.sql  # Script de inicialização do BD
 └── scripts/              # Scripts de processamento de dados
+    └── *.py              # Scripts Python para ETL de dados estatísticos
 ```
 
 ---
@@ -148,84 +151,6 @@ O frontend estará disponível em: `http://localhost:5173`
 
 ---
 
-## 🐍 Configuração da API Django (Opcional)
-
-A API Django é **opcional** e serve como alternativa ao uso direto do Supabase.
-
-### 1. Navegar até a pasta da API
-
-```bash
-cd guia_cuidar_api
-```
-
-### 2. Criar ambiente virtual Python
-
-```bash
-python -m venv .venv
-```
-
-### 3. Ativar o ambiente virtual
-
-**Linux/Mac:**
-```bash
-source .venv/bin/activate
-```
-
-**Windows:**
-```bash
-.venv\Scripts\activate
-```
-
-### 4. Instalar dependências
-
-```bash
-pip install -e .
-```
-
-ou usando uv (mais rápido):
-
-```bash
-uv pip install -e .
-```
-
-### 5. Configurar variáveis de ambiente
-
-Copie o arquivo de exemplo:
-
-```bash
-cp .env.example .env
-```
-
-Edite o arquivo `.env` com suas credenciais do Supabase:
-
-```env
-SUPABASE_URL=https://jksbjifwsxrmhzunozql.supabase.co
-SUPABASE_ANON_KEY=sua_anon_key_aqui
-SUPABASE_SERVICE_ROLE_KEY=sua_service_role_key_aqui
-JWT_SECRET_KEY=sua_jwt_secret_aqui
-JWT_ALGORITHM=HS256
-JWT_ACCESS_TOKEN_EXPIRE_MINUTES=30
-ENVIRONMENT=development
-```
-
-### 6. Executar migrações
-
-```bash
-python manage.py migrate
-```
-
-### 7. Iniciar o servidor Django
-
-```bash
-python manage.py runserver
-```
-
-A API estará disponível em: `http://localhost:8000/api/v1/`
-
-Documentação dos endpoints: Consulte `guia_cuidar_api/API_ENDPOINTS.md`
-
----
-
 ## 🚀 Executando a Aplicação
 
 ### Início Rápido (Usando Supabase Cloud)
@@ -262,23 +187,6 @@ Documentação dos endpoints: Consulte `guia_cuidar_api/API_ENDPOINTS.md`
 3. **Acessar a aplicação:**
    - Frontend: `http://localhost:5173`
    - Supabase Studio: `http://localhost:8000`
-
-### Com API Django (Opcional)
-
-1. **Iniciar o Supabase** (se estiver usando local)
-
-2. **Iniciar a API Django:**
-   ```bash
-   cd guia_cuidar_api
-   source .venv/bin/activate  # ou .venv\Scripts\activate no Windows
-   python manage.py runserver
-   ```
-
-3. **Iniciar o frontend:**
-   ```bash
-   cd ../frontend
-   npm run dev
-   ```
 
 ---
 
@@ -324,8 +232,6 @@ Documentação dos endpoints: Consulte `guia_cuidar_api/API_ENDPOINTS.md`
   - Auth - Autenticação
   - Row Level Security - Segurança
   - Realtime - Atualizações em tempo real
-- **Django** (opcional) - Framework Python
-- **Django Ninja** - API REST
 
 ### DevOps
 - **Docker** - Containerização
@@ -366,15 +272,6 @@ npm run build        # Build para produção
 npm run build:dev    # Build em modo desenvolvimento
 npm run preview      # Preview do build de produção
 npm run lint         # Executa linter
-```
-
-### API Django
-
-```bash
-python manage.py runserver        # Inicia servidor
-python manage.py migrate          # Executa migrações
-python manage.py makemigrations   # Cria novas migrações
-python manage.py createsuperuser  # Cria usuário admin
 ```
 
 ### Supabase Local
