@@ -179,7 +179,7 @@ const Services = () => {
                       <Button asChild variant="link" className="ml-2">
                         <a href={service.url_servico} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="w-4 h-4 mr-1" />
-                          Ver no Maps
+                          Acessar website
                         </a>
                       </Button>
                     )}
