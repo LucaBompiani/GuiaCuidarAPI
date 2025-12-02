@@ -1,6 +1,7 @@
 # 🧩 Guia Cuidar
 
-# Repositório do Projeto: https://github.com/LucaBompiani/GuiaCuidarAPI
+- Repositório do Projeto: https://github.com/LucaBompiani/GuiaCuidarAPI
+- Link para o Site: https://guia-cuidar-api.vercel.app/
 
 Plataforma web para apoio a responsáveis de pessoas com Transtorno do Espectro Autista (TEA), oferecendo recursos informativos, materiais de apoio, serviços locais e uma comunidade de depoimentos.
 
