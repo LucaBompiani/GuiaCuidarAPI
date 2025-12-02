@@ -1,148 +1,411 @@
-```mermaid
-sequenceDiagram
-    actor U as Usuário (Responsável)
-    participant F as Front-end
-    participant API as Supabase API
-    participant DB as PostgreSQL DB
+# 🧩 Guia Cuidar
 
-    Note over U,DB: 1. CADASTRO DE NOVO USUÁRIO
+Plataforma web para apoio a responsáveis de pessoas com Transtorno do Espectro Autista (TEA), oferecendo recursos informativos, materiais de apoio, serviços locais e uma comunidade de depoimentos.
 
-    U->>F: Acessa tela de cadastro
-    U->>F: Preenche dados (nome, email, senha)
-    F->>API: signUp(email, senha, metadata)
-    API->>DB: INSERT INTO auth.users
-    DB->>DB: Trigger: on_auth_user_created
-    DB->>DB: INSERT INTO Responsavel (auto)
-    DB-->>API: Usuário criado
-    API-->>F: Token de autenticação
-    F-->>U: Redireciona para dashboard
+---
 
-    Note over U,DB: 2. LOGIN
+## 📋 Índice
 
-    U->>F: Acessa tela de login
-    U->>F: Insere email e senha
-    F->>API: signInWithPassword(email, senha)
-    API->>DB: Valida credenciais em auth.users
-    DB-->>API: Credenciais válidas
-    API-->>F: Token JWT + Session
-    F->>API: SELECT * FROM Responsavel WHERE id = auth.uid()
-    API->>DB: Query com RLS aplicado
-    DB-->>API: Dados do responsável
-    API-->>F: Perfil do usuário
-    F-->>U: Dashboard personalizado
+- [Pré-requisitos](#-pré-requisitos)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Configuração do Backend (Supabase)](#-configuração-do-backend-supabase)
+- [Configuração do Frontend](#-configuração-do-frontend)
+- [Configuração da API Django (Opcional)](#-configuração-da-api-django-opcional)
+- [Executando a Aplicação](#-executando-a-aplicação)
+- [Funcionalidades](#-funcionalidades)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Estrutura do Banco de Dados](#-estrutura-do-banco-de-dados)
 
-    Note over U,DB: 3. CADASTRAR DEPENDENTE
+---
 
-    U->>F: Clica em "Adicionar Dependente"
-    U->>F: Preenche formulário (nome, nível TEA)
-    F->>API: INSERT INTO Dependente (nome, nivel_suporte_tea_id)
-    Note over API: RLS verifica: auth.uid() = responsavel_id
-    API->>DB: INSERT com responsavel_id = auth.uid()
-    DB->>DB: Trigger: update_dependente_timestamp
-    DB-->>API: Dependente criado (id, dados)
-    API-->>F: Confirmação + dados do dependente
-    F-->>U: Exibe dependente na lista
+## 🔧 Pré-requisitos
 
-    Note over U,DB: 4. BUSCAR ARTIGOS INFORMATIVOS
+Antes de começar, certifique-se de ter instalado:
 
-    U->>F: Acessa seção de artigos
-    F->>API: SELECT * FROM ArtigoInformativo ORDER BY data_criacao DESC
-    Note over API: RLS: authenticated users podem ler
-    API->>DB: Query com RLS aplicado
-    DB-->>API: Lista de artigos
-    API-->>F: Array de artigos
-    F-->>U: Exibe grid de artigos
+- **Node.js** (versão 18 ou superior) - [Download](https://nodejs.org/)
+- **npm** ou **yarn** (gerenciador de pacotes)
+- **Docker** e **Docker Compose** - [Download](https://www.docker.com/)
+- **Python** (versão 3.13 ou superior) - [Download](https://www.python.org/) *(opcional, apenas se for usar a API Django)*
+- **Git** - [Download](https://git-scm.com/)
 
-    U->>F: Busca por palavra-chave
-    F->>API: SELECT * FROM ArtigoInformativo WHERE titulo ILIKE '%keyword%'
-    API->>DB: Query com filtro
-    DB-->>API: Artigos filtrados
-    API-->>F: Resultados da busca
-    F-->>U: Exibe artigos relevantes
+---
 
-    Note over U,DB: 5. FAVORITAR MATERIAL DE APOIO
-
-    U->>F: Navega pelos materiais de apoio
-    F->>API: SELECT * FROM MaterialDeApoio WHERE nivel_suporte_tea_id = ?
-    API->>DB: Query filtrada por nível
-    DB-->>API: Materiais compatíveis
-    API-->>F: Lista de materiais
-    F-->>U: Exibe materiais
-
-    U->>F: Clica em favoritar para dependente específico
-    F->>API: INSERT INTO MaterialFavorito (material_id, dependente_id)
-    Note over API: RLS: auth.uid() deve ser dono do dependente
-    API->>DB: Valida dependente pertence ao responsável
-    DB->>DB: INSERT com responsavel_id = auth.uid()
-    DB-->>API: Favorito criado
-    API-->>F: Confirmação
-    F-->>U: Ícone de favorito ativado
-
-    Note over U,DB: 6. BUSCAR SERVIÇOS LOCAIS
-
-    U->>F: Acessa mapa de serviços
-    F->>API: SELECT * FROM Dependente WHERE responsavel_id = auth.uid()
-    API->>DB: Query com RLS
-    DB-->>API: Lista de dependentes
-    API-->>F: Dependentes do usuário
-    
-    U->>F: Seleciona dependente e tipo de serviço
-    F->>API: SELECT SL.*, TS.name FROM ServicoLocal SL<br/>JOIN TipoServico TS ON SL.tipo_servico_id = TS.id<br/>WHERE TS.id = ?
-    API->>DB: Query com JOIN
-    DB-->>API: Serviços locais filtrados
-    API-->>F: Lista de serviços
-    F-->>U: Exibe serviços no mapa/lista
-
-    Note over U,DB: 7. CRIAR DEPOIMENTO
-
-    U->>F: Acessa seção de depoimentos
-    U->>F: Escreve depoimento e seleciona categoria
-    F->>API: INSERT INTO DepoimentoResponsavel (texto, categoria_id)
-    Note over API: RLS: responsavel_id = auth.uid(), aprovado = FALSE
-    API->>DB: INSERT com status pendente
-    DB-->>API: Depoimento criado (aguardando aprovação)
-    API-->>F: Confirmação
-    F-->>U: "Depoimento enviado para análise"
-
-    Note over U,DB: 8. VISUALIZAR DEPOIMENTOS APROVADOS
-
-    U->>F: Navega pela comunidade
-    F->>API: SELECT * FROM DepoimentoResponsavel WHERE aprovado = TRUE
-    Note over API: RLS permite ver aprovados ou próprios
-    API->>DB: Query com filtro de aprovação
-    DB-->>API: Depoimentos aprovados
-    API-->>F: Lista de depoimentos
-    F-->>U: Exibe depoimentos da comunidade
-
-    Note over U,DB: 9. VISUALIZAR DADOS ESTATÍSTICOS
-
-    U->>F: Acessa dashboard de estatísticas
-    F->>API: SELECT * FROM DadosEstatisticosTEA
-    API->>DB: Query com RLS (authenticated)
-    DB-->>API: Dados estatísticos
-    API-->>F: Estatísticas e fontes
-    F-->>U: Exibe gráficos e informações
-
-    Note over U,DB: 10. ATUALIZAR PERFIL
-
-    U->>F: Edita informações do perfil
-    U->>F: Salva alterações
-    F->>API: UPDATE Responsavel SET nome = ? WHERE id = auth.uid()
-    Note over API: RLS: só pode atualizar próprio perfil
-    API->>DB: UPDATE com validação RLS
-    DB->>DB: Trigger: update_responsavel_timestamp
-    DB-->>API: Perfil atualizado
-    API-->>F: Confirmação
-    F-->>U: "Perfil atualizado com sucesso"
-
-    Note over U,DB: 11. REMOVER FAVORITO
-
-    U->>F: Clica para desfavoritar material
-    F->>API: DELETE FROM MaterialFavorito<br/>WHERE material_id = ? AND dependente_id = ?
-    Note over API: RLS valida responsavel_id = auth.uid()
-    API->>DB: DELETE com RLS
-    DB-->>API: Favorito removido
-    API-->>F: Confirmação
-    F-->>U: Ícone de favorito desativado
+## 📁 Estrutura do Projeto
 
 ```
+guia-cuidar/
+├── frontend/              # Aplicação React + Vite + TypeScript
+├── guia_cuidar_api/      # API Django (opcional)
+├── supabase-project/     # Configuração do Supabase local
+├── Docs/                 # Documentação e diagramas
+└── scripts/              # Scripts de processamento de dados
+```
+
+---
+
+## 🗄️ Configuração do Backend (Supabase)
+
+O projeto utiliza **Supabase** como backend (autenticação, banco de dados PostgreSQL e APIs).
+
+### Opção 1: Usar Supabase Cloud (Recomendado para desenvolvimento rápido)
+
+O projeto já está configurado para usar uma instância cloud do Supabase. Nenhuma configuração adicional é necessária para o backend.
+
+### Opção 2: Rodar Supabase Localmente (Self-Hosted)
+
+Se preferir rodar o Supabase localmente:
+
+#### 1. Obter as credenciais
+
+Entre em contato com os integrantes do grupo para obter:
+- `JWT_SECRET`
+- `ANON_KEY`
+- `SERVICE_ROLE_KEY`
+- Credenciais do banco de dados compartilhado
+
+#### 2. Criar arquivo `.env` no Supabase
+
+Navegue até a pasta `supabase-project` e crie um arquivo `.env`:
+
+```bash
+cd supabase-project
+```
+
+Crie o arquivo `.env` com as credenciais obtidas:
+
+```env
+JWT_SECRET=sua_jwt_secret_aqui
+ANON_KEY=sua_anon_key_aqui
+SERVICE_ROLE_KEY=sua_service_role_key_aqui
+```
+
+#### 3. Iniciar o Supabase com Docker
+
+```bash
+docker compose up -d
+```
+
+Verifique se todos os containers estão rodando:
+
+```bash
+docker compose ps
+```
+
+Todos devem aparecer como `Up` ou `Healthy`.
+
+#### 4. Acessar o Painel do Supabase
+
+Abra no navegador: `http://localhost:8000`
+
+- **Usuário:** `supabase`
+- **Senha:** `labsoft`
+
+---
+
+## 💻 Configuração do Frontend
+
+### 1. Navegar até a pasta do frontend
+
+```bash
+cd frontend
+```
+
+### 2. Instalar dependências
+
+```bash
+npm install
+```
+
+ou se preferir usar yarn:
+
+```bash
+yarn install
+```
+
+### 3. Configurar variáveis de ambiente
+
+O arquivo `.env` já existe na pasta `frontend` com as configurações para o Supabase Cloud:
+
+```env
+VITE_SUPABASE_URL=https://jksbjifwsxrmhzunozql.supabase.co
+VITE_SUPABASE_PUBLISHABLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Se estiver usando Supabase local**, edite o arquivo `.env`:
+
+```env
+VITE_SUPABASE_URL=http://localhost:8000
+VITE_SUPABASE_PUBLISHABLE_KEY=sua_anon_key_aqui
+```
+
+### 4. Iniciar o servidor de desenvolvimento
+
+```bash
+npm run dev
+```
+
+O frontend estará disponível em: `http://localhost:5173`
+
+---
+
+## 🐍 Configuração da API Django (Opcional)
+
+A API Django é **opcional** e serve como alternativa ao uso direto do Supabase.
+
+### 1. Navegar até a pasta da API
+
+```bash
+cd guia_cuidar_api
+```
+
+### 2. Criar ambiente virtual Python
+
+```bash
+python -m venv .venv
+```
+
+### 3. Ativar o ambiente virtual
+
+**Linux/Mac:**
+```bash
+source .venv/bin/activate
+```
+
+**Windows:**
+```bash
+.venv\Scripts\activate
+```
+
+### 4. Instalar dependências
+
+```bash
+pip install -e .
+```
+
+ou usando uv (mais rápido):
+
+```bash
+uv pip install -e .
+```
+
+### 5. Configurar variáveis de ambiente
+
+Copie o arquivo de exemplo:
+
+```bash
+cp .env.example .env
+```
+
+Edite o arquivo `.env` com suas credenciais do Supabase:
+
+```env
+SUPABASE_URL=https://jksbjifwsxrmhzunozql.supabase.co
+SUPABASE_ANON_KEY=sua_anon_key_aqui
+SUPABASE_SERVICE_ROLE_KEY=sua_service_role_key_aqui
+JWT_SECRET_KEY=sua_jwt_secret_aqui
+JWT_ALGORITHM=HS256
+JWT_ACCESS_TOKEN_EXPIRE_MINUTES=30
+ENVIRONMENT=development
+```
+
+### 6. Executar migrações
+
+```bash
+python manage.py migrate
+```
+
+### 7. Iniciar o servidor Django
+
+```bash
+python manage.py runserver
+```
+
+A API estará disponível em: `http://localhost:8000/api/v1/`
+
+Documentação dos endpoints: Consulte `guia_cuidar_api/API_ENDPOINTS.md`
+
+---
+
+## 🚀 Executando a Aplicação
+
+### Início Rápido (Usando Supabase Cloud)
+
+1. **Instalar dependências do frontend:**
+   ```bash
+   cd frontend
+   npm install
+   ```
+
+2. **Iniciar o frontend:**
+   ```bash
+   npm run dev
+   ```
+
+3. **Acessar a aplicação:**
+   Abra `http://localhost:5173` no navegador
+
+### Com Supabase Local
+
+1. **Iniciar o Supabase:**
+   ```bash
+   cd supabase-project
+   docker compose up -d
+   ```
+
+2. **Instalar e iniciar o frontend:**
+   ```bash
+   cd ../frontend
+   npm install
+   npm run dev
+   ```
+
+3. **Acessar a aplicação:**
+   - Frontend: `http://localhost:5173`
+   - Supabase Studio: `http://localhost:8000`
+
+### Com API Django (Opcional)
+
+1. **Iniciar o Supabase** (se estiver usando local)
+
+2. **Iniciar a API Django:**
+   ```bash
+   cd guia_cuidar_api
+   source .venv/bin/activate  # ou .venv\Scripts\activate no Windows
+   python manage.py runserver
+   ```
+
+3. **Iniciar o frontend:**
+   ```bash
+   cd ../frontend
+   npm run dev
+   ```
+
+---
+
+## ✨ Funcionalidades
+
+### Para Usuários (Responsáveis)
+
+- **Autenticação:** Cadastro e login seguro
+- **Gerenciamento de Dependentes:** Cadastrar pessoas com TEA sob sua responsabilidade
+- **Artigos Informativos:** Acesso a conteúdo educativo sobre TEA
+- **Materiais de Apoio:** Recursos categorizados por nível de suporte
+- **Favoritos:** Salvar materiais relevantes para cada dependente
+- **Serviços Locais:** Buscar serviços de apoio na sua região
+- **Depoimentos:** Compartilhar experiências com a comunidade
+- **Dados Estatísticos:** Visualizar informações sobre TEA no Brasil
+
+### Recursos Técnicos
+
+- **Row Level Security (RLS):** Segurança a nível de linha no banco de dados
+- **Autenticação JWT:** Tokens seguros para sessões
+- **Triggers Automáticos:** Atualização automática de timestamps
+- **Validação de Dados:** Schemas Zod no frontend
+- **UI Responsiva:** Interface adaptável para mobile e desktop
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+### Frontend
+- **React 18** - Biblioteca UI
+- **TypeScript** - Tipagem estática
+- **Vite** - Build tool e dev server
+- **React Router** - Roteamento
+- **TanStack Query** - Gerenciamento de estado assíncrono
+- **Shadcn/ui** - Componentes UI
+- **Tailwind CSS** - Estilização
+- **Zod** - Validação de schemas
+- **React Hook Form** - Gerenciamento de formulários
+
+### Backend
+- **Supabase** - Backend as a Service
+  - PostgreSQL - Banco de dados
+  - Auth - Autenticação
+  - Row Level Security - Segurança
+  - Realtime - Atualizações em tempo real
+- **Django** (opcional) - Framework Python
+- **Django Ninja** - API REST
+
+### DevOps
+- **Docker** - Containerização
+- **Docker Compose** - Orquestração de containers
+
+---
+
+## 🗃️ Estrutura do Banco de Dados
+
+O banco de dados possui as seguintes tabelas principais:
+
+- **Responsavel** - Dados dos usuários responsáveis
+- **Dependente** - Pessoas com TEA cadastradas
+- **NivelSuporteTEA** - Níveis de suporte (1, 2, 3)
+- **ArtigoInformativo** - Conteúdo educativo
+- **MaterialDeApoio** - Recursos de apoio
+- **CategoriaMaterial** - Categorias dos materiais
+- **MaterialFavorito** - Materiais favoritados pelos usuários
+- **ServicoLocal** - Serviços disponíveis
+- **TipoServico** - Tipos de serviços
+- **DepoimentoResponsavel** - Depoimentos da comunidade
+- **CategoriaDepoimento** - Categorias de depoimentos
+- **DadosEstatisticosTEA** - Estatísticas sobre TEA
+
+Para visualizar o diagrama ER completo, consulte: `Docs/DiagramaER.png`
+
+Para o script SQL de inicialização: `Docs/GuiaCuidarBDinit.sql`
+
+---
+
+## 📝 Scripts Úteis
+
+### Frontend
+
+```bash
+npm run dev          # Inicia servidor de desenvolvimento
+npm run build        # Build para produção
+npm run build:dev    # Build em modo desenvolvimento
+npm run preview      # Preview do build de produção
+npm run lint         # Executa linter
+```
+
+### API Django
+
+```bash
+python manage.py runserver        # Inicia servidor
+python manage.py migrate          # Executa migrações
+python manage.py makemigrations   # Cria novas migrações
+python manage.py createsuperuser  # Cria usuário admin
+```
+
+### Supabase Local
+
+```bash
+docker compose up -d      # Inicia containers
+docker compose down       # Para containers
+docker compose ps         # Lista status dos containers
+docker compose logs       # Visualiza logs
+```
+
+---
+
+## 🤝 Contribuindo
+
+Este é um projeto acadêmico desenvolvido para a disciplina de Laboratório de Software.
+
+---
+
+## 📄 Licença
+
+Este projeto é de uso acadêmico.
+
+---
+
+## 👥 Equipe
+
+Projeto desenvolvido pelo Grupo 04 - Laboratório de Software
+
+---
+
+## 📞 Suporte
+
+Para dúvidas sobre credenciais ou configurações, entre em contato com os integrantes do grupo.
